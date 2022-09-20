@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@600&family=Open+Sans:wght@400;700&family=Qwitcher+Grypen:wght@700&family=Roboto:wght@700&family=Titillium+Web&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <title>Espaço Família Saúde</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <span class="logo-circular">
+                <img src="./images/Logo_clinica.png" alt="espaco saude familia logo">
+            </span>
+
+            <div class="menu-hamburguer">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+    </div>
+    <nav>
+        <div class="container">
+            <ul>
+                <li>
+                    <a href="#">Sobre</a>
+                </li>
+                <li>
+                    <a href="#">Em destaque</a>
+                </li>
+                <li>
+                    <a href="#">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    </header>
+    <div id="carousel-images">
+        <img src="./images/consultorio_crianca2.jpeg" alt="Consultoria infantil  ">
+        <img src="./images/brinquedos2.jpeg" alt="Brinquedos infantis">
+        <img src="./images/recepcao.jpeg" alt="recepcao clinica">
+        <img src="./images/recepcao4.jpeg" alt="recepcao clinica">
+        <img src="./images/recepcao3.jpeg" alt="recepcao clinica">
+        <img src="./images/recepcao2.jpeg" alt="recepcao clinica">
+    </div>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contato</h2>
+            <div class="contact-methods">
+                <div>
+                    <h3>Fale conosco</h3>
+                    <form>
+                        <input type="text" placeholder="Seu nome" required />
+                        <input type="email" placeholder="Seu email" required />
+                        <input type="tel" placeholder="Seu telefone (opcional)" />
+                        <textarea placeholder="Sua mensagem" required></textarea>
+                        <button type="submit"> Enviar</button>
+                    </form>
+                </div>
+                <div>
+                    <h3>Nos siga</h3>
+                    <ul class="social-links">
+                        <li>
+                            <a href="https://www.instagram.com/bruno.caetano16/" tittle="Siga-me no Instagram">
+                                <img src="./images/logo-instagram.webp" alt="Logo do instagram" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" tittle="Siga-me no Facebook">
+                                <img src="./images/facebook-logo-3-1.png" alt="Logo do facebook" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/bruno-caetano-64398531/" tittle="Siga-me no Linkedin">
+                                <img src="./images/174857.png" alt="Logo do Linkedin" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/bcaetano16" tittle="Veja meus projetos já realizados">
+                                <img src="./images/github_logo_icon_143772.png" alt="Logo do github" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Telefone/Whatsapp</h3>
+                    <h4>(38) 99854-1314</h4><br />
+                    <img class="store-fronts" src="./images/ferenc-almasi-c8h0n7fSTqs-unsplash.jpg"
+                        alt="desenvolvimento de software front-end" />
+                </div>
+                <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+                <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+                <script type="text/javascript"
+                    src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+                <script>  $(document).ready(function () {
+
+                        $('#carousel-images').slick({
+                            autoplay: true,
+                        });
+
+                    }) </script>
+</body>
+
+</html>
