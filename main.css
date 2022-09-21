@@ -1,55 +1,88 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Manrope', sans-serif;
 }
 
-.container{
-    max-width: 1366px;
-    width: 100%;
-    margin: 0 auto;
+
+html,
+body {
+
+    height: 100%;
+    overflow-x: hidden;
+    background-color: #DDA0DD;
 }
 
-header{
-    background-color: #FF69B4;
+.container {
+    max-width: 1366px;
+    width: 95%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+/*Cabeçalho*/
+header {
+    background-color: #8B008B;
     padding-top: 16px;
     color: #fff;
 }
 
+header span {
+    display: flex;
+    vertical-align: middle;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    max-height: 400px;
 
-header > .container{
+}
+
+header span img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+}
+
+header h1{
+    font-family: 'Caveat', cursive;
+    font-weight: bold;
+    font-size: 64px;
+}
+
+header > .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 16px;
 }
 
-header span {
-    display:inline-block;
-    vertical-align:middle;
-    border-radius: 50%;
-    overflow: hidden;
-    width: 150px;
-    height: 150px;
-    max-height: 400px;
-    margin-right: 32px;
-}
 
-header span img {
-    width: 100%;
-    height: 100%;
-    object-fit:cover;  
-}
-
-nav{
-    background-color: #ffcbdb ;
+header nav {
+    background-color: #BA55D3;
     padding: 16px 0;
     font-weight: bold;
-    color: #fff;
+    display: none;
+
 }
 
-nav li{
+
+.centro{
+    margin-left: 16px;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    text-align: left;
+    color: #fff;
+    font-size: 22px;
+    list-style: disc;
+    border-bottom: 2px solid #fff;
+    position:relative;
+}
+
+/*Seções*/
+nav li {
     list-style: none;
     display: inline;
     font-size: 18px;
@@ -58,28 +91,203 @@ nav li{
     text-transform: uppercase;
 }
 
-.menu-hamburguer{
+nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+button {
+    background-color: rgb(199, 52, 162);
+    border: none;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    /* ao ocupar toda a largura da tela, cria-se uma nova linha*/
+}
+
+ul li {
+    max-width: 25%;
+    position: relative;
+    max-height: 280px;
+    overflow-y: hidden;
+    /*Cortar as imagens conforme configuração eixo y = eixo vertical*/
+}
+
+
+.menu-hamburguer {
     width: 32px;
 }
 
-.menu-hamburguer span{
+.menu-hamburguer span {
     height: 2px;
     width: 100%;
     background-color: #fff;
     display: block;
     margin-bottom: 4px;
+    margin-left: 16px;
+    cursor: pointer;
+    border-radius: 16px;
 }
 
-#carousel-images{
-    max-height: 400px;
-    max-width: 600px;
-    height: 100%;
-    width: 100%
+#carousel-images {
+    /*max-height: 400px;
+    max-width: 600px;*/
+    height: 90%;
+    width: 100%;
+    max-width: 35%;
+    position: relative;
+    max-height: 442px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    margin-right: 16px;
+    margin-left: 16px;
+    border-radius: 8px;
+}
 
+.espaco 
+{
+    display: flex;
+max-height: 600px;
+
+}
+
+.espaco p {
+    text-align: justify;  
+    width: 300px;
+    color: #fff;
+}
+
+.logo2{
+    height: 100%;
+    width: 100%;
+    max-height: 600px;
+    max-width: 35%; 
+    overflow-y: hidden;
+    margin-left: 16px;
+    border-radius: 8px;
+}
+
+#brinquedo {
+    max-width: 600px;
+    max-height: 600px;
 }
 
 .contact-methods {
-    display: flex;
+    display: inline-flex;
+    margin-left: 8px;
+    color: #fff;
     justify-content: space-between;
-    margin-right: 8px;
+}
+
+
+.contact-methods form{
+    align-items: flex-start;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 10px;
+}
+
+.contact-methods input,
+textarea {
+    width: 256px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contact-methods button{
+    width: 64px;
+    height: 24px;
+    border-radius: 13px;
+}
+
+section {
+    padding: 24px 0;
+    color: rgb(9, 26, 114);
+    margin-top: 16px;
+    
+}
+
+section h2 {
+    margin-bottom: 16px;
+    font-size: 30px;
+    align-items: flex-start;
+    margin-top: 16px;
+    color: #fff;
+}
+
+section p {
+    max-height: 400px;
+    margin-bottom: 8px;
+    margin-right: 48px;
+    text-align: justify;
+}
+
+section #contact{
+    display: inline ;
+    align-items: center;
+    
+}
+
+.store-front {
+    margin-top: 32px;
+    max-height: 400px;
+    margin-right: 32px;
+}
+
+.social-links li,
+img {
+    display: inline;
+    height: 18px;
+    margin-right: 4px;
+
+
+}
+
+footer {
+    background-color: #DDA0DD;
+    color: #fff;
+    text-align: center;
+
+}
+
+footer img{
+    height: 90%;
+    width: 100%;
+    max-width: 35%;
+    position: relative;
+    max-height: 500px; 
+}
+
+.whatsapp-link {
+    position: fixed; /* ficar fixo dentro da página*/
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+}
+
+.fa-whatsapp {
+    margin-top: 16px;
+}
+
+#local{
+    align-items: center;
+    border-radius: 10px;
+    
 }
