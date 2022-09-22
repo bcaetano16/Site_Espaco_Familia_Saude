@@ -2,13 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
+/*Leelawadee UI
+Adiescode
+Tahoma
+Corbel
+Calibri
+Arial Rounded MT Bold   Fontes usadas*/
+
 html,
 body {
-
     height: 100%;
     overflow-x: hidden;
     background-color: #DDA0DD;
@@ -23,9 +29,11 @@ body {
 
 /*Cabeçalho*/
 header {
-    background-color: #8B008B;
+    background-color: #fff;
     padding-top: 16px;
-    color: #fff;
+    color: #a54586;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header span {
@@ -43,16 +51,16 @@ header span img {
     position: relative;
     width: 100%;
     height: 100%;
-    object-fit:contain;
+    object-fit: contain;
 }
 
-header h1{
-    font-family: 'Caveat', cursive;
+header h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
     font-size: 64px;
 }
 
-header > .container {
+header>.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -61,7 +69,7 @@ header > .container {
 
 
 header nav {
-    background-color: #BA55D3;
+    background-color: #a54586;
     padding: 16px 0;
     font-weight: bold;
     display: none;
@@ -69,7 +77,7 @@ header nav {
 }
 
 
-.centro{
+.centro {
     margin-left: 16px;
     margin-bottom: 16px;
     margin-top: 16px;
@@ -78,7 +86,7 @@ header nav {
     font-size: 22px;
     list-style: disc;
     border-bottom: 2px solid #fff;
-    position:relative;
+    position: relative;
 }
 
 /*Seções*/
@@ -127,7 +135,7 @@ ul li {
 .menu-hamburguer span {
     height: 2px;
     width: 100%;
-    background-color: #fff;
+    background-color: #a54586;
     display: block;
     margin-bottom: 4px;
     margin-left: 16px;
@@ -148,26 +156,28 @@ ul li {
     margin-right: 16px;
     margin-left: 16px;
     border-radius: 8px;
+    margin-bottom: 16px;
 }
 
-.espaco 
-{
+.espaco {
     display: flex;
-max-height: 600px;
+    max-height: 600px;
+    border-bottom: 2px solid #fff;
+    
 
 }
 
 .espaco p {
-    text-align: justify;  
+    text-align: justify;
     width: 300px;
     color: #fff;
 }
 
-.logo2{
+.logo2 {
     height: 100%;
     width: 100%;
     max-height: 600px;
-    max-width: 35%; 
+    max-width: 35%;
     overflow-y: hidden;
     margin-left: 16px;
     border-radius: 8px;
@@ -183,10 +193,11 @@ max-height: 600px;
     margin-left: 8px;
     color: #fff;
     justify-content: space-between;
+    
 }
 
 
-.contact-methods form{
+.contact-methods form {
     align-items: flex-start;
     text-decoration: none;
     color: #fff;
@@ -203,7 +214,7 @@ textarea {
     margin-bottom: 10px;
 }
 
-.contact-methods button{
+.contact-methods button {
     width: 64px;
     height: 24px;
     border-radius: 13px;
@@ -213,7 +224,8 @@ section {
     padding: 24px 0;
     color: rgb(9, 26, 114);
     margin-top: 16px;
-    
+    justify-content: space-between;
+
 }
 
 section h2 {
@@ -231,10 +243,10 @@ section p {
     text-align: justify;
 }
 
-section #contact{
-    display: inline ;
+section #contact {
+    display: inline;
     align-items: center;
-    
+
 }
 
 .store-front {
@@ -246,10 +258,16 @@ section #contact{
 .social-links li,
 img {
     display: inline;
-    height: 18px;
+    height: 24px;
     margin-right: 4px;
+}
 
+h3{
+    margin-bottom: 10px;
+}
 
+.nos-acompanhe{
+    margin-left: 150px;
 }
 
 footer {
@@ -259,16 +277,18 @@ footer {
 
 }
 
-footer img{
+footer img {
     height: 90%;
     width: 100%;
     max-width: 35%;
     position: relative;
-    max-height: 500px; 
+    max-height: 500px;
+    border-radius: 8px;
 }
 
 .whatsapp-link {
-    position: fixed; /* ficar fixo dentro da página*/
+    position: fixed;
+    /* ficar fixo dentro da página*/
     width: 60px;
     height: 60px;
     bottom: 40px;
@@ -286,8 +306,14 @@ footer img{
     margin-top: 16px;
 }
 
-#local{
+#local {
     align-items: center;
     border-radius: 10px;
-    
+    margin-left: 100px;
+    height: 220px;
+
+}
+
+.localizacao h3{
+margin-left: 100px;
 }
