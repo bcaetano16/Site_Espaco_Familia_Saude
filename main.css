@@ -163,8 +163,6 @@ ul li {
     display: flex;
     max-height: 600px;
     border-bottom: 2px solid #fff;
-    
-
 }
 
 .espaco p {
@@ -270,10 +268,41 @@ h3{
     margin-left: 150px;
 }
 
+
+#convenios{
+    height: 200px;
+    
+}
+
+#convenios .carousel-2{
+    margin-top: 32px;
+}
+
+.carousel-2{
+    /*max-height: 400px;
+    max-width: 600px;*/
+    height: 100%;
+    width: 100%;
+    position: relative;
+    max-height: 442px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    margin-right: 16px;
+    margin-left: 16px;
+    margin-bottom: 16px;
+    
+}
+
+.carousel-2 img{
+    max-height: 40px;
+    height: 40px;
+}
+
 footer {
     background-color: #DDA0DD;
     color: #fff;
     text-align: center;
+    margin-top: 32px;
 
 }
 
@@ -286,7 +315,7 @@ footer img {
     border-radius: 8px;
 }
 
-.whatsapp-link {
+.whatsapp-link {  /*Botão fixo do Whatsapp*/
     position: fixed;
     /* ficar fixo dentro da página*/
     width: 60px;
