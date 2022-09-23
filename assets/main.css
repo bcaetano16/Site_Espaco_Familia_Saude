@@ -113,6 +113,11 @@ button {
     cursor: pointer;
 }
 
+form button:hover {
+    background-color: #FF00FF;
+
+}
+
 ul {
     display: flex;
     flex-wrap: wrap;
@@ -219,9 +224,8 @@ textarea {
 }
 
 section {
-    padding: 24px 0;
+    padding: 48px 0;
     color: rgb(9, 26, 114);
-    margin-top: 16px;
     justify-content: space-between;
 
 }
@@ -294,8 +298,13 @@ h3{
 }
 
 .carousel-2 img{
-    max-height: 40px;
+    max-height: 200px;
     height: 40px;
+}
+
+#convenio #sao-lucas{
+    height:80px;
+    width: 60px;
 }
 
 footer {
@@ -304,15 +313,6 @@ footer {
     text-align: center;
     margin-top: 32px;
 
-}
-
-footer img {
-    height: 90%;
-    width: 100%;
-    max-width: 35%;
-    position: relative;
-    max-height: 500px;
-    border-radius: 8px;
 }
 
 .whatsapp-link {  /*Botão fixo do Whatsapp*/
@@ -345,4 +345,13 @@ footer img {
 
 .localizacao h3{
 margin-left: 100px;
+}
+
+#img-espaco{
+    height: 150px;
+    width: 80%;
+    margin-left: 100px;
+    position: relative;
+    max-height: 500px;
+    border-radius: 8px;
 }
