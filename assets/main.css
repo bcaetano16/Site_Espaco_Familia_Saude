@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 8px;
 }
 
 
@@ -32,6 +33,7 @@ header {
     background-color: #fff;
     padding-top: 16px;
     color: #a54586;
+    text-decoration: underline;
     text-transform: uppercase;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -225,7 +227,6 @@ textarea {
 
 section {
     padding: 48px 0;
-    color: rgb(9, 26, 114);
     justify-content: space-between;
 
 }
@@ -251,6 +252,21 @@ section #contact {
 
 }
 
+section #em-destaque{
+margin: 16px 0;
+margin-bottom: 16px;
+}
+
+section #em-destaque h1{
+    margin-bottom: 16px;
+padding: 16px 0;
+}
+
+section #em-destaque img{
+    width:500px;
+    height: 400px;
+}
+
 .store-front {
     margin-top: 32px;
     max-height: 400px;
@@ -272,9 +288,15 @@ h3{
     margin-left: 150px;
 }
 
+#destaque{
+    width: 400px;
+    height: 450px;
+    margin-top: 24px;
+}
 
 #convenios{
     height: 200px;
+    margin-top: 24px;
     
 }
 
@@ -312,6 +334,7 @@ footer {
     color: #fff;
     text-align: center;
     margin-top: 32px;
+    font-size: 12px;
 
 }
 

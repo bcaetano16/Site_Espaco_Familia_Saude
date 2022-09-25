@@ -5,15 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/sobre.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Manrope:wght@600&family=Open+Sans:wght@400;700&family=Qwitcher+Grypen:wght@700&family=Roboto:wght@700&family=Titillium+Web&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <title>Sobre</title>
 </head>
 <body>
+    <a class="whatsapp-link" href="https://web.whatsapp.com/send?phone=5538999243451" target="_blank">
+        <i class="fa fa-whatsapp"></i>
+    </a>
     <header>
-        <h1>Sobre</h1>
+        <div class="container">
+            <span class="logo-circular">
+                <img src="./assets/images/logos/Logo2.jpg" alt="espaco saude familia logo">
+
+            </span>
+            <h1>Institucional</h1>
+
+            <div class="menu-hamburguer">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <nav>
+            <div class="container">
+                <ul>
+                    <li>
+                        <a href="./index.html">Página Principal</a>
+                    </li>
+                    <li>
+                        <a href="./sobre.html" target="_blank">Institucional</a>
+                    </li>
+                    <li>
+                        <a href="./unidades.html">Unidades</a>
+                    </li>
+                    <li>
+                        <a href="./profissionais.html">Nossos profissionais</a>
+                    </li>
+                    <li>
+                        <a href="./servicos.html">Nossos Serviços</a>
+                    </li>
+                    <!-- <li>
+                        <a href="#">Convênios</a>
+                    </li>-->
+                    <li>
+                        <a href="#contact">Contato</a>
+                    </li>
+                </ul>
+
+        </nav>
+        </div>
     </header>
     <div class="container">
         <div>
-            <img src="./assets/images/crianca.jpeg" alt="Consultoria infantil  ">
+            <video id="tatiane" src="./assets/videos/Proprietaria Clínica.mp4" alt="Tatiane espaço familia saude "></video>
             <p>        O espaço saúde família que foi criada com o objetivo de auxiliar os seus pacientes/clientes a lidar com suas
                 dificuldades, focada nas especialidades de
                 Psicologia, Fonoaudiologia, Nutrição e Medicina ativando suas emoções e redescobrindo-se. Ela oferece
@@ -26,5 +78,31 @@
         </div>
     </div>
     
+    <div class="container">
+        <div class="rodape">
+            <footer>
+
+                <p>
+                    &copy; Espaco Familia Servicos de Saude LTDA| CNPJ: 33.973.268/0001-69 | Endereço: Rua Correia Machado,
+                    1025 Centro - Montes Claros, MG CEP: 39.400-090
+                    Sócio-Administrador: Tatiane Aparecida Mendes - CRPMG -35803 |
+                    © 2022 Espaço Família Saúde | Todos os direitos reservados.
+                </p>
+            </footer>
+        </div>
+
+    </div>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script>  $(document).ready(function () {
+
+        $('.menu-hamburguer').click(function () {
+            $('nav').slideToggle();
+        })
+
+    }) </script>
+
 </body>
 </html>
