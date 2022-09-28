@@ -27,6 +27,7 @@ header {
     text-decoration: underline;
     text-transform: uppercase;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-bottom: 4px solid #a54586;
 }
 
 header span {
@@ -109,13 +110,13 @@ ul li {
 }
 
 footer {
-    background-color: #fff;
-    color: #a54586;
     text-align: center;
     margin-top: 32px;
     font-size: 12px;
-
+    border-top: 4px solid #a54586;
+    margin-bottom: 16px;
 }
+
 
 .whatsapp-link {  /*Botão fixo do Whatsapp*/
     position: fixed;

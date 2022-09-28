@@ -25,7 +25,9 @@ header {
     color: #a54586;
     text-decoration: underline;
     text-transform: uppercase;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-bottom: 4px solid #a54586;
+}
 
 header span {
     display: flex;
@@ -80,6 +82,7 @@ ul li {
     overflow-y: hidden;
     /*Cortar as imagens conforme configuração eixo y = eixo vertical*/
 }
+
 .container {
     max-width: 1366px;
     width: 95%;
@@ -133,4 +136,14 @@ img {
     max-width: 500px;
     width: 95%;
     height: 400px;
+}
+
+footer {
+    background-color: #fff;
+    color: #a54586;
+    text-align: center;
+    margin-top: 32px;
+    font-size: 12px;
+    border-top: 4px solid #a54586;
+    margin-bottom: 16px;
 }

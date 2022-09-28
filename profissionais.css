@@ -20,6 +20,8 @@ header {
     text-decoration: underline;
     text-transform: uppercase;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 16px;
+    border-bottom: 4px solid #a54586;
 }
 
 header span {
@@ -52,6 +54,7 @@ header h1 {
     margin: 0 auto;
     flex-wrap: wrap;
 }
+
 header>.container {
     display: flex;
     justify-content: space-between;
@@ -68,6 +71,26 @@ header nav {
 
 }
 
+
+nav {
+    background-color: #575fcf;
+    padding: 16px 0;
+    font-weight: bold;
+    color: #fff;
+}
+
+nav li {
+    display: flex;
+    font-size: 18px;
+    margin-right: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+}
 ul {
     display: flex;
     flex-wrap: wrap;
@@ -98,6 +121,16 @@ ul li {
     border-radius: 16px;
 }
 
+
+section img{
+    width: 500px;
+    height: 400px;
+}
+
+section p {
+    margin-top: 16px;
+}
+
 .whatsapp-link {  /*Botão fixo do Whatsapp*/
     position: fixed;
     /* ficar fixo dentro da página*/
@@ -125,4 +158,6 @@ footer {
     margin-top: 32px;
     font-size: 12px;
     width: 100%;
+    border-top: 4px solid #a54586;
+    margin-bottom: 16px;
 }

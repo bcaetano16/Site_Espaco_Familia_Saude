@@ -25,7 +25,6 @@ body {
     max-width: 1366px;
     width: 95%;
     margin: 0 auto;
-    flex-wrap: wrap;
 }
 
 /*Cabeçalho*/
@@ -150,14 +149,15 @@ ul li {
     border-radius: 16px;
 }
 
+.menu-hamburguer span:hover{
+    background-color: #FF00FF;
+}
+
 #carousel-images {
-    /*max-height: 400px;
-    max-width: 600px;*/
     height: 90%;
     width: 100%;
-    max-width: 35%;
-    position: relative;
-    max-height: 442px;
+    max-width: 450px;
+    max-height: 600px;
     overflow-y: hidden;
     overflow-x: hidden;
     margin-right: 16px;
@@ -166,7 +166,7 @@ ul li {
     margin-bottom: 16px;
 }
 
-.espaco {
+.espaco {   
     display: flex;
     max-height: 600px;
     border-bottom: 2px solid #fff;
@@ -176,6 +176,12 @@ ul li {
     text-align: justify;
     width: 300px;
     color: #fff;
+    margin-top: 32px;
+}
+
+.espaco #unid-premier{
+    width: 100%;
+    height: 580px;
 }
 
 .logo2 {
@@ -241,20 +247,22 @@ section h2 {
 
 section p {
     max-height: 400px;
-    margin-bottom: 8px;
     margin-right: 48px;
     text-align: justify;
 }
 
-section #contact {
+section #contact > .container {
     display: inline;
     align-items: center;
+    border-bottom: 2px solid #fff;
+    width: 100%;
 
 }
 
 section #em-destaque{
 margin: 16px 0;
 margin-bottom: 16px;
+justify-content: space-between;
 }
 
 section #em-destaque h1{
@@ -262,10 +270,17 @@ section #em-destaque h1{
 padding: 16px 0;
 }
 
-section #em-destaque img{
+section #em-destaque img, video{
     width:500px;
-    height: 400px;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 16px;
 }
+
+video #procrastinacao{
+    margin-left: 32px;
+}
+
 
 .store-front {
     margin-top: 32px;
@@ -297,6 +312,7 @@ h3{
 #convenios{
     height: 200px;
     margin-top: 24px;
+    justify-content: space-between;
     
 }
 
@@ -335,6 +351,7 @@ footer {
     text-align: center;
     margin-top: 32px;
     font-size: 12px;
+    margin-bottom: 16px;
 
 }
 
