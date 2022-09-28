@@ -61,7 +61,8 @@ header h1 {
     font-size: 64px;
 }
 
-header>.container {
+header > .container,
+footer > .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -149,7 +150,7 @@ ul li {
     border-radius: 16px;
 }
 
-.menu-hamburguer span:hover{
+.menu-hamburguer span:hover {
     background-color: #FF00FF;
 }
 
@@ -157,7 +158,7 @@ ul li {
     height: 90%;
     width: 100%;
     max-width: 450px;
-    max-height: 600px;
+    max-height: 580px;
     overflow-y: hidden;
     overflow-x: hidden;
     margin-right: 16px;
@@ -166,7 +167,20 @@ ul li {
     margin-bottom: 16px;
 }
 
-.espaco {   
+#carousel-videos {
+    height: 90%;
+    width: 100%;
+    max-width: 450px;
+    max-height: 550px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    margin-right: 32px;
+    margin-left: 16px;
+    border-radius: 8px;
+    margin-top: 32px;
+}
+
+.espaco {
     display: flex;
     max-height: 600px;
     border-bottom: 2px solid #fff;
@@ -179,7 +193,7 @@ ul li {
     margin-top: 32px;
 }
 
-.espaco #unid-premier{
+.espaco #unid-premier {
     width: 100%;
     height: 580px;
 }
@@ -199,22 +213,24 @@ ul li {
     max-height: 600px;
 }
 
-.contact-methods {
-    display: inline-flex;
+.contact-methods, h2 {
+    margin-left: 32px;
     margin-left: 8px;
     color: #fff;
     justify-content: space-between;
-    
+
+}
+.contact-methods h3{
+    text-decoration: underline;
 }
 
-
 .contact-methods form {
-    align-items: flex-start;
     text-decoration: none;
     color: #fff;
     font-size: 14px;
-    cursor: pointer;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    max-width: 360px;
+    width: 100%;
     margin-top: 10px;
 }
 
@@ -231,11 +247,28 @@ textarea {
     border-radius: 13px;
 }
 
-section {
-    padding: 48px 0;
-    justify-content: space-between;
-
+.form-campo label {
+    display: block;
+    font-weight: bold;
 }
+
+.form-campo input,
+textarea {
+    width: 100%;
+    padding: 2px;
+    display: block;
+}
+
+.form-campo textarea {
+    height: 120px;
+    resize: none;
+}
+
+.nos-acompanhe {
+    justify-content: space-between  ;
+    max-width: 100%;
+}
+
 
 section h2 {
     margin-bottom: 16px;
@@ -251,76 +284,73 @@ section p {
     text-align: justify;
 }
 
-section #contact > .container {
-    display: inline;
-    align-items: center;
-    border-bottom: 2px solid #fff;
-    width: 100%;
-
+section #em-destaque {
+    margin: 16px 0;
+    justify-content: space-between;
+    display: block;
 }
 
-section #em-destaque{
-margin: 16px 0;
-margin-bottom: 16px;
-justify-content: space-between;
+#em-destaque h1 {
+    margin-top: 16px;
+    text-align: center;
 }
 
-section #em-destaque h1{
-    margin-bottom: 16px;
-padding: 16px 0;
-}
-
-section #em-destaque img, video{
-    width:500px;
+section #em-destaque img,
+video {
+    width: 500px;
     justify-content: space-between;
     align-items: center;
     margin-left: 16px;
 }
 
-video #procrastinacao{
-    margin-left: 32px;
-}
-
-
-.store-front {
-    margin-top: 32px;
-    max-height: 400px;
-    margin-right: 32px;
+#contact{
+    display: flex;
 }
 
 .social-links li,
 img {
     display: inline;
-    height: 24px;
+    height: 20px;
     margin-right: 4px;
+    text-decoration: none;
 }
 
-h3{
+h3 {
     margin-bottom: 10px;
 }
 
-.nos-acompanhe{
-    margin-left: 150px;
+#img-espaco {
+    height: 150px;
+    width: 80%;
+    max-width: 400px;
+    margin-left: 200px;
+    position: relative;
+    max-height: 500px;
+    border-radius: 8px;
 }
 
-#destaque{
+
+#destaque {
     width: 400px;
     height: 450px;
     margin-top: 24px;
 }
 
-#convenios{
+#convenios {
     height: 200px;
     margin-top: 24px;
     justify-content: space-between;
-    
+
 }
 
-#convenios .carousel-2{
+#convenios h1{
+    margin-top: 32px;
+}
+#convenios .carousel-2 {
     margin-top: 32px;
 }
 
-.carousel-2{
+.carousel-2 {
     /*max-height: 400px;
     max-width: 600px;*/
     height: 100%;
@@ -332,18 +362,14 @@ h3{
     margin-right: 16px;
     margin-left: 16px;
     margin-bottom: 16px;
-    
+
 }
 
-.carousel-2 img{
+.carousel-2 img {
     max-height: 200px;
     height: 40px;
 }
 
-#convenio #sao-lucas{
-    height:80px;
-    width: 60px;
-}
 
 footer {
     background-color: #DDA0DD;
@@ -355,7 +381,19 @@ footer {
 
 }
 
-.whatsapp-link {  /*Botão fixo do Whatsapp*/
+footer li{
+    list-style: none;
+    margin-left: 16px;
+}
+
+footer li img{
+    height: 32px;
+    cursor: pointer;
+}
+
+
+.whatsapp-link {
+    /*Botão fixo do Whatsapp*/
     position: fixed;
     /* ficar fixo dentro da página*/
     width: 60px;
@@ -380,18 +418,7 @@ footer {
     border-radius: 10px;
     margin-left: 100px;
     height: 220px;
-
 }
-
-.localizacao h3{
-margin-left: 100px;
-}
-
-#img-espaco{
-    height: 150px;
-    width: 80%;
+.localizacao h3 {
     margin-left: 100px;
-    position: relative;
-    max-height: 500px;
-    border-radius: 8px;
 }
