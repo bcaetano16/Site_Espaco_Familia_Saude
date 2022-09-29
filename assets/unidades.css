@@ -17,10 +17,13 @@ header {
     background-color: #fff;
     padding-top: 16px;
     color: #a54586;
-    text-decoration: underline;
     text-transform: uppercase;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-bottom: 4px solid #a54586;
+    position: sticky;
+    top:0;
+    left:0;
+    z-index: 1;
 }
 
 header span {

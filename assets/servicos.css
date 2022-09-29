@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -24,10 +24,13 @@ header {
     background-color: #fff;
     padding-top: 16px;
     color: #a54586;
-    text-decoration: underline;
     text-transform: uppercase;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-bottom: 4px solid #a54586;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 header span {
@@ -54,7 +57,7 @@ header h1 {
     font-size: 50px;
 }
 
-header>.container {
+header > .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -68,6 +71,19 @@ header nav {
     font-weight: bold;
     display: none;
 }
+
+header ul {
+    list-style: none;
+    margin-left: 16px;
+    justify-content: space-between;
+}
+
+header ul li img {
+    height: 32px;
+    cursor: pointer;
+}
+
+
 
 ul {
     display: flex;
@@ -101,13 +117,18 @@ ul li {
 }
 
 .servicos {
-        color: #fff;
-        margin-left: 100px;
-        margin-top: 16px;
-        font-size: 20px;
-        list-style: disc;
-        display: block;
+    color: #fff;
+    margin-left: 100px;
+    margin-top: 16px;
+    font-size: 20px;
+    list-style: disc;
+    display: list-item;
 }
+
+.servicos li {
+    list-style: disc;
+}
+
 
 footer {
     text-align: center;
@@ -118,7 +139,8 @@ footer {
 }
 
 
-.whatsapp-link {  /*Botão fixo do Whatsapp*/
+.whatsapp-link {
+    /*Botão fixo do Whatsapp*/
     position: fixed;
     /* ficar fixo dentro da página*/
     width: 60px;

@@ -35,6 +35,7 @@
         <div class="container">
             <span class="logo-circular">
                 <img src="./assets/images/logos/Logo2.jpg" alt="espaco saude familia logo">
+                <a href="./index.html"></a>
 
             </span>
             <h1>Espaço Família Saúde</h1>
@@ -60,9 +61,9 @@
                     <li>
                         <a href="./servicos.html">Nossos Serviços</a>
                     </li>
-                    <!-- <li>
-                        <a href="#">Convênios</a>
-                    </li>-->
+                    <li>
+                        <a href="./convenios.html">Convênios</a>
+                    </li>
                     <li>
                         <a href="#contact">Contato</a>
                     </li>
@@ -100,12 +101,12 @@
             🔸️Espaço Família Mais - Antônio Pimenta</p>
     </div>
 
-    <section id="em-destaque" style="background-color:#fff;display: block;">
-        <h1 style=" color:  #a54586;text-decoration: underline; margin-top: 10px;">Destaques</h1>
+    <section id="em-destaque" style="background-color:#fff;">
+        <h1 style=" color:  #a54586;text-decoration: underline; margin-top: 10px; margin-bottom: 10px;">Eventos</h1>
         <div class="container" style="display: flex;">
 
             <div id="carousel-videos" style="margin-top:32px">
-                <video controls autoplay src="./assets/videos/comemoracao 2 anos.mp4"></video>
+                <video controls loop src="./assets/videos/comemoracao 2 anos.mp4"></video>
                 <video controls autoplay loop src="./assets/videos/livros_crianca.mp4"
                     alt="recepcao clinica espaco saude familia"></video>
                 <video controls autoplay loop src="./assets/videos/arvore_macacos.mp4"
@@ -124,8 +125,9 @@
                         src="./assets/videos/consultorio2.mp4"></video>
             </div>
 
-            <img style="margin-left: 32px;" src="./assets/images/Destaques/Setembro amarelo.png" id="destaque"
-                alt="Setembro amarelo">
+            <img src="./assets/images/Destaques/Setembro amarelo.png" id="destaque" alt="Setembro amarelo">
+            <video controls style="width: 350px; margin-right: 16px; border-radius: 18px;"
+                src="./assets/videos/ALINHAMENTO.MP4" id="alinhamento"></video>
         </div>
 
 
@@ -134,43 +136,46 @@
         <div class="container">
             <h2 style="text-decoration:underline ;">Fale conosco</h2>
             <div class="contact-methods" style="display:block ;">
+                <h2 style="text-align:left; font-size: 20px; ">Entre em contato</h2>
                 <form>
                     <div class="form-campo">
                         <label for="nome">Nome:</label>
-                        <input type="text" id="nome" required>
+                        <input type="text" id="nome" name="nome">
                     </div>
                     <div class="form-campo">
                         <label for="telefone">Telefone:</label>
-                        <input type="tel" id="telefone (Opcional)">
+                        <input type="tel" id="telefone" name="telefone">
                     </div>
                     <div class="form-campo">
                         <label for="email">Email:</label>
-                        <input type="email" id="email" required>
+                        <input type="email" id="email" name="email">
                     </div>
                     <div class="form-campo">
                         <label for="especialidade-interesse">Especialidade de interesse:</label>
-                        <input type="text" id="especialidade-interesse" required>
+                        <input type="text" id="especialidade-interesse" name="especialidadeDeInteresse">
                     </div>
                     <div class="form-campo">
                         <label for="mensagem">Mensagem:</label>
-                        <textarea id="mensagem" required></textarea>
+                        <textarea id="mensagem" name="mensagem"></textarea>
                     </div>
-                    <button type="submit">Enviar</button>
+                    <button id="button-conosco" type="submit">Enviar</button>
                 </form>
-                <!-- <li>
+            </div>
+    </section>
+    <!-- <li>
                             <a href="mailto:tatianemendes.psimoc@gmail.com"
                             style="margin-left: 8px; text-decoration: none; margin-top: 4px;" id="mailto"
                             target="_blank tittle=" Entre em contato pelo email>
                             <img src="./assets/images/logos/gmail_new_logo_icon_159149.png" alt="Logo do gmail" />
                         </a>
                         </li>-->
-            </div>
+    </div>
     </section>
 
     <section id="convenios" style=background-color:#fff>
         <div class="container">
 
-            <h1 style="text-align: Center; ">Alguns de nossos clientes</h1>
+            <h1 style="text-align: Center; ">Alguns de nossos convênios</h1>
 
             <div style="text-align: Center" class="carousel-2">
 
@@ -205,14 +210,14 @@
                     &copy; Espaco Familia Servicos de Saude LTDA| CNPJ: 33.973.268/0001-69 | Endereço: Rua Correia
                     Machado,
                     1025 Centro - Montes Claros, MG CEP: 39.400-090
-                    Sócio-Administrador: Tatiane Aparecida Mendes - CRPMG -35803 |
+                    Responsável Técnica: Tatiane Aparecida Mendes - CRPMG -35803 |
                     © 2022 Espaço Família Saúde | Todos os direitos reservados.
                 </p>
 
                 <ul class="container-flex">
                     <li>
                         <a href="https://www.facebook.com/espacofamiliasaude" target="_blank">
-                            <img src="./assets/images/logos/facebook-logo-5-1.png" alt="Facebook" >
+                            <img src="./assets/images/logos/facebook-logo-5-1.png" alt="Facebook">
                         </a>
                     </li>
                     <li>
@@ -227,12 +232,14 @@
                     </li>
                 </ul>
             </footer>
-
         </div>
     </div>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./Js/jquery.mask.min.js"></script>
+    <script src="./Js/jquery.validate.min.js"></script>
+    <script src="./Js/messages_pt_BR.min.js"></script>
     <script>  $(document).ready(function () {
 
             $('#carousel-images').slick({
@@ -247,6 +254,40 @@
                 $('nav').slideToggle();
             })
 
+            $("#telefone").mask('(00) 00000-0000')
+
+            $('form').validate({
+                rules: {
+                    nome: {
+                        required: true
+                    },
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    telefone: {
+                        required: true
+                    },
+                    mensagem: {
+                        required: true
+                    },
+                    especialidadeDeInteresse: {
+                        required: false,
+                    }
+                },
+                messages: {
+                    nome: 'Por favor, insira o seu nome'
+                },
+                submitHandler: function (form) {
+                    console.log(form)
+                },
+                invalidHandler: function (evento, validador) {
+                    let camposIncorretos = validador.numberOfInvalids();
+                    if (camposIncorretos) {
+                        alert(`Existem ${camposIncorretos} campos Incorretos`)
+                    }
+                }
+            })
         }) </script>
 
     <!-- <script>
@@ -254,8 +295,6 @@
                 $('.carousel-2').slick({
                     autoplay: true, infinite: true, speed: 500, dots: true
                 });
-
-
             })
         </script>-->
     <script src="./assets/main.js"></script>

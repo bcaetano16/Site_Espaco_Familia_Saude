@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border-radius: 8px;
 }
 
 
@@ -32,9 +31,12 @@ header {
     background-color: #fff;
     padding-top: 16px;
     color: #a54586;
-    text-decoration: underline;
     text-transform: uppercase;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 header span {
@@ -45,6 +47,7 @@ header span {
     width: 100px;
     height: 100px;
     max-height: 400px;
+    cursor: pointer;
 
 }
 
@@ -61,23 +64,20 @@ header h1 {
     font-size: 64px;
 }
 
-header > .container,
-footer > .container {
+header>.container,
+footer>.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 16px;
 }
 
-
 header nav {
     background-color: #a54586;
     padding: 16px 0;
     font-weight: bold;
     display: none;
-
 }
-
 
 .centro {
     margin-left: 16px;
@@ -180,6 +180,16 @@ ul li {
     margin-top: 32px;
 }
 
+#alinhamento{
+    height: 100%;
+    width: 100%;
+    max-width: 450px;
+    max-height: 500px;
+    margin-right: 32px;
+    margin-left: 16px;
+    border-radius: 8px;
+    margin-top: 24px;
+}
 .espaco {
     display: flex;
     max-height: 600px;
@@ -213,14 +223,15 @@ ul li {
     max-height: 600px;
 }
 
-.contact-methods, h2 {
+.contact-methods,
+h2 {
     margin-left: 32px;
-    margin-left: 8px;
     color: #fff;
     justify-content: space-between;
 
 }
-.contact-methods h3{
+
+.contact-methods h3 {
     text-decoration: underline;
 }
 
@@ -238,14 +249,29 @@ ul li {
 textarea {
     width: 256px;
     display: block;
-    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .contact-methods button {
-    width: 64px;
-    height: 24px;
-    border-radius: 13px;
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    background-color: #a54586;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-top: 10px;
+    max-width: 100px;
 }
+
+#button-conosco:hover {
+    background-color: #FF00FF;
+}
+
 
 .form-campo label {
     display: block;
@@ -265,7 +291,7 @@ textarea {
 }
 
 .nos-acompanhe {
-    justify-content: space-between  ;
+    justify-content: space-between;
     max-width: 100%;
 }
 
@@ -291,7 +317,7 @@ section #em-destaque {
 }
 
 #em-destaque h1 {
-    margin-top: 16px;
+    margin-top: 32px;
     text-align: center;
 }
 
@@ -303,8 +329,8 @@ video {
     margin-left: 16px;
 }
 
-#contact{
-    display: flex;
+section #contact h2 {
+    font-size: 20px;
 }
 
 .social-links li,
@@ -337,17 +363,18 @@ h3 {
 }
 
 #convenios {
-    height: 200px;
-    margin-top: 24px;
+    height: 120px;
     justify-content: space-between;
 
 }
 
 #convenios h1{
-    margin-top: 32px;
+    margin-top: 30px;
+    color: #a54586;
 }
+
 #convenios .carousel-2 {
-    margin-top: 32px;
+    margin-top: 16px;
 }
 
 .carousel-2 {
@@ -361,8 +388,6 @@ h3 {
     overflow-x: hidden;
     margin-right: 16px;
     margin-left: 16px;
-    margin-bottom: 16px;
-
 }
 
 .carousel-2 img {
@@ -381,12 +406,12 @@ footer {
 
 }
 
-footer li{
+footer li {
     list-style: none;
     margin-left: 16px;
 }
 
-footer li img{
+footer li img {
     height: 32px;
     cursor: pointer;
 }
@@ -419,6 +444,7 @@ footer li img{
     margin-left: 100px;
     height: 220px;
 }
+
 .localizacao h3 {
     margin-left: 100px;
 }
