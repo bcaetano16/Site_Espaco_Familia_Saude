@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -14,21 +14,21 @@ body {
 
 .container {
     max-width: 1366px;
-    width: 95%;
+    width: 97%;
     margin: 0 auto;
+    flex-wrap: wrap;
 }
 
-/*Cabeçalho*/
 header {
     background-color: #fff;
     padding-top: 16px;
     color: #a54586;
     text-transform: uppercase;
-    height: 131px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-bottom: 4px solid #a54586;
     position: sticky;
-    top: 0;
-    left: 0;
+    top:0;
+    left:0;
     z-index: 1;
 }
 
@@ -40,7 +40,6 @@ header span {
     width: 100px;
     height: 100px;
     max-height: 400px;
-    cursor: pointer;
 
 }
 
@@ -54,21 +53,66 @@ header span img {
 header h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
-    font-size: 64px;
+    font-size: 50px;
 }
 
-/*header>.container {
+header>.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 16px;
-}*/
+}
+
 
 header nav {
     background-color: #a54586;
     padding: 16px 0;
     font-weight: bold;
     display: none;
+
+}
+
+nav {
+    background-color: #575fcf;
+    padding: 16px 0;
+    font-weight: bold;
+    color: #fff;
+}
+/*Seções*/
+nav li {
+    list-style: none;
+    display: inline;
+    font-size: 18px;
+    margin-right: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul {
+    display: inline;
+    flex-wrap: wrap;
+    /* ao ocupar toda a largura da tela, cria-se uma nova linha*/
+}
+
+ul li {
+    max-width: 25%;
+    position: relative;
+    max-height: 280px;
+    overflow-y: hidden;
+    /*Cortar as imagens conforme configuração eixo y = eixo vertical*/
+}
+
+.container {
+    max-width: 1366px;
+    width: 95%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+ text-decoration: none;
 }
 
 .menu-hamburguer {

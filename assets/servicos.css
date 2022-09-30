@@ -74,16 +74,17 @@ header nav {
 
 header ul {
     list-style: none;
-    margin-left: 16px;
-    justify-content: space-between;
+    width: 120px;
+    padding: auto 32px ;
+    display: inline;
 }
 
 header ul li img {
-    height: 32px;
+    height: 24px;
     cursor: pointer;
+    overflow-x: hidden;
+    display: inline;
 }
-
-
 
 ul {
     display: flex;
@@ -96,7 +97,7 @@ ul li {
     position: relative;
     max-height: 280px;
     overflow-y: hidden;
-    display: block;
+    display: flex;
     color: #fff;
     /*Cortar as imagens conforme configuração eixo y = eixo vertical*/
 }
@@ -115,6 +116,7 @@ ul li {
     cursor: pointer;
     border-radius: 16px;
 }
+
 
 .servicos {
     color: #fff;
