@@ -465,6 +465,12 @@ footer li img {
         max-width: 90%;
     }
 
+    .container.espaco{
+        display: block;
+        justify-content: center;
+        border-bottom: 2px solid #fff;
+    }
+
     header {
         text-align: center;
         justify-content: space-between;
@@ -571,7 +577,6 @@ footer li img {
     .espaco .logo2 {
         max-width: 100%;
         width: 60%;
-
     }
 
     #em-destaque>.container {
