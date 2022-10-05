@@ -48,7 +48,6 @@ header span {
     height: 100px;
     max-height: 400px;
     cursor: pointer;
-
 }
 
 header span img {
@@ -65,9 +64,10 @@ header h1 {
 }
 
 header>.container,
-footer>.container {
+footer>.container,
+#em-destaque>.container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding-bottom: 16px;
 }
@@ -76,7 +76,14 @@ header nav {
     background-color: #a54586;
     padding: 16px 0;
     font-weight: bold;
-    display: none;
+    display: flex;
+}
+
+.celular-flex {
+    display: flex;
+    max-height: 100%;
+    max-width: 100%;
+    justify-content: center;
 }
 
 .centro {
@@ -143,11 +150,12 @@ ul li {
     height: 2px;
     width: 100%;
     background-color: #a54586;
-    display: block;
+    display: none;
     margin-bottom: 4px;
     margin-left: 16px;
     cursor: pointer;
     border-radius: 16px;
+
 }
 
 .menu-hamburguer span:hover {
@@ -167,11 +175,12 @@ ul li {
     margin-bottom: 16px;
 }
 
+
 #carousel-videos {
-    height: 100%;
+    height: 480px;
     width: 100%;
     max-width: 550px;
-    max-height: 585px;
+    max-height: 530px;
     overflow-y: hidden;
     overflow-x: hidden;
     margin-right: 32px;
@@ -180,19 +189,27 @@ ul li {
     margin-top: 32px;
 }
 
-#alinhamento{
-    height: 100%;
-    width: 100%;
-    max-width: 450px;
-    max-height: 450px;
+#destaque {
+    width: 400px;
+    max-height: 500px;
+    height: 480px;
+    margin-top: 24px;
+}
+
+
+#alinhamento {
+    width: 350px;
+    height: 400px;
     margin-right: 32px;
     margin-left: 16px;
     border-radius: 8px;
     margin-top: 24px;
 }
-.espaco {
+
+.container.espaco{
     display: flex;
     max-height: 600px;
+    justify-content: center;
     border-bottom: 2px solid #fff;
 }
 
@@ -214,8 +231,10 @@ ul li {
     max-height: 600px;
     max-width: 35%;
     overflow-y: hidden;
+    margin-right: 16px;
     margin-left: 16px;
     border-radius: 8px;
+    margin-bottom: 16px;
 }
 
 #brinquedo {
@@ -348,19 +367,13 @@ h3 {
 }
 
 
-#destaque {
-    width: 370px;
-    height: 370px;
-    margin-top: 24px;
-}
-
 #convenios {
     height: 120px;
     justify-content: space-between;
 
 }
 
-#convenios h1{
+#convenios h1 {
     margin-top: 30px;
     color: #a54586;
 }
@@ -439,4 +452,174 @@ footer li img {
 
 .localizacao h3 {
     margin-left: 100px;
+}
+
+@media screen and (max-width: 767px) {
+    /* display mais blockado*/
+
+    .menu {
+        display: block;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    header {
+        text-align: center;
+        justify-content: space-between;
+    }
+
+    header span {
+
+        display: none;
+        vertical-align: middle;
+        border-radius: 50%;
+        overflow: hidden;
+        width: 100px;
+        height: 100px;
+        max-height: 400px;
+        cursor: pointer;
+    }
+
+    .menu-hamburguer {
+        width: 64px;
+    }
+
+    .menu-hamburguer span {
+        height: 4px;
+        width: 100%;
+        background-color: #a54586;
+        color: #fff;
+        display: block;
+        margin-bottom: 8px;
+        margin-left: 16px;
+        cursor: pointer;
+        border-radius: 16px;
+
+    }
+
+    nav li {
+        display: none;
+        font-size: 18px;
+        margin-right: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    nav li a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .menu,
+    .menu>li {
+        width: 100%;
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        justify-content: space-around;
+
+    }
+
+    .celular-flex {
+        display: flex;
+        margin-top: 32px;
+        margin-bottom: 32px;
+        max-height: 100%;
+        max-width: 100%;
+        justify-content: space-between;
+    }
+
+    #destaque {
+        max-width: 100%;
+        width: 100%;
+        max-height: 95%;
+        height: 80%;
+    }
+
+    #alinhamento {
+        width: 600px;
+        height: 600px;
+        margin-right: 32px;
+        margin-left: 16px;
+        border-radius: 8px;
+        margin-top: 24px;
+    }
+
+    /* .menu>li {
+        clear: both;
+    }*/
+
+    .espaco {
+        display: block;
+        max-height: 100%;
+        border-bottom: 2px solid #fff;
+        text-align: center;
+    }
+
+    .espaco p {
+        text-align: justify;
+        width: 250px;
+        color: #fff;
+        font-size: 14px;
+        margin-bottom: 24px;
+    }
+
+    .espaco .logo2 {
+        max-width: 100%;
+        width: 60%;
+
+    }
+
+    #em-destaque>.container {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 16px;
+    }
+
+
+    #carousel-images img {
+        margin-top: 16px;
+        height: 100%;
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        border-radius: 8px;
+        margin-bottom: 16px;
+        align-items: center;
+    }
+
+    #carousel-videos {
+        height: 525px;
+        width: 95%;
+        max-width: 100%;
+        max-height: 530px;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        margin-right: 32px;
+        margin-left: 16px;
+        border-radius: 8px;
+        margin-top: 32px;
+    }
+
+    #convenios {
+        max-height: 100%;
+        height: 20%;
+        justify-content: space-between;
+
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .container {
+        max-width: 90%;
+    }
+
 }

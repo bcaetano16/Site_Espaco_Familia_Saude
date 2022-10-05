@@ -21,6 +21,7 @@ header {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-top: 16px;
     border-bottom: 4px solid #a54586;
+    text-decoration: none;
     /*position: sticky;
     top:0;
     left:0;
@@ -93,6 +94,7 @@ nav li a {
     color: #fff;
     text-decoration: none;
 }
+
 ul {
     display: flex;
     flex-wrap: wrap;

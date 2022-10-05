@@ -27,8 +27,8 @@ header {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-bottom: 4px solid #a54586;
     position: sticky;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     z-index: 1;
 }
 
@@ -115,7 +115,8 @@ img {
     border-radius: 16px;
 }
 
-.whatsapp-link {  /*Botão fixo do Whatsapp*/
+.whatsapp-link {
+    /*Botão fixo do Whatsapp*/
     position: fixed;
     /* ficar fixo dentro da página*/
     width: 60px;
@@ -135,10 +136,19 @@ img {
     margin-top: 16px;
 }
 
-footer {
+#tatiane {
+    width: 450px;
+    max-height: 500px;
+    height: 480px;
+    margin-top: 24px;
+}
+
+footer p    {
     background-color: #fff;
     color: #a54586;
     text-align: center;
+    margin-top: 32px;
     font-size: 12px;
+    width: 100%;
     border-top: 4px solid #a54586;
 }

@@ -13,6 +13,14 @@ body {
     color: #fff;
 }
 
+
+.container {
+    max-width: 1366 px;
+    width: 95%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
 header {
     background-color: #fff;
     padding-top: 16px;
@@ -21,10 +29,12 @@ header {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-bottom: 4px solid #a54586;
     position: sticky;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     z-index: 1;
 }
+
+
 
 header span {
     display: flex;
@@ -66,12 +76,7 @@ header nav {
 
 }
 
-.container {
-    max-width: 1366 px;
-    width: 95%;
-    margin: 0 auto;
-    flex-wrap: wrap;
-}
+
 
 ul {
     display: flex;
@@ -105,27 +110,29 @@ section {
     margin: 16px;
 }
 
-section h2{
+section h2 {
     text-decoration: underline;
     text-transform: uppercase;
     color: #fff;
     margin-bottom: 4px;
 }
 
-section #unidades{
+section #unidades {
     margin: 16px 0;
     margin-bottom: 32px;
+    display: flex;
 }
 
-#unidades h3 i{
+#unidades h3 i {
     font-size: 14px;
 }
 
-nav {
-    background-color: #575fcf;
+
+header nav {
+    background-color: #a54586;
     padding: 16px 0;
     font-weight: bold;
-    color: #fff;
+    display: flex;
 }
 
 nav li {
@@ -141,20 +148,22 @@ nav li a {
     text-decoration: none;
 }
 
-.lista-unidades{
+.lista-unidades {
     height: 90%;
     width: 100%;
     max-width: 35%;
     /*position: relative;*/
-    max-width: 600px;
+    max-width: 500px;
     overflow-y: hidden;
     overflow-x: hidden;
     margin-right: 16px;
-/* margin-left: 320px;*/
+    /* margin-left: 320px;*/
     margin-top: 16px;
+    display: flex;
 }
 
-.lista-unidades li, img {
+.lista-unidades li,
+img {
     max-width: 100%;
     margin-bottom: 24px;
     border-radius: 12px;
@@ -165,12 +174,12 @@ nav li a {
     text-decoration: underline;
 }
 
-.lista-unidades #local{
+.lista-unidades #local {
     max-width: 100%;
     margin-top: 16px;
 }
 
-.lista-unidades #endereco1{
+.lista-unidades #endereco1 {
     text-decoration: none;
 }
 
@@ -184,18 +193,15 @@ nav li a {
     overflow-x: hidden;
     margin-right: 16px;
     border-radius: 8px;
-    margin-top: 32px;   
+    margin-top: 32px;
     margin-left: 235px;
     align-items: center;
 }
 
-
-
-#carousel-unidade3 img{
-height: 500px;
-width: 700px;
+#carousel-unidade3 img {
+    height: 500px;
+    width: 700px;
 }
-
 
 footer {
     background-color: #fff;
@@ -204,10 +210,10 @@ footer {
     margin-top: 32px;
     font-size: 12px;
     border-top: 4px solid #a54586;
-
 }
 
-.whatsapp-link {  /*Botão fixo do Whatsapp*/
+.whatsapp-link {
+    /*Botão fixo do Whatsapp*/
     position: fixed;
     width: 60px;
     height: 60px;
