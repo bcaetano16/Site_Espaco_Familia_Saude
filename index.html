@@ -88,6 +88,11 @@
                 <span></span>
             </div>
         </div>
+        <div class="botao-menu">
+            <button type="button">
+                Abrir menu
+            </button>
+        </div>
         <nav>
             <div class="container">
 
@@ -120,7 +125,7 @@
         <img src="./assets/images/logos/Logo2.jpg" class="logo2" alt="logo clinica espaco mais familia">
         <div class="celular-flex">
         <div id="carousel-images">
-            <img style="height:580px" id="unid-premier" src="./assets/images/Espaco familia premier.jpeg"
+            <img id="unid-premier" src="./assets/images/Espaco familia premier.jpeg"
                 alt="recepcao clinica espaco saude familia premier">
             <img src="./assets/images/Unidade 1/recepcao2.jpeg" alt="recepcao clinica espaco saude familia">
             <img src="./assets/images/Unidade 1/consultorio.jpeg" alt="consultorio clinica espaco saude familia">
@@ -291,6 +296,7 @@
     <script src="./Js/jquery.mask.min.js"></script>
     <script src="./Js/jquery.validate.min.js"></script>
     <script src="./Js/messages_pt_BR.min.js"></script>
+   
     <script>  $(document).ready(function () {
 
             $('#carousel-images').slick({
@@ -301,7 +307,7 @@
                 autoplay: true, speed: 1500, dots: true
             });
 
-            $('.menu-hamburguer').click(function () {
+            $('.botao-menu button').click(function () {
                 $('.menu').slideToggle();
             })
 
