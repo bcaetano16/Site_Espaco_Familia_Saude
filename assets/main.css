@@ -146,6 +146,13 @@ ul li {
     width: 32px;
 }
 
+.botao-menu {
+    display: none;
+    justify-content: center;
+    margin-top: 16px;
+    padding-bottom: 16px;
+}
+
 .menu-hamburguer span {
     height: 2px;
     width: 100%;
@@ -206,7 +213,7 @@ ul li {
     margin-top: 24px;
 }
 
-.container.espaco{
+.container.espaco {
     display: flex;
     max-height: 600px;
     justify-content: center;
@@ -465,7 +472,7 @@ footer li img {
         max-width: 90%;
     }
 
-    .container.espaco{
+    .container.espaco {
         display: block;
         justify-content: center;
         border-bottom: 2px solid #fff;
@@ -540,8 +547,8 @@ footer li img {
     }
 
     #alinhamento {
-       max-width: 600px;
-       width: 90%;
+        max-width: 600px;
+        width: 90%;
         margin-right: 32px;
         margin-left: 16px;
         border-radius: 8px;
@@ -612,6 +619,7 @@ footer li img {
         justify-content: space-between;
 
     }
+
     .carousel-2 {
         /*max-height: 400px;
         max-width: 600px;*/
@@ -626,7 +634,7 @@ footer li img {
         text-align: center;
     }
 
-    footer p{
+    footer p {
         margin-bottom: 16px;
     }
 }
