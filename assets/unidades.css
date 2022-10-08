@@ -7,7 +7,7 @@
 
 html,
 body {
-    height: 100%;
+    /* height: 100%;*/
     overflow-x: hidden;
     background-color: #DDA0DD;
     color: #fff;
@@ -15,7 +15,7 @@ body {
 
 
 .container {
-    max-width: 1366 px;
+    max-width: 1366px;
     width: 95%;
     margin: 0 auto;
     flex-wrap: wrap;
@@ -35,7 +35,6 @@ header {
 }
 
 
-
 header span {
     display: flex;
     vertical-align: middle;
@@ -44,13 +43,14 @@ header span {
     width: 100px;
     height: 100px;
     max-height: 400px;
-
+    cursor: pointer;
 }
 
 header span img {
+    margin-top: 16px;
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 75%;
     object-fit: contain;
 }
 
@@ -62,7 +62,7 @@ header h1 {
 
 header>.container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding-bottom: 16px;
 }
@@ -75,8 +75,6 @@ header nav {
     display: none;
 
 }
-
-
 
 ul {
     display: flex;
@@ -99,7 +97,7 @@ ul li {
     height: 2px;
     width: 100%;
     background-color: #a54586;
-    display: block;
+    display: none;
     margin-bottom: 4px;
     margin-left: 16px;
     cursor: pointer;
@@ -117,11 +115,11 @@ section h2 {
     margin-bottom: 4px;
 }
 
-section #unidades {
+/*section #unidades {
     margin: 16px 0;
     margin-bottom: 32px;
     display: flex;
-}
+}*/
 
 #unidades h3 i {
     font-size: 14px;
@@ -195,12 +193,16 @@ img {
     border-radius: 8px;
     margin-top: 32px;
     margin-left: 235px;
-    align-items: center;
 }
 
 #carousel-unidade3 img {
     height: 500px;
-    width: 700px;
+    width: 600px;
+}
+
+.unidade-3 h3 {
+    margin-top: 32px;
+    text-align: center;
 }
 
 footer {
@@ -230,4 +232,29 @@ footer {
 
 .fa-whatsapp {
     margin-top: 16px;
+}
+
+.articles {
+    display: flex;
+    margin-top: 32px;
+}
+
+.articles article img {
+    height: 350px;
+    padding: 16px 0;
+    border-radius: 16px;
+}
+
+.articles article {
+    width: 47%;
+}
+
+#unid-premier{
+    margin-right: 32px;
+    width: 90%;
+}
+
+#unid-pimenta {
+    width: 90%;
+    border-radius: 16px;
 }

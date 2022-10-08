@@ -185,10 +185,10 @@ ul li {
 
 
 #carousel-videos {
-    height: 480px;
+    height: 550px;
     width: 100%;
-    max-width: 550px;
-    max-height: 530px;
+    max-width: 350px;
+    max-height: 100%;
     overflow-y: hidden;
     overflow-x: hidden;
     margin-right: 32px;
@@ -198,16 +198,18 @@ ul li {
 }
 
 #destaque {
-    width: 400px;
-    max-height: 500px;
-    height: 480px;
-    margin-top: 24px;
+    border-radius: 13px;
+    width: 420px;
+    max-height: 100%;
+    height: 530px;
+    margin-bottom: 16px;
 }
 
 
 #alinhamento {
     width: 350px;
-    height: 400px;
+    height: 530px;
+    max-height: 100%;
     margin-right: 32px;
     margin-left: 16px;
     border-radius: 8px;
