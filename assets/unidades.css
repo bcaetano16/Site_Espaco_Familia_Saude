@@ -88,6 +88,10 @@ ul li {
     /*Cortar as imagens conforme configuração eixo y = eixo vertical*/
 }
 
+button {
+    display: none;
+}
+
 .menu-hamburguer {
     width: 32px;
     align-content: center;
@@ -135,7 +139,7 @@ header nav {
 
 nav li {
     display: flex;
-    font-size: 18px;
+    font-size: 20px;
     margin-right: 16px;
     font-weight: bold;
     text-transform: uppercase;
@@ -147,8 +151,8 @@ nav li a {
 }
 
 #carousel-unidade3 {
-    height: 100%;
-    width: 100%;
+    height: 80%;
+    width: 80%;
     position: relative;
     max-width: 100%;
     max-height: 100%;
@@ -157,11 +161,20 @@ nav li a {
     margin-right: 16px;
     border-radius: 8px;
     margin-top: 32px;
+    margin-left: 100px;
 }
 
-#carousel-unidade3 img {
-    height: 500px;
-    width: 600px;
+#unid-premier {
+    margin-right: 32px;
+    width: 90%;
+    height: 700px;
+}
+
+#unid-pimenta {
+    width: 90%;
+    border-radius: 16px;
+    height: 700px;
+    margin-left: 50px;
 }
 
 .unidade-3 h3 {
@@ -201,6 +214,7 @@ footer {
 .articles {
     display: flex;
     margin-top: 32px;
+    color: #a54586;
 }
 
 .articles article img {
@@ -213,15 +227,69 @@ footer {
     width: 47%;
 }
 
-#unid-premier {
-    margin-right: 32px;
-    width: 90%;
+.articles .h3,
+    h3 {
+        font-size: calc(1.8rem + .6vw);
+        color: #a54586;
+    }
+
+    #unidades .h3,
+    h3 {
+        margin-top: 32px;
+        text-align: center;
+    }
+
+.articles h3 .h3 {
+    margin-left: 100px;
+    text-align: center;
 }
 
-#unid-pimenta {
-    width: 90%;
-    border-radius: 16px;
+#listaRedesSociais {
+    font-size: 24px;
+    margin-right: 64px;
+    margin-left: 10px;
+    display: inline;
 }
+
+#listaRedesSociais .d-inline i {
+    color: #a54586;
+}
+
+.flex-row-reverse {
+    flex-direction: initial;
+}
+
+#espaco-familia h2 {
+    font-size: 1.0rem;
+    text-align: left;
+}
+
+#responsabilidade-tecnica {
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+.col-md-6 h3 {
+    text-align: center;
+    font-size: calc(0.9rem + .6vw);
+}
+
+.col-md-6 h2 {
+    text-align: left;
+    font-size: calc(0.9rem + .6vw);
+}
+
+.col-md-6 .h3 {
+    text-align: left;
+    font-size: calc(0.9rem + .6vw);
+}
+
+.col-md-6 .tituloFooter {
+    text-align: left;
+    font-size: calc(1rem + .6vw);
+}
+
+
 
 @media screen and (max-width: 767px) {
     /* display mais blockado*/
@@ -237,7 +305,8 @@ footer {
         max-height: fit-content;
     }
 
-    header{
+
+    header {
         text-align: center;
     }
 
@@ -260,12 +329,25 @@ footer {
         font-weight: bold;
         text-transform: uppercase;
     }
-    
+
     nav li a {
         color: #fff;
         text-decoration: none;
     }
-    
+
+    ul {
+        display: inline;
+        flex-wrap: wrap;
+        /* ao ocupar toda a largura da tela, cria-se uma nova linha*/
+    }
+
+    ul li {
+        max-width: 25%;
+        position: relative;
+        overflow-y: hidden;
+        /*Cortar as imagens conforme configuração eixo y = eixo vertical*/
+    }
+
     header span {
         width: 100%;
         vertical-align: middle;
@@ -276,7 +358,7 @@ footer {
         max-height: 400px;
         cursor: pointer;
     }
-    
+
     header span img {
         margin-top: 16px;
         position: relative;
@@ -288,23 +370,19 @@ footer {
     .menu,
     .menu>li {
         width: 100%;
-        display: block;
+        display: block  ;
         max-width: 400px;
         margin-top: 8px;
         margin-bottom: 8px;
     }
 
 
-    /*.menu {
-        display: none;
-    }*/
-
     .menu-hamburguer {
         margin-right: 32px;
         width: 32px;
         margin-top: 8px;
     }
-    
+
     .menu-hamburguer span {
         height: 4px;
         width: 100%;
@@ -324,11 +402,12 @@ footer {
         cursor: pointer;
         display: none;
     }
-    
+
     form button:hover {
         background-color: #FF00FF;
-    
+
     }
+
     .botao-menu {
         display: flex;
         justify-content: center;
@@ -341,12 +420,20 @@ footer {
     }
 
 
-    .articles .h3, h3 {
+    .articles .h3,
+    h3 {
         font-size: calc(1.8rem + .6vw);
+        color: #a54586;
+    }
+
+    #unidades .h3,
+    h3 {
+        margin-top: 32px;
+        text-align: center;
     }
 
     #carousel-unidade3 {
-        height: 90%;
+        height: 70%;
         width: 100%;
         position: relative;
         max-width: 700px;
@@ -359,12 +446,12 @@ footer {
     }
 
     #carousel-unidade3 img {
-        height: 500px;
+        height: 400px;
         width: 600px;
     }
 
 
-    .articles{
+    .articles {
         display: block;
     }
 
@@ -375,19 +462,274 @@ footer {
         margin-top: 24px;
     }
 
-    .articles .article span{
+    .articles .article span {
         color: #a54586;
     }
-    .articles article img{
+
+    .articles article img {
         border-radius: 16px;
     }
 
+    #unid-premier {
+        margin-right: 32px;
+        width: 100%;
+        height: 450px;
+    }
+
+    #unid-pimenta {
+        width: 100%;
+        border-radius: 16px;
+        height: 400px;
+        margin-left: 0;
+    }
+
+    #listaRedesSociais {
+        font-size: 24px;
+        margin-right: 64px;
+        margin-left: 10px;
+    }
+
+    #listaRedesSociais .d-inline i {
+        color:#a54586;
+    }
+
+    .flex-row-reverse {
+        flex-direction: initial;
+    }
+
+    #espaco-familia h2 {
+        font-size: 1.0rem;
+        text-align: left;
+    }
+
+    #responsabilidade-tecnica {
+        font-size: 0.9rem;
+        text-align: left;
+    }
+
+    .col-md-6 h3 {
+        text-align: center;
+        font-size: calc(0.7rem + .6vw);
+    }
+
+    .col-md-6 h2 {
+        text-align: left;
+        font-size: calc(0.7rem + .6vw);
+    }
+
+    .col-md-6 .h3 {
+        text-align: left;
+        font-size: calc(0.7rem + .6vw);
+    }
+
+    .col-md-6 .tituloFooter {
+        text-align: left;
+        font-size: calc(0.7rem + .6vw);
+    }
+
+
+
     footer {
-        background-color:#a54586;
-        color: #fff;
+        background-color: #fff;
+        color: #a54586;
         text-align: center;
         margin-top: 32px;
         font-size: 12px;
-        border-top: 4px solid #a54586;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1300px) {
+
+    .container {
+        max-width: 90%;
+        display: contents;
+    }
+
+
+
+    header>.container h1 {
+        font-size: 40px;
+    }
+
+
+    header nav {
+        background-color: #a54586;
+        padding: 0 0;
+        font-weight: bold;
+
+    }
+
+    nav li {
+        font-size: 18px;
+        margin-right: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    nav li a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    ul {
+        display: inline;
+        flex-wrap: wrap;
+        /* ao ocupar toda a largura da tela, cria-se uma nova linha*/
+    }
+
+    ul li {
+        max-width: 25%;
+        position: relative;
+        overflow-y: hidden;
+        /*Cortar as imagens conforme configuração eixo y = eixo vertical*/
+    }
+
+    .menu,
+    .menu>li {
+        width: 100%;
+        display: inline;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
+    /*.menu {
+        display: none;
+    }*/
+
+    .sobre {
+        display: flex;
+        width: 100%;
+        max-width: 100%;
+        background-color: #fff;
+    }
+
+    .sobre p {
+        color: #fff;
+        background-color: #DDA0DD;
+        ;
+        max-width: 100%;
+        width: 100%;
+        margin-top: 20px;
+        text-align: justify;
+        margin-left: 32px;
+    }
+
+    #listaRedesSociais {
+        font-size: 28px;
+        margin-right: 64px;
+    }
+
+    #listaRedesSociais .d-inline i {
+        color: #a54586;
+    }
+
+    .flex-row-reverse {
+        flex-direction: initial;
+    }
+
+    #espaco-familia h2 {
+        font-size: 1.5rem;
+        text-align: left;
+    }
+
+    #responsabilidade-tecnica {
+        font-size: 1.5rem;
+        text-align: left;
+    }
+
+    .col-md-6 h3 {
+        text-align: center;
+        font-size: calc(1.2rem + .6vw);
+    }
+
+    .col-md-6 h2 {
+        text-align: left;
+        font-size: calc(1.1rem + .6vw);
+    }
+
+    .col-md-6 .h3 {
+        text-align: left;
+        font-size: calc(1.0rem + .6vw);
+    }
+
+    .col-md-6 .tituloFooter {
+        text-align: left;
+        font-size: calc(1.0rem + .6vw);
+    }
+
+    .articles {
+        display: block;
+    }
+
+    .articles article {
+        color: #a54586;
+        width: 100%;
+        text-align: center;
+        margin-top: 24px;
+    }
+
+    .articles .article span {
+        color: #a54586;
+    }
+
+    .articles article img {
+        border-radius: 16px;
+    }
+
+    .articles .h3,
+    h3 {
+        font-size: calc(1.8rem + .6vw);
+        color: #a54586;
+    }
+
+    #unidades .h3,
+    h3 {
+        margin-top: 32px;
+        text-align: center;
+    }
+    #unid-premier {
+        margin-right: 32px;
+        width: 90%;
+        height: 900px;
+    }
+
+    #unid-pimenta {
+        width: 90%;
+        border-radius: 16px;
+        height: 800px;
+    }
+
+    #carousel-unidade3 {
+        max-width: 90%;
+        max-height: 100%;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        border-radius: 8px;
+        margin-top: 32px;
+        margin-left: 100px;
+    }
+
+    #carousel-unidade3 img {
+        height: 100%;
+        width: 95%;
+    }
+
+    footer {
+        background-color: #fff;
+        color: #a54586;
+        text-align: center;
+        margin-top: 32px;
+        font-size: 12px;
+        margin-bottom: 16px;
+
+    }
+
+    footer p {
+        background-color: #fff;
+        color: #a54586;
+        text-align: center;
+        margin-top: 32px;
+        font-size: 12px;
+        width: 100%;
     }
 }
