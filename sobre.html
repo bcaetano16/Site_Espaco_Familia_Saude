@@ -11,15 +11,19 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Manrope:wght@600&family=Open+Sans:wght@400;700&family=Qwitcher+Grypen:wght@700&family=Roboto:wght@700&family=Titillium+Web&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./assets/main.css">
+    <link rel="stylesheet" href="./assets/sobre.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!--Links pra carousel por Jquery-->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <!--Bootstrap link-->
     <title>Sobre</title>
 </head>
 
 <body>
-    <a class="whatsapp-link" href="https://web.whatsapp.com/send?phone=5538999243451&text=Olá, estou vindo do site!" target="_blank">
+    <a class="whatsapp-link" href="https://web.whatsapp.com/send?phone=5538999243451&text=Olá, estou vindo do site!"
+        target="_blank">
         <i class="fa fa-whatsapp"></i>
     </a>
     <header>
@@ -35,9 +39,15 @@
                 <span></span>
             </div>
         </div>
+        <div class="botao-menu">
+            <button type="button">
+                Abrir menu
+            </button>
+        </div>
+        
         <nav>
             <div class="container">
-                <ul>
+                <ul class="menu">
                     <li>
                         <a href="./index.html">Página Principal</a>
                     </li>
@@ -59,21 +69,29 @@
         </div>
     </header>
     <div class="container">
-        <div style="display:flex ; margin-top: 24px;">
-            <video controls id="tatiane" src="./assets/videos/Proprietaria Clínica.mp4"
-                alt=" "></video>
-            <p style="color:#fff; text-align: justify; margin-left: 32px; margin-top: 32px; font-size: 16px; font-weight: bold;"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo ano de 2014 o Espaço Família Saúde foi 
-                pensando como um local de atendimento psicológico para indivíduos, casais e famílias. Desde a sua inauguração a cada ano expandimos os atendimentos e públicos. </br>
-                &nbsp&nbsp&nbsp&nbsp&nbsp&nbspAtualmente atendemos mais de 30 planos de saúde e temos orgulho de dizer que funcionamos de segunda a segunda, tendo uma jornada de em torno de 12 horas diárias 
+        <div class="sobre">
+            <video controls id="tatiane" src="./assets/videos/Proprietaria Clínica.mp4" alt=" "></video>
+            <p>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo ano de 2014 o Espaço Família Saúde foi
+                pensando como um local de atendimento psicológico para indivíduos, casais e famílias. Desde a sua
+                inauguração a cada ano expandimos os atendimentos e públicos. </br>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbspAtualmente atendemos mais de 30 planos de saúde e temos orgulho de dizer
+                que funcionamos de segunda a segunda, tendo uma jornada de em torno de 12 horas diárias
                 para flexibilizar para nossos pacientes em suas rotinas diária.</br>
-                &nbsp&nbsp&nbsp&nbsp&nbsp&nbspHoje contamos com dois espaços de atendimentos aconchegantes e sofisticados com 6 consultórios adaptados para atendimentos profissionais; 
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbspHoje contamos com dois espaços de atendimentos aconchegantes e
+                sofisticados com 6 consultórios adaptados para atendimentos profissionais;
                 realizando atendimento infantil, adulto, casal e familiar. </br>
-                &nbsp&nbsp&nbsp&nbsp&nbsp&nbspA nossa equipe de profissionais AMA O QUE FAZ E FAZ COM PROFISSIONALISMO. Contamos com: </br>
-                - 22 Psicólogos qualificados para as diversas demandas da área da saúde mental, relacionamento, questões familiares, luto e perda, dificuldades de aprendizagem, 
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbspA nossa equipe de profissionais AMA O QUE FAZ E FAZ COM PROFISSIONALISMO.
+                Contamos com: </br>
+                - 22 Psicólogos qualificados para as diversas demandas da área da saúde mental, relacionamento, questões
+                familiares, luto e perda, dificuldades de aprendizagem,
                 déficit de atenção, autismo, etc.; </br>
-                - 01 Fonoaudióloga qualificada para atendimento em diversas demandas relacionadas à linguagem e dificuldades de aprendizagem;</br>
-                - 04 Nutricionistas capacitadas para atuar na prevenção, promoção e recuperação de saúde com enfoque a demandas relacionadas a emagrecimento e deficiências nutricionais;</br>
-                - 01 Médica Psiquiatra que realiza consultas e acompanhamento psiquiátricos e de saúde mental a todas as faixas etárias;</br>
+                - 01 Fonoaudióloga qualificada para atendimento em diversas demandas relacionadas à linguagem e
+                dificuldades de aprendizagem;</br>
+                - 04 Nutricionistas capacitadas para atuar na prevenção, promoção e recuperação de saúde com enfoque a
+                demandas relacionadas a emagrecimento e deficiências nutricionais;</br>
+                - 01 Médica Psiquiatra que realiza consultas e acompanhamento psiquiátricos e de saúde mental a todas as
+                faixas etárias;</br>
                 - 01 Médica Homeopata que realiza consultas e acompanhamento a todas as faixas etárias;</br>
                 - 01 Médica Pediatra que realiza consultas e acompanhamento infanto-juvenil.
                 Agende sua consulta.
@@ -84,12 +102,11 @@
         <div>
             <footer>
                 <p>
-                    &copy; Espaco Familia Servicos de Saude LTDA| CNPJ: 33.973.268/0001-69 | Endereço: Rua Correia
-                    Machado,
-                    1025 Centro - Montes Claros, MG CEP: 39.400-090
+                    &copy; CNPJ: 33.973.268/0001-69 |
                     Responsável Técnica: Tatiane Aparecida Mendes - CRPMG -35803 |
                     © 2022 Espaço Família Saúde | Todos os direitos reservados.
                 </p>
+
             </footer>
         </div>
 
@@ -97,13 +114,21 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./Js/jquery.mask.min.js"></script>
+    <script src="./Js/jquery.validate.min.js"></script>
+    <script src="./Js/messages_pt_BR.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>  $(document).ready(function () {
 
-          /*  $('.menu-hamburguer').click(function () {
-                $('nav').slideToggle();
+          /*  $('.botao-menu button').click(function () {
+                $('.menu').slideToggle();
             })*/
 
+
+            $('.menu-hamburguer').click(function () {
+                $('nav').slideToggle();
+            })
         }) </script>
 
 </body>

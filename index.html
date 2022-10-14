@@ -50,7 +50,6 @@
         </div>
         <nav>
             <div class="container">
-
                 <ul class="menu">
                     <li>
                         <a href="./sobre.html" target="_blank">Sobre</a>
@@ -70,7 +69,26 @@
                     <li>
                         <a href="#contact">Contato</a>
                     </li>
+
+                    <ul class="container-flex">
+                        <li>
+                            <a href="https://www.facebook.com/espacofamiliasaude" target="_blank">
+                                <img src="./assets/images/logos/facebook-logo-5-1.png" alt="Facebook">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/espacofamiliasaude/" target="_blank">
+                                <img src="./assets/images/logos/instagram-icone-icon-1.png" alt="Instagram">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <img src="./assets/images/logos/youtube.webp" alt="Youtube">
+                            </a>
+                        </li>
+                    </ul>
                 </ul>
+              
         </nav>
         </div>
     </header>
@@ -114,16 +132,18 @@
 
 
     <section id="em-destaque" style="background-color:#fff;"></br>
-        <h1 style=" color:  #a54586;text-decoration: underline; ">Eventos e Destaques</h1>
+        <h1>Eventos e Destaques</h1>
         <div class="container">
-            <!--style="display: flex;"-->
+            <h3 style="margin-left:30px; color: #a54586; text-align: center;"><i>Eventos recentes</i></h3>
             <div id="carousel-videos">
-                <video controls src="./assets/videos/Setembro amarelo/espaco instagramavel.mp4"></video>
-                <video controls src="./assets/videos/Setembro amarelo/brindes e sorteios.mp4">Brindes e sorteios</video>
-                <video controls src="./assets/videos/Setembro amarelo/Encerramento evento.mp4">Encerramento
-                    evento</video>
-                <video controls src="./assets/videos/comemoracao 2 anos.mp4">Comemoração 2 anos espaço familia
+                <video controls src="./assets/videos/Outubro/dia_das_criancas_espaco_familia.mp4">Dia das
+                    crianças</video>
+                <video controls src="./assets/videos/Setembro amarelo/final_evento_setembro_amarelo.mp4">Final evento
+                    setembro amarelo Alpargatas
                     <i>mais</i></video>
+                <video controls src="./assets/videos/Setembro amarelo/espaco instagramavel.mp4">Encerramento
+                    evento</video>
+
                 <!-- <video controls autoplay loop src="./assets/videos/procrastinação.mp4"
                     alt="recepcao clinica espaco saude familia"></video>-->
                 <!-- <video controls autoplay loop src="./assets/videos/"
@@ -141,14 +161,15 @@
                     <video controls autoplay loop style="width: 350px; margin-right: 16px; border-radius: 18px;"
                         src="./assets/videos/consultorio2.mp4"></video>-->
             </div>
-            <img src="./assets/images/Destaques/Setembro amarelo.png" id="destaque" alt="Setembro amarelo">
-            <div>
-                <video controls src="./assets/videos/ALINHAMENTO.MP4" id="alinhamento"></video>
-                <h3 style="margin-left:30px; color: #a54586; list-style-type: disc;"><i>Alinhamento de equipe</i></h3>
+
+            <!--<img src="./assets/images/Destaques/Setembro amarelo.png" id="destaque" alt="Setembro amarelo">-->
+            <h3 style="margin-left:30px; color: #a54586; list-style-type: disc; text-align: center;"><i>Nosso Espaço</i>
+            </h3>
+            <div id="carousel-video-2">
+                <video controls src="./assets/videos/espaco_familia_premier.mp4">Espaco familia premier</video>
+                <video controls src="./assets/videos/video_espaco_familia.mp4">Espaco Familia</video>
             </div>
         </div>
-        </div>
-
     </section>
     <section id="contact">
         <div class="container">
@@ -166,17 +187,18 @@
                         <label class="form-label" for="email">Email:</label>
                         <input class="form-control" type="email" id="email" name="email">
                         <label class="form-label" for="especialidade-interesse">Especialidade de interesse:</label>
-                        <input class="form-control" type="text" id="especialidade-interesse" name="especialidadeDeInteresse">
+                        <input class="form-control" type="text" id="especialidade-interesse"
+                            name="especialidadeDeInteresse">
                         <label class="form-label" for="mensagem">Mensagem:</label>
                         <textarea class="form-control" id="mensagem" name="mensagem"></textarea>
                         <div class="form-check form-switch">
-                            <label class="form-check-label" for="aceito-termos">Li e concordo com os termos do site</label>
+                            <label class="form-check-label" for="aceito-termos">Li e concordo com os termos do
+                                site</label>
                             <input class="form-check-input" type="checkbox" id="aceito-termos">
                         </div>
                         <button class="btn btn-success" id="button-conosco">Enviar</button>
                 </form>
             </div>
-        </div>
         </div>
     </section>
     <!-- <li>
@@ -186,66 +208,99 @@
                             <img src="./assets/images/logos/gmail_new_logo_icon_159149.png" alt="Logo do gmail" />
                         </a>
                         </li>-->
-    </div>
-    </section>
 
     <section id="convenios" style=background-color:#fff>
         <h1 style="text-align: Center; ">Alguns de nossos convênios</h1>
 
         <div class="container carousel-2">
 
-            <img src="./assets/images/logos/logos plano de saude/logo_sao_lucas.jpg" id="sao-lucas"
-                alt="plano de saude Sao Lucas">
-            <img src="./assets/images/logos/logos plano de saude/promed assistencia.webp" id="" alt="promed">
-            <img src="./assets/images/logos/logos plano de saude/Camed.png" alt="camed saude ">
-            <!--<img src="./images/logos/logos plano de saude/" alt="">  Saúde Livre viver faz bem faltando-->
-            <img src="./assets/images/logos/logos plano de saude/fundaffemg.png" alt="fundaffemg">
-            <img src="./assets/images/logos/logos plano de saude/bradesco-saude-logo.png" alt="bradesco-saude-logo">
-            <!--  <img src="./images/logos/logos plano de saude/" alt=" "> Sindicomércio Montes Claros faltando   -->
-            <img src="./assets/images/logos/logos plano de saude/copass saude.png" id="" alt="copass saude">
-            <img src="./assets/images/logos/logos plano de saude/capesesp.jpg" alt="capesesp saude">
-            <img src="./assets/images/logos/logos plano de saude/premium-saude-logo.png" alt="premium-saude-logo">
-            <img src="./assets/images/logos/logos plano de saude/sua saude.png" alt="sua saude">
-            <img src="./assets/images/logos/logos plano de saude/elegibilidade.png" alt="elegibilidade saude">
-            <!--<img src="./images/logos/" alt="">PAF Avelar faltando -->
-            <img src="./assets/images/logos/logos plano de saude/mediservice-logo-conteudo.png"
-                alt="mediservice-logo-conteudo">
-            <img src="./assets/images/logos/logos plano de saude/jequiti vale.jpg" alt="jequiti saude">
-            <img src="./assets/images/logos/logos plano de saude/saae norte.jpg" alt="saae saude">
+            <div>
+                <img src="./assets/images/logos/logos plano de saude/logo_sao_lucas.jpg" id="sao-lucas"
+                    alt="plano de saude Sao Lucas">
+            </div>
+            <div>
+                <img src="./assets/images/logos/logos plano de saude/promed assistencia.webp" id="" alt="promed">
+            </div>
+            <div>
+                <img src="./assets/images/logos/logos plano de saude/Camed.png" alt="camed saude ">
+            </div>
+            <div>
+                <img src="./assets/images/logos/logos plano de saude/fundaffemg.png" alt="fundaffemg">
+            </div>
+            <div>
+                <img src="./assets/images/logos/logos plano de saude/bradesco-saude-logo.png" alt="bradesco-saude-logo">
+            </div>
+            <div>
+                <img src="./assets/images/logos/logos plano de saude/copass saude.png" id="" alt="copass saude">
+            </div>
+            <div>
+                <img src="./assets/images/logos/logos plano de saude/capesesp.jpg" alt="capesesp saude">
+            </div>
+            <div>
+
+                <img src="./assets/images/logos/logos plano de saude/premium-saude-logo.png" alt="premium-saude-logo">
+            </div>
+            <div>
+                <img src="./assets/images/logos/logos plano de saude/sua saude.png" alt="sua saude">
+            </div>
+            <div>
+                <img src="./assets/images/logos/logos plano de saude/elegibilidade.png" alt="elegibilidade saude">
+            </div>
+            <div>
+                <img src="./assets/images/logos/logos plano de saude/mediservice-logo-conteudo.png"
+                    alt="mediservice-logo-conteudo">
+            </div>
+            <div>
+                <img src="./assets/images/logos/logos plano de saude/jequiti vale.jpg" alt="jequiti saude">
+            </div>
+            <div>
+                <img src="./assets/images/logos/logos plano de saude/saae norte.jpg" alt="saae saude">
+            </div>
+
         </div>
 
 
     </section>
 
     <div class="container">
-        <div class="rodape">
-            <footer>
 
-                <p>
-                    &copy; Espaco Familia Servicos de Saude LTDA| CNPJ: 33.973.268/0001-69 | Endereço: Rua Correia
-                    Machado,
-                    1025 Centro - Montes Claros, MG CEP: 39.400-090
-                    Responsável Técnica: Tatiane Aparecida Mendes - CRPMG -35803 |
-                    © 2022 Espaço Família Saúde | Todos os direitos reservados.
-                </p>
+            <footer id="responsibilidade-tecnica">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>Responsabilidade Técnica</h3>
+                        <h2 class="pt-2">Tatiane Aparecida Mendes</h2>
+                        <h2>CRPMG -35803</h2>
+                        <p class="h3">Psicóloga com formação em Terapia Familiar Sistêmica e pedagoga.</p>
+                        <p></p>
+                    </div>
+                </div>
+            </footer>
 
-                <ul class="container-flex">
-                    <li>
-                        <a href="https://www.facebook.com/espacofamiliasaude" target="_blank">
-                            <img src="./assets/images/logos/facebook-logo-5-1.png" alt="Facebook">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/espacofamiliasaude/" target="_blank">
-                            <img src="./assets/images/logos/instagram-icone-icon-1.png" alt="Instagram">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank">
-                            <img src="./assets/images/logos/youtube.webp" alt="Youtube">
-                        </a>
-                    </li>
-                </ul>
+
+            <footer id="espaco-familia">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2 class="tituloFooter">© 2022 Espaço Família Saúde CNPJ: 33.973.268/0001-69 </h2>
+                    </div>
+                    <div class="col-md-6 align-self-center">
+                        <div class="d-flex flex-row-reverse">
+                            <ul id="listaRedesSociais">
+                                <li class="d-inline"><a target="_blank"
+                                        href="https://www.facebook.com/espacofamiliasaude"><i class="fa fa-facebook"
+                                            aria-hidden="true"></i></a></li>
+                                <li class="d-inline"><a target="_blank"
+                                        href="https://www.instagram.com/espacofamiliasaude/"><i class="fa fa-instagram"
+                                            aria-hidden="true"></i></a></li>
+                                <li class="d-inline"><a target="_blank" href="https://twitter.com/"><i
+                                            class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li class="d-inline"><a target="_blank" href="https://pt.linkedin.com/"><i
+                                            class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                <li class="d-inline"><a target="_blank" href="https://www.youtube.com/"><i
+                                            class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </footer>
         </div>
     </div>
@@ -264,6 +319,10 @@
             });
 
             $('#carousel-videos').slick({
+                autoplay: false, speed: 1500, dots: true
+            });
+
+            $('#carousel-video-2').slick({
                 autoplay: false, speed: 1500, dots: true
             });
 
