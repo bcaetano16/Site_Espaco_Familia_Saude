@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
     <title>Nossos Profissionais</title>
 </head>
 
@@ -36,7 +37,7 @@
         </div>
         <nav>
             <div class="container">
-                <ul>
+                <ul class="menu">
                     <li>
                         <a href="./index.html">Página Principal</a>
                     </li>
@@ -60,9 +61,32 @@
 
     <section id="profissionais" style=background-color:#fff>
         <div class="container"></br>
-            <p style="color:#a54586 ; margin-top: 16px;"><b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspTemos em nossas unidades, 22 psicólogos que atendem de 2ª a 2ª em horários variados, temos médico
+            <p><b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspTemos em nossas unidades, 22 psicólogos que atendem de 2ª a 2ª em horários variados, temos médico
                 homeopata, médica psiquiatra, fonoaudiólogo, terapeuta ocupacional e nutricionistas.</b></p>
-            <iframe src="./assets/images/ESPAÇO FAMILIA UNIDADE 2 -PROFISSIONAIS.pdf"  height="1000px" width="100%" style="margin-top:20px ;"></iframe>
+                <div class="profissionais-img">
+                    <div>
+                        <img src="./assets/images/Profissionais espaco familia/WhatsApp Image 2022-10-14 at 8.49.39 AM.jpeg" alt="">
+                    </div>
+                    <div>
+                        <img src="./assets/images/Profissionais espaco familia/WhatsApp Image 2022-10-14 at 8.49.40 AM.jpeg" alt="">
+                    </div>
+                    <div>
+                        <img src="./assets/images/Profissionais espaco familia/WhatsApp Image 2022-10-14 at 8.49.41 AM.jpeg" alt="">
+                    </div>
+                    <div>
+                        <img src="./assets/images/Profissionais espaco familia/WhatsApp Image 2022-10-14 at 8.49.43 AM.jpeg" alt="">
+                    </div>
+                    <div>
+                        <img src="./assets/images/Profissionais espaco familia/WhatsApp Image 2022-10-14 at 8.49.39 AM (1).jpeg" alt="">
+                    </div>
+                    <div>
+                        <img src="./assets/images/Profissionais espaco familia/WhatsApp Image 2022-10-14 at 8.49.41 AM (1).jpeg" alt="">
+                    </div>
+                    <div>
+                        <img src="./assets/images/Profissionais espaco familia/WhatsApp Image 2022-10-14 at 8.49.43 AM (1).jpeg" alt="">
+                    </div>
+                </div>
+               
             
 
         </div>
@@ -70,27 +94,53 @@
 
     </section>
     <div class="container">
-        <div class="rodape">
-            <footer>
 
-                <p>
-                    &copy; CNPJ: 33.973.268/0001-69 |
-                    Responsável Técnica: Tatiane Aparecida Mendes - CRPMG -35803 |
-                    © 2022 Espaço Família Saúde | Todos os direitos reservados.
-                </p>
-
-            </footer>
-        </div>
-
+        <footer id="responsibilidade-tecnica">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="pt-2">RT - Tatiane Aparecida Mendes | Psicóloga - CRP 04/35803 </h2>
+                    
+                    <h2>CNPJ: 33.973.268/0001-69</h2>
+                     <!-- <p class="h3">Psicóloga com formação em Terapia Familiar Sistêmica e Pedagogia.</p>-->
+                    <p></p>
+                </div>
+            </div>
+        </footer>
+        <footer id="espaco-familia">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="tituloFooter">© 2022 Espaço Família Saúde | Todos os direitos reservados.</h2>
+                </div>
+                <div class="col-md-6 align-self-center">
+                    <div class="d-flex flex-row-reverse">
+                        <ul id="listaRedesSociais">
+                            <li class="d-inline"><a target="_blank"
+                                    href="https://www.facebook.com/espacofamiliasaude"><i class="fa fa-facebook"
+                                        aria-hidden="true"></i></a></li>
+                            <li class="d-inline"><a target="_blank"
+                                    href="https://www.instagram.com/espacofamiliasaude/"><i class="fa fa-instagram"
+                                        aria-hidden="true"></i></a></li>
+                            <li class="d-inline"><a target="_blank" href="https://twitter.com/"><i class="fa fa-twitter"
+                                        aria-hidden="true"></i></a></li>
+                            <li class="d-inline"><a target="_blank" href="https://pt.linkedin.com/"><i
+                                        class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                            <li class="d-inline"><a target="_blank" href="https://www.youtube.com/"><i
+                                        class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
     <script>  $(document).ready(function () {
 
-          /*  $('.menu-hamburguer').click(function () {
+            $('.menu-hamburguer').click(function () {
                 $('nav').slideToggle();
-            })*/
+            })
 
         }) </script>
 </body>

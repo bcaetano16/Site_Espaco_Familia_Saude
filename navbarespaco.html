@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/lib/bootstrap.min.css">
+    <style>
+        .navbar-nav .nav-link {
+            text-transform: uppercase;
+        }
+
+        .navbar-nav .nav-link.active {
+            color: #fff;
+
+        }
+
+        .nav-link {
+            text-align: center;
+        }
+
+        section {
+            height: 100vh;
+            background-color: #fff;
+            padding-top:115px;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            left: 0;
+            background-color: #fff;
+        }
+
+        header h1 {
+            text-transform: uppercase;
+            color: #a54586;
+        }
+
+        .nav-pills .nav-link.active,
+        .nav-pills .show>.nav-link {
+            color: #fff;
+            background-color: #a54586;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>Espaço Família Saúde</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#inicio">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#unidades">Unidades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#profissionais">Nossos profissionais</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#servicos">Nossos Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#convenios">Convênios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button id="btn-checar-emails" class="btn btn-warning" type="button">Checar caixa de entrada</button>
+            </div>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <section id="inicio">
+            <h2>Início</h2>
+        </section>
+        <section id="produtos">
+            <h2>Produtos</h2>
+            <div class="container">
+                <nav class="nav nav-pills">
+                    <button data-bs-toggle="tab" data-bs-target="#aba1" class="nav-link active"
+                        type="button">Eletrônicos</button>
+                    <button data-bs-toggle="tab" data-bs-target="#aba2" class="nav-link" type="button">Moda
+                        Masculina</button>
+                    <button data-bs-toggle="tab" data-bs-target="#aba3" class="nav-link" type="button">Moda
+                        Feminina</button>
+                </nav>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="aba1">
+                        Conteúdo da aba Eletrônicos
+                    </div>
+                    <div class="tab-pane" id="aba2">
+                        Conteúdo da aba Moda Masculina
+                    </div>
+                    <div class="tab-pane" id="aba3">
+                        Conteúdo da aba Moda Feminina
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="inicio">
+            <h2>Sobre</h2>
+        </section>
+        <section id="unidades">
+            <h2>Unidades</h2>
+        </section>
+        <section id="profissionais">
+            <h2>Nossos Profissionais</h2>
+        </section>
+        <section id="servicos">
+            <h2>Nossos Serviços</h2>
+        </section>
+        <section id="convenios">
+            <h2>Convênios</h2>
+        </section>
+        <section id="contato">
+            <h2>Contato</h2>
+        </section>
+    </div>
+
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div class="toast" id="mensagens-alerta">
+            <header class="toast-header">
+                <strong>Importante</strong>
+            </header>
+            <div class="toast-body">
+                Você possui 10 mensagens não lidas
+                <div class="mt-2 pt-2 border-top">
+                    <button data-bs-dismiss="toast" class="btn btn-danger" type="button">
+                        Descartar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/lib/bootstrap.bundle.min.js"></script>
+    <script>
+        const ativadorToast = document.getElementById('btn-checar-emails');
+        const mensagem = document.getElementById('mensagens-alerta')
+
+        if (ativadorToast) {
+            ativadorToast.addEventListener('click', function () {
+                const toast = new bootstrap.Toast(mensagem);
+                toast.show();
+            })
+        } 
+    </script>
+</body>
+
+</html>

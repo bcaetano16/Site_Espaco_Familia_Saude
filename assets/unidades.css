@@ -56,14 +56,15 @@ header span img {
 header h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 64px;
 }
 
-header>.container {
+header>.container,
+footer>.container,
+#em-destaque>.container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding-bottom: 16px;
 }
 
 
@@ -78,14 +79,27 @@ header nav {
 ul {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+   
     /* ao ocupar toda a largura da tela, cria-se uma nova linha*/
 }
 
 ul li {
     max-width: 25%;
     position: relative;
+    max-height: 280px;
     overflow-y: hidden;
+    font-style:normal;
     /*Cortar as imagens conforme configuração eixo y = eixo vertical*/
+}
+
+ul li a{
+    font-size: 25px;
+
+}
+
+nav li a:hover{
+    color: #C0C0C0;
 }
 
 button {
@@ -98,10 +112,10 @@ button {
 }
 
 .menu-hamburguer span {
-    height: 2px;
+    height: 4px;
     width: 100%;
     background-color: #a54586;
-    display: none;
+    display: block;
     margin-bottom: 4px;
     margin-left: 16px;
     cursor: pointer;
@@ -119,14 +133,8 @@ section h2 {
     margin-bottom: 4px;
 }
 
-/*section #unidades {
-    margin: 16px 0;
-    margin-bottom: 32px;
-    display: flex;
-}*/
-
 #unidades h3 i {
-    font-size: 14px;
+    font-size: 30px;
 }
 
 
@@ -164,6 +172,12 @@ nav li a {
     margin-left: 100px;
 }
 
+#carousel-unidade3 img {
+    width: 600px;
+    height: 600px;
+}
+
+
 #unid-premier {
     margin-right: 32px;
     width: 90%;
@@ -172,14 +186,121 @@ nav li a {
 
 #unid-pimenta {
     width: 90%;
-    border-radius: 16px;
     height: 700px;
     margin-left: 50px;
 }
 
-.unidade-3 h3 {
+.articles {
+    display: flex;
     margin-top: 32px;
+    color: #a54586;
+}
+
+.articles article img {
+    height: 350px;
+    padding: 16px 0;
+    border-radius: 24px;
+
+}
+
+.articles article {
+    width: 100%;
+}
+
+
+.articles article a {
+    color: #a54586;
+}
+
+.articles article a span {
+    color: #a54586;
+    display: block;
+}
+
+.articles article #endereco2 {
+    margin-left: 50px;
+}
+
+
+.articles .h3,
+h3 {
+    font-size: calc(1.8rem + .6vw);
+    color: #a54586;
+    margin-top: 32px;
+}
+
+#unidades #projeto3 .h3,
+h3 {
     text-align: center;
+
+}
+
+#projeto3 {
+    margin-top: 32px;
+}
+
+.articles h3 .h3 {
+    margin-left: 100px;
+    text-align: center;
+}
+
+
+#listaRedesSociais {
+    font-size: 24px;
+    margin-right: 64px;
+    margin-left: 10px;
+    display: inline;
+}
+
+#listaRedesSociais .d-inline i {
+    color: #a54586;
+}
+
+#listaRedesSociais {
+    font-size: 24px;
+}
+
+#listaRedesSociais .d-inline i {
+    color: #a54586;
+}
+
+
+.col-md-6 h3 {
+    text-align: center;
+    font-size: calc(0.8rem + .5vw);
+    color: #a54586;
+    border-top: 2px solid #a54586;
+    margin-top: 16px;
+}
+
+.col-md-6 h2 {
+    text-align: left;
+    font-size: calc(0.9rem + .6vw);
+    width: 600px;
+}
+
+.col-md-6 .h3 {
+    text-align: left;
+    font-size: calc(0.5rem + .5vw);
+    margin-top: 16px;
+
+}
+
+.col-md-6 .tituloFooter {
+    text-align: left;
+    font-size: calc(0.7rem + .6vw);
+}
+
+#responsabilidade-tecnica {
+    font-size: 1.0rem;
+    text-align: initial;
+    color: #a54586;
+    margin-top: 16px;
+
+}
+
+footer #responsabilidade-tecnica .row {
+    margin-top: 32px;
 }
 
 footer {
@@ -211,85 +332,6 @@ footer {
     margin-top: 16px;
 }
 
-.articles {
-    display: flex;
-    margin-top: 32px;
-    color: #a54586;
-}
-
-.articles article img {
-    height: 350px;
-    padding: 16px 0;
-    border-radius: 16px;
-}
-
-.articles article {
-    width: 47%;
-}
-
-.articles .h3,
-    h3 {
-        font-size: calc(1.8rem + .6vw);
-        color: #a54586;
-    }
-
-    #unidades .h3,
-    h3 {
-        margin-top: 32px;
-        text-align: center;
-    }
-
-.articles h3 .h3 {
-    margin-left: 100px;
-    text-align: center;
-}
-
-#listaRedesSociais {
-    font-size: 24px;
-    margin-right: 64px;
-    margin-left: 10px;
-    display: inline;
-}
-
-#listaRedesSociais .d-inline i {
-    color: #a54586;
-}
-
-.flex-row-reverse {
-    flex-direction: initial;
-}
-
-#espaco-familia h2 {
-    font-size: 1.0rem;
-    text-align: left;
-}
-
-#responsabilidade-tecnica {
-    font-size: 0.9rem;
-    text-align: left;
-}
-
-.col-md-6 h3 {
-    text-align: center;
-    font-size: calc(0.9rem + .6vw);
-}
-
-.col-md-6 h2 {
-    text-align: left;
-    font-size: calc(0.9rem + .6vw);
-}
-
-.col-md-6 .h3 {
-    text-align: left;
-    font-size: calc(0.9rem + .6vw);
-}
-
-.col-md-6 .tituloFooter {
-    text-align: left;
-    font-size: calc(1rem + .6vw);
-}
-
-
 
 @media screen and (max-width: 767px) {
     /* display mais blockado*/
@@ -310,6 +352,14 @@ footer {
         text-align: center;
     }
 
+    header>.container,
+    footer>.container,
+    #em-destaque>.container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     header>.container h1 {
         font-size: 40px;
     }
@@ -328,6 +378,7 @@ footer {
         margin-right: 16px;
         font-weight: bold;
         text-transform: uppercase;
+        padding-right: 24px;
     }
 
     nav li a {
@@ -370,7 +421,7 @@ footer {
     .menu,
     .menu>li {
         width: 100%;
-        display: block  ;
+        display: block;
         max-width: 400px;
         margin-top: 8px;
         margin-bottom: 8px;
@@ -443,6 +494,7 @@ footer {
         margin-right: 16px;
         border-radius: 8px;
         margin-top: 32px;
+        margin-left: 0;
     }
 
     #carousel-unidade3 img {
@@ -490,7 +542,7 @@ footer {
     }
 
     #listaRedesSociais .d-inline i {
-        color:#a54586;
+        color: #a54586;
     }
 
     .flex-row-reverse {
@@ -514,7 +566,8 @@ footer {
 
     .col-md-6 h2 {
         text-align: left;
-        font-size: calc(0.7rem + .6vw);
+        font-size: calc(0.9rem + .6vw);
+        width: 100%;
     }
 
     .col-md-6 .h3 {
@@ -538,7 +591,7 @@ footer {
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1300px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
 
     .container {
         max-width: 90%;
@@ -564,6 +617,7 @@ footer {
         margin-right: 16px;
         font-weight: bold;
         text-transform: uppercase;
+        padding-right: 24px;
     }
 
     nav li a {
@@ -687,6 +741,7 @@ footer {
         margin-top: 32px;
         text-align: center;
     }
+
     #unid-premier {
         margin-right: 32px;
         width: 90%;
@@ -700,18 +755,22 @@ footer {
     }
 
     #carousel-unidade3 {
-        max-width: 90%;
+        height: 100%;
+        width: 80%;
+        position: relative;
+        max-width: 100%;
         max-height: 100%;
         overflow-y: hidden;
         overflow-x: hidden;
+        margin-right: 16px;
         border-radius: 8px;
         margin-top: 32px;
         margin-left: 100px;
     }
 
     #carousel-unidade3 img {
-        height: 100%;
-        width: 95%;
+        height: 500px;
+        width: 500px;
     }
 
     footer {
