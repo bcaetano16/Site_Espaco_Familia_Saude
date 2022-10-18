@@ -21,13 +21,44 @@
             text-align: center;
         }
 
+        .nav-pills .nav-link.active,
+        .nav-pills .show>.nav-link {
+            color: #fff;
+            background-color: #a54586;
+
+        }
+
+        .navbar-expand-lg .navbar-collapse {
+            display: flex !important;
+            background-color: #fff;
+            /* flex-basis: auto;*/
+        }
+
+        .navbar-expand-lg .navbar-collapse a {
+            font-size: 20px;
+            position: sticky;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            /* flex-basis: auto;*/
+        }
+
+        #btn-checar-emails {
+            text-transform: uppercase;
+            font-weight: bold;
+
+        }
+
         section {
             height: 100vh;
             background-color: #fff;
-            padding-top:115px;
+            padding-top: 115px;
+            margin-left: 16px;
+            color: #a54586;
+            text-transform: uppercase;
         }
 
-        header {
+        #cabecalho {
             position: sticky;
             top: 0;
             left: 0;
@@ -37,98 +68,468 @@
         header h1 {
             text-transform: uppercase;
             color: #a54586;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            font-size: 53px;
+            text-align: center;
         }
 
-        .nav-pills .nav-link.active,
-        .nav-pills .show>.nav-link {
-            color: #fff;
-            background-color: #a54586;
+        header span {
+            display: flex;
+            vertical-align: middle;
+            border-radius: 50%;
+            overflow: hidden;
+            width: 100px;
+            height: 100px;
+            max-height: 400px;
+            cursor: pointer;
+        }
 
+        header span img {
+            margin-top: 16px;
+            position: relative;
+            width: 100%;
+            height: 75%;
+            object-fit: contain;
+        }
+
+
+        header>.container,
+        footer>.container,
+        #em-destaque>.container {
+            display: table-column-group;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        header nav {
+            background-color: #a54586;
+            padding: 16px 0;
+            font-weight: bold;
+            display: flex;
+            position: sticky;
+
+        }
+
+        /*Seções*/
+        nav li {
+            list-style: none;
+            display: inline;
+            font-size: 18px;
+            margin-right: 16px;
+            text-align: center;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        nav li a {
+            color: #fff;
+            text-decoration: solid;
+        }
+
+        nav li a:hover {
+            color: #C0C0C0;
+        }
+
+       
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            /* ao ocupar toda a largura da tela, cria-se uma nova linha*/
+        }
+
+        ul li {
+            display: inline;
+            max-width: 25%;
+            position: relative;
+            max-height: 280px;
+            overflow-y: hidden;
+            font-style: normal;
+            /*Cortar as imagens conforme configuração eixo y = eixo vertical*/
+        }
+
+        ul li a {
+            font-size: 25px;
+        }
+
+        .social-links li,
+        img {
+            display: inline;
+            height: 21px;
+            margin-right: 2px;
+            text-decoration: none;
+        }
+
+        .navbar-expand-lg .navbar-collapse {
+            display: flex !important;
+            flex-basis: auto;
+        }
+
+        .navbar-toggler {
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%;
+        }
+
+        .navbar-toggler:hover,
+        .navbar-toggler:hover {
+            color: #a54586;
+        }
+
+        @media screen and (max-width: 767px) {
+            .navbar-nav .nav-link {
+                text-transform: uppercase;
+            }
+
+            .navbar-nav .nav-link.active {
+                color: #fff;
+
+            }
+
+            .nav-link {
+                text-align: center;
+            }
+
+            .nav-pills .nav-link.active,
+            .nav-pills .show>.nav-link {
+                color: #fff;
+                background-color: #a54586;
+
+            }
+
+            .navbar-expand-lg .navbar-collapse {
+                display: flex !important;
+                background-color: #fff;
+                /* flex-basis: auto;*/
+            }
+
+            .navbar-expand-lg .navbar-collapse a {
+                font-size: 20px;
+                position: sticky;
+                top: 0;
+                left: 0;
+                z-index: 1;
+                /* flex-basis: auto;*/
+            }
+
+            .justify-content-end {
+                justify-content: center !important;
+            }
+
+
+            .navbar-toggler:hover,
+            .navbar-toggler:hover {
+                color: #a54586;
+            }
+
+            ul.nav.navbar-nav.nav-pills {
+                display: block;
+            }
+
+            #btn-checar-emails {
+                text-transform: uppercase;
+                font-weight: bold;
+
+            }
+
+            section {
+                height: 100vh;
+                background-color: #fff;
+                padding-top: 115px;
+                margin-left: 16px;
+                color: #a54586;
+                text-transform: uppercase;
+            }
+
+
+
+            header h1 {
+                text-transform: uppercase;
+                color: #a54586;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: bold;
+                font-size: 53px;
+                text-align: center;
+            }
+
+            header span {
+                display: flex;
+                vertical-align: middle;
+                border-radius: 50%;
+                overflow: hidden;
+                width: 100%;
+                height: 100px;
+                max-height: 400px;
+                cursor: pointer;
+            }
+
+            header span img {
+                margin-top: 16px;
+                position: relative;
+                width: 100%;
+                height: 75%;
+                object-fit: contain;
+                display: flex;
+            }
+
+
+            /* header>.container,
+            footer>.container,
+            #em-destaque>.container {
+                display: table-column-group;
+                justify-content: space-between;
+                align-items: center;
+
+            }*/
+
+            .collapse:not(.show) {
+                display: none;
+            }
+
+            .navbar>.container {
+                justify-content: center;
+                position: sticky;
+                top: 0;
+                left: 0;
+                background-color: #fff;
+
+
+            }
+
+            header nav {
+                background-color: #a54586;
+                padding: 16px 0;
+                font-weight: bold;
+                display: block;
+                position: relative;
+
+            }
+
+
+            /*Seções*/
+            /*nav li {
+                list-style: none;
+                display: inline;
+                font-size: 18px;
+                margin-right: 16px;
+                text-align: center;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+
+            nav li a {
+                color: #fff;
+                text-decoration: solid;
+            }
+
+            nav li a:hover {
+                color: #C0C0C0;
+            }*/
+
+
+
+            ul {
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                /* ao ocupar toda a largura da tela, cria-se uma nova linha*/
+            }
+
+            ul li {
+                max-width: 25%;
+                position: relative;
+                max-height: 280px;
+                overflow-y: hidden;
+                font-style: normal;
+            }
+
+            /*Cortar as imagens conforme configuração eixo y = eixo vertical*/
+
+
+            ul li a {
+                font-size: 25px;
+            }
+
+            .menu,
+            .menu>li {
+                display: block;
+                max-width: 400px;
+                margin-top: 8px;
+                margin-bottom: 8px;
+                font-size: 20px;
+            }
+
+            .social-links li,
+            img {
+                display: none;
+                height: 21px;
+                margin-right: 2px;
+                text-decoration: none;
+            }
+
+          
 
         }
     </style>
 </head>
 
 <body>
+
+
+    <header>
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <span class="logo-circular">
+                    <img src="./assets/images/logos/outubro_rosa logo.png" alt="espaco saude familia logo">
+                </span>
+                <h1>Espaço Família Saúde</h1>
+                <button type="button" class="navbar-toggler d-block" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+    </header>
+
+    <header id="principal">
+        <!--<div class="container">
+
+            <div class="menu-hamburguer">
+
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>-->
+        <!--<div class="botao-menu">
+                    <button type="button">
+                        Abrir menu
+                    </button>
+                </div>-->
+
+
+        <nav id="menu">
+            <div class="container">
+
+                <ul class="menu">
+                    <li>
+                        <a href="./sobre.html" target="_blank">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="./unidades.html">Unidades</a>
+                    </li>
+                    <li>
+                        <a href="./profissionais.html">Nossos profissionais</a>
+                    </li>
+                    <li>
+                        <a href="./servicos.html">Nossos Serviços</a>
+                    </li>
+                    <li>
+                        <a href="./convenios.html">Convênios</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contato</a>
+                    </li>
+
+                    <ul class="container-flex">
+                        <li>
+                            <a href="https://www.facebook.com/espacofamiliasaude" target="_blank">
+                                <img src="./assets/images/logos/facebook-logo-5-1.png" alt="Facebook">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/espacofamiliasaude/" target="_blank">
+                                <img src="./assets/images/logos/instagram-icone-icon-1.png" alt="Instagram">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <img src="./assets/images/logos/youtube.webp" alt="Youtube">
+                            </a>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+        </nav>
+
+
+    </header>
     <header id="cabecalho">
         <div class="navbar navbar-expand-lg">
             <div class="container">
-                <h1>Espaço Família Saúde</h1>
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
                 <nav class="collapse navbar-collapse justify-content-end" id="menu">
                     <ul class="nav navbar-nav nav-pills">
                         <li class="nav-item">
                             <a class="nav-link active" href="#inicio">Sobre</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#unidades">Unidades</a>
+                            <a class="nav-link" href="#eventos">Eventos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#profissionais">Nossos profissionais</a>
+                            <a class="nav-link" href="#fale">Fale conosco</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#servicos">Nossos Serviços</a>
+                            <a class="nav-link" href="#footer">Dados técnicos</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#convenios">Convênios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contato">Contato</a>
-                        </li>
+                        <!--  <li class="nav-item">
+                                <a class="nav-link" href="#convenios">Convênios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contato">Contato</a>
+                            </li>-->
                     </ul>
                 </nav>
-                <button id="btn-checar-emails" class="btn btn-warning" type="button">Checar caixa de entrada</button>
+                <button id="btn-checar-emails" class="btn btn-warning" type="button">Checar caixa de
+                    entrada</button>
             </div>
         </div>
+
     </header>
+    </div>
+
     <div data-bs-spy="scroll" data-bs-target="#cabecalho">
         <section id="inicio">
             <h2>Início</h2>
         </section>
-        <section id="produtos">
-            <h2>Produtos</h2>
+        <section id="eventos">
+            <h2>Eventos e Destaques</h2>
             <div class="container">
                 <nav class="nav nav-pills">
-                    <button data-bs-toggle="tab" data-bs-target="#aba1" class="nav-link active"
-                        type="button">Eletrônicos</button>
-                    <button data-bs-toggle="tab" data-bs-target="#aba2" class="nav-link" type="button">Moda
-                        Masculina</button>
-                    <button data-bs-toggle="tab" data-bs-target="#aba3" class="nav-link" type="button">Moda
-                        Feminina</button>
+                    <button data-bs-toggle="tab" data-bs-target="#aba1" class="nav-link active" type="button">Eventos
+                        Recentes</button>
+                    <button data-bs-toggle="tab" data-bs-target="#aba2" class="nav-link" type="button">Nosso
+                        Espaço</button>
+                    <button data-bs-toggle="tab" data-bs-target="#aba3" class="nav-link" type="button">Filmes Sistêmicos
+                        Recomendados</button>
                 </nav>
                 <div class="tab-content">
                     <div class="tab-pane active" id="aba1">
-                        Conteúdo da aba Eletrônicos
+                        Conteúdo da aba Eventos Recentes
                     </div>
                     <div class="tab-pane" id="aba2">
-                        Conteúdo da aba Moda Masculina
+                        Conteúdo da aba Nosso Espaço
                     </div>
                     <div class="tab-pane" id="aba3">
-                        Conteúdo da aba Moda Feminina
+                        Conteúdo da aba Filmes Sistêmicos Recomendados
                     </div>
                 </div>
             </div>
         </section>
-        <section id="inicio">
-            <h2>Sobre</h2>
+        <!-- <section id="eventos">
+            <h2>Eventos e Destaques</h2>
+        </section>-->
+        <section id="fale">
+            <h2>Fale Conosco</h2>
         </section>
-        <section id="unidades">
-            <h2>Unidades</h2>
+        <section id="footer">
+            <h2>Dados técnicos</h2>
         </section>
-        <section id="profissionais">
-            <h2>Nossos Profissionais</h2>
-        </section>
-        <section id="servicos">
-            <h2>Nossos Serviços</h2>
-        </section>
-        <section id="convenios">
+        <!--<section id="convenios">
             <h2>Convênios</h2>
         </section>
         <section id="contato">
             <h2>Contato</h2>
-        </section>
+        </section>-->
     </div>
 
     <div class="toast-container position-fixed bottom-0 end-0 p-3">

@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -20,7 +20,7 @@ header {
     text-transform: uppercase;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-top: 16px;
-   /* border-bottom: 4px solid #a54586;*/
+    /* border-bottom: 4px solid #a54586;*/
     text-decoration: none;
     /*position: sticky;
     top:0;
@@ -84,28 +84,21 @@ footer>.container,
     margin-bottom: 8px;
 }
 
-header nav {
-    background-color: #a54586;
-    padding: 16px 0;
-    font-weight: bold;
-    display: none;
+#profissionais p {
+    color: #a54586;
+    font-size: 20px;
+    list-style: disc;
+    display: list-item;
 }
 
-#profissionais p{
-color: #a54586;
-font-size: 20px;
-list-style: disc;
-display: list-item;
-}
-
-.profissionais-img{
+.profissionais-img {
     text-align: center;
 }
 
-.profissionais-img img{
+.profissionais-img img {
     max-width: 100%;
     max-height: 100%;
-    width: 75%;
+    width: 70%;
     height: 80%;
 }
 
@@ -120,7 +113,7 @@ ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-   
+
     /* ao ocupar toda a largura da tela, cria-se uma nova linha*/
 }
 
@@ -129,18 +122,19 @@ ul li {
     position: relative;
     max-height: 280px;
     overflow-y: hidden;
-    font-style:normal;
+    font-style: normal;
     /*Cortar as imagens conforme configuração eixo y = eixo vertical*/
 }
 
-ul li a{
+ul li a {
     font-size: 25px;
 
 }
 
-nav li a:hover{
+nav li a:hover {
     color: #C0C0C0;
 }
+
 nav li {
     list-style: none;
     display: inline;
@@ -171,7 +165,7 @@ nav li a {
     border-radius: 16px;
 }
 
-section img{
+section img {
     width: 500px;
     height: 400px;
 }
@@ -180,7 +174,8 @@ section p {
     margin-top: 16px;
 }
 
-.whatsapp-link {  /*Botão fixo do Whatsapp*/
+.whatsapp-link {
+    /*Botão fixo do Whatsapp*/
     position: fixed;
     /* ficar fixo dentro da página*/
     width: 60px;
@@ -239,4 +234,267 @@ footer {
 .col-md-6 .tituloFooter {
     text-align: left;
     font-size: calc(1.0rem + .6vw);
+}
+
+@media screen and (max-width: 767px) {
+    /* display mais blockado*/
+
+
+
+    .container {
+        max-width: 90%;
+    }
+
+    header {
+        text-align: center;
+        justify-content: space-between;
+        position: relative;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    header span {
+        display: flex;
+        vertical-align: middle;
+        border-radius: 50%;
+        overflow: hidden;
+        width: 125px;
+        height: 125px;
+        max-height: 400px;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    header span img {
+        margin-top: 16px;
+        position: relative;
+        width: 100%;
+        height: 75%;
+        object-fit: contain;
+    }
+
+    header>.container,
+    footer>.container {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    header>.container h1 {
+        font-size: 40px;
+    }
+
+    header nav {
+        background-color: #a54586;
+        font-weight: bold;
+        display: none;
+        padding-right: 24px;
+    }
+
+    .menu,
+    .menu>li {
+        width: 100%;
+        display: block;
+        max-width: 400px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .menu-hamburguer {
+        margin-right: 32px;
+        margin-top: 16px;
+        display: block;
+        margin-left: 120px;
+        margin-bottom: 32px;
+    }
+
+    .menu-hamburguer span {
+        height: 4px;
+        width: 100%;
+        background-color: #a54586;
+        display: block;
+        margin-top: 8px;
+        cursor: pointer;
+        border-radius: 16px;
+        margin-right: 16px;
+    }
+
+    form button:hover {
+        background-color: #FF00FF;
+
+    }
+
+    form button:hover {
+        background-color: #FF00FF;
+
+    }
+
+    #profissionais p {
+        color: #a54586;
+        font-size: 20px;
+        display: block;
+    }
+
+    .profissionais-img img {
+        text-align: center;
+        width: 100%;
+    }
+
+    #listaRedesSociais {
+        font-size: 20px;
+        margin-top: 16px;
+        display: block;
+    }
+
+    #listaRedesSociais .d-inline i {
+        color: #a54586;
+    }
+
+    .col-md-6 h3 {
+        text-align: center;
+        font-size: calc(1.2rem + .6vw);
+    }
+
+    .col-md-6 h2 {
+        text-align: left;
+        font-size: calc(0.9rem + .6vw);
+        width: 100%;
+    }
+
+    .col-md-6 .h3 {
+        text-align: left;
+        font-size: calc(1.0rem + .6vw);
+    }
+
+    .col-md-6 .tituloFooter {
+        text-align: left;
+        font-size: calc(1.0rem + .6vw);
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .container {
+        max-width: 90%;
+    }
+
+    header>.container h1 {
+        font-size: 40px;
+    }
+
+
+    header nav {
+        background-color: #a54586;
+        padding: 0 0;
+        font-weight: bold;
+
+    }
+
+    nav li {
+        display: flex;
+        font-size: 18px;
+        margin-right: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    nav li a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .menu,
+    .menu>li {
+        width: 100%;
+        display: inline;
+        max-width: 400px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
+    
+
+
+    #profissionais p {
+        color: #a54586;
+        font-size: 20px;
+        display: block;
+    }
+
+    .profissionais-img img {
+        text-align: center;
+        width: 100%;
+    }
+    #listaRedesSociais {
+        font-size: 28px;
+        margin-right: 64px;
+        display: block;
+    }
+
+    #listaRedesSociais .d-inline i {
+        color: #a54586;
+    }
+
+    .flex-row-reverse {
+        flex-direction: initial;
+    }
+
+    #espaco-familia h2 {
+        font-size: 1.2  rem;
+        text-align: left;
+    }
+
+    #responsabilidade-tecnica {
+        font-size: 1.2rem;
+        text-align: left;
+    }
+
+    .col-md-6 h3 {
+        text-align: center;
+        font-size: calc(1.2rem + .6vw);
+    }
+
+    .col-md-6 h2 {
+        text-align: left;
+        font-size: calc(1.1rem + .6vw);
+        margin-bottom: 16px;
+    }
+
+    .col-md-6 .h3 {
+        text-align: left;
+        font-size: calc(1.0rem + .6vw);
+    }
+
+    .col-md-6 .tituloFooter {
+        text-align: left;
+        font-size: calc(1.0rem + .6vw);
+    }
+
+    footer {
+        background-color: #fff;
+        color: #a54586;
+        text-align: center;
+        margin-top: 32px;
+        font-size: 12px;
+        margin-bottom: 16px;
+
+    }
+
+    footer p {
+        background-color: #fff;
+        color: #a54586;
+        text-align: center;
+        margin-top: 32px;
+        font-size: 12px;
+        width: 100%;
+    }
 }

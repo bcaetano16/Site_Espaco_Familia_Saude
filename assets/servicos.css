@@ -492,6 +492,8 @@ footer #responsabilidade-tecnica .row {
     #listaRedesSociais {
         font-size: 28px;
         margin-right: 64px;
+        display: block;
+        margin-top: 16px;
     }
 
     #listaRedesSociais .d-inline i {
@@ -503,12 +505,12 @@ footer #responsabilidade-tecnica .row {
     }
 
     #espaco-familia h2 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         text-align: left;
     }
 
     #responsabilidade-tecnica {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         text-align: left;
     }
 
@@ -520,6 +522,7 @@ footer #responsabilidade-tecnica .row {
     .col-md-6 h2 {
         text-align: left;
         font-size: calc(1.1rem + .6vw);
+        margin-bottom: 16px;
     }
 
     .col-md-6 .h3 {
