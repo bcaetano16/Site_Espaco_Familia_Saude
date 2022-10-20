@@ -13,12 +13,12 @@ body {
     color: #fff;
 }
 
-
 .container {
     max-width: 1366px;
     width: 95%;
     margin: 0 auto;
     flex-wrap: wrap;
+    
 }
 
 header {
@@ -275,28 +275,20 @@ h3 {
 
 .col-md-6 h2 {
     text-align: left;
-    font-size: calc(0.9rem + .6vw);
+    font-size: 1rem;
     width: 600px;
 }
 
 .col-md-6 .h3 {
     text-align: left;
-    font-size: calc(0.5rem + .5vw);
+    font-size: 1rem;
     margin-top: 16px;
 
 }
 
 .col-md-6 .tituloFooter {
     text-align: left;
-    font-size: calc(0.7rem + .6vw);
-}
-
-#responsabilidade-tecnica {
-    font-size: 1.0rem;
-    text-align: initial;
-    color: #a54586;
-    margin-top: 16px;
-
+    font-size: 1rem;
 }
 
 footer #responsabilidade-tecnica .row {
@@ -312,9 +304,12 @@ footer {
     border-top: 4px solid #a54586;
 }
 
+
 .whatsapp-link {
+    margin-bottom: 32px;
     /*Botão fixo do Whatsapp*/
     position: fixed;
+    /* ficar fixo dentro da página*/
     width: 60px;
     height: 60px;
     bottom: 40px;

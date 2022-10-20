@@ -9,7 +9,7 @@ html,
 body {
     height: 100%;
     overflow-x: hidden;
-    background-color: #DDA0DD;
+    background-color: #cfb3c1;
 }
 
 .container {
@@ -30,6 +30,13 @@ header {
     left: 0;
     z-index: 1;
     text-align: center;
+}
+
+header #principal{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 header>.container,
@@ -124,6 +131,7 @@ nav li a:hover{
     text-transform: uppercase;
     list-style:disc;
     display: list-item;
+    background-color: #cfb3c1;
 }
 
 .menu,
@@ -157,6 +165,7 @@ form button:hover {
 }
 
 .whatsapp-link {
+    margin-bottom: 32px;
     /*Botão fixo do Whatsapp*/
     position: fixed;
     /* ficar fixo dentro da página*/
@@ -218,33 +227,26 @@ footer {
 
 .col-md-6 h2 {
     text-align: left;
-    font-size: calc(0.9rem + .6vw);
+    font-size: 1rem;
     width: 600px;
 }
 
 .col-md-6 .h3 {
     text-align: left;
-    font-size: calc(0.5rem + .5vw);
+    font-size: 1rem;
     margin-top: 16px;
 
 }
 
 .col-md-6 .tituloFooter {
     text-align: left;
-    font-size: calc(0.7rem + .6vw);
-}
-
-#responsabilidade-tecnica {
-    font-size: 1.0rem;
-    text-align: initial;
-    color: #a54586;
-    margin-top: 16px;
-
+    font-size: 1rem;
 }
 
 footer #responsabilidade-tecnica .row {
     margin-top: 32px;
 }
+
 
 @media screen and (max-width: 767px) {
     /* display mais blockado*/
@@ -489,7 +491,7 @@ footer #responsabilidade-tecnica .row {
         border-radius: 16px;
     }
 
-    #listaRedesSociais {
+  #listaRedesSociais {
         font-size: 28px;
         margin-right: 64px;
         display: block;

@@ -13,21 +13,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="./assets/images/favicon_io/site.webmanifest">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">-->
     <link rel="stylesheet" href="./assets/lib/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/main.css">
 
     <style>
-        /* #menu.collpase.show {
-            display: block;
-            height: 350px;
-        }*/
-
         .navbar-expand-lg .navbar-collapse {
             display: flex !important;
             /*  flex-basis: auto;*/
@@ -70,7 +64,6 @@
 
         }
 
-        
 
         @media screen and (max-width: 767px) {
             .navbar-nav .nav-link {
@@ -173,10 +166,6 @@
 
             }
 
-            .collapse:not(.show) {
-                display: none;
-            }
-
             header nav {
                 background-color: #a54586;
                 padding: 16px 0;
@@ -185,41 +174,40 @@
                 position: relative;
             }
 
-                ul {
-                    flex-wrap: wrap;
-                    justify-content: space-evenly;
-                    /* ao ocupar toda a largura da tela, cria-se uma nova linha*/
-                }
-
-                ul li {
-                    max-width: 25%;
-                    position: relative;
-                    max-height: 280px;
-                    overflow-y: hidden;
-                    font-style: normal;
-                }
-
-                /*Cortar as imagens conforme configuração eixo y = eixo vertical*/
-
-
-                ul li a {
-                    font-size: 25px;
-                }
-
-                .menu,
-                .menu>li {
-                    display: block;
-                    max-width: 400px;
-                    margin-top: 8px;
-                    margin-bottom: 8px;
-                    font-size: 20px;
-                }
-
-
-                /*Cortar as imagens conforme configuração eixo y = eixo vertical*/
-
+            ul {
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                /* ao ocupar toda a largura da tela, cria-se uma nova linha*/
             }
-        
+
+            ul li {
+                max-width: 25%;
+                position: relative;
+                max-height: 280px;
+                overflow-y: hidden;
+                font-style: normal;
+            }
+
+            /*Cortar as imagens conforme configuração eixo y = eixo vertical*/
+
+
+            ul li a {
+                font-size: 25px;
+            }
+
+            .menu,
+            .menu>li {
+                display: block;
+                max-width: 400px;
+                margin-top: 8px;
+                margin-bottom: 8px;
+                font-size: 20px;
+            }
+
+
+            /*Cortar as imagens conforme configuração eixo y = eixo vertical*/
+
+        }
     </style>
 
 
@@ -233,6 +221,9 @@
         <i class="fa fa-whatsapp"></i>
     </a>
 
+    <header id="principal">
+
+    
     <header>
         <div class="navbar navbar-expand-lg">
             <div class="container">
@@ -250,21 +241,21 @@
                 Abrir menu
             </button>
         </div>-->
-    <header id="principal">
+    <header >
         <nav id="menu">
             <div class="container">
                 <ul class="menu">
                     <li>
-                        <a href="./sobre.html" target="_blank">Sobre</a>
+                        <a href="./sobre.html" target="_blank">Quem Somos</a>
                     </li>
                     <li>
                         <a href="./unidades.html">Unidades</a>
                     </li>
                     <li>
-                        <a href="./profissionais.html">Nossos profissionais</a>
+                        <a href="./servicos.html">Nossos Serviços</a>
                     </li>
                     <li>
-                        <a href="./servicos.html">Nossos Serviços</a>
+                        <a href="./profissionais.html">Nossos profissionais</a>
                     </li>
                     <li>
                         <a href="./convenios.html">Convênios</a>
@@ -296,7 +287,7 @@
 
     </header>
 
-
+</header>
     <h1 class="centro"></h1>
     <div class="container espaco">
 
@@ -570,14 +561,16 @@
             </div>
         </footer>
     </div>
+
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./Js/jquery.mask.min.js"></script>
     <script src="./Js/jquery.validate.min.js"></script>
     <script src="./Js/messages_pt_BR.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!--  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>-->
     <script src="./assets/lib/bootstrap.bundle.min.js"></script>
+
 
     <script>  $(document).ready(function () {
 
