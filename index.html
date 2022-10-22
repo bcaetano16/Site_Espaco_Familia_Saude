@@ -17,11 +17,14 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="./assets/images/favicon_io/site.webmanifest">
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">-->
     <link rel="stylesheet" href="./assets/lib/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/main.css">
 
     <style>
+        .nav {
+            --bs-nav-link-color: #fff;
+        }
+
         .navbar-expand-lg .navbar-collapse {
             display: flex !important;
             /*  flex-basis: auto;*/
@@ -39,7 +42,6 @@
             vertical-align: middle;
         }
 
-        .navbar-toggler:hover,
         .navbar-toggler:hover {
             color: #a54586;
         }
@@ -53,8 +55,14 @@
 
         }
 
-        .nav-link {
+        .nav-link a:hover {
             text-align: center;
+            color: whitesmoke;
+
+        }
+
+        .nav-link:hover {
+            color: pink;
         }
 
         .nav-pills .nav-link.active,
@@ -64,8 +72,21 @@
 
         }
 
+        .container-flex img {
+            display: inline;
+            height: 18px;
+            margin-right: 2px;
+            text-decoration: none;
+        }
+
 
         @media screen and (max-width: 767px) {
+
+            .nav {
+                --bs-nav-link-color: #fff;
+                display: block;
+            }
+
             .navbar-nav .nav-link {
                 text-transform: uppercase;
             }
@@ -112,19 +133,17 @@
                 height: 1.5em;
             }
 
+            #contact form {
+                width: 100%;
+            }
+
+            #contatos-col {
+                border: none;
+            }
 
             .justify-content-end {
                 justify-content: center !important;
             }
-
-            /* section {
-                height: 100vh;
-                background-color: #fff;
-                padding-top: 115px;
-                margin-left: 16px;
-                color: #a54586;
-                text-transform: uppercase;
-            }*/
 
             header h1 {
                 text-transform: uppercase;
@@ -149,10 +168,9 @@
             header span img {
                 margin-top: 16px;
                 position: relative;
-                width: 100%;
+                width: 100px;
                 height: 75%;
                 object-fit: contain;
-                display: flex;
             }
 
             .navbar>.container {
@@ -204,90 +222,156 @@
                 font-size: 20px;
             }
 
-
             /*Cortar as imagens conforme configuração eixo y = eixo vertical*/
 
         }
-    </style>
 
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+
+            header h1 {
+                font-size: 50px;
+            }
+
+            .nav {
+            --bs-nav-link-color: #fff;
+        }
+
+        .navbar-expand-lg .navbar-collapse {
+            display: flex !important;
+            /*  flex-basis: auto;*/
+        }
+
+        .navbar-expand-lg .navbar-toggler {
+            display: block;
+        }
+
+
+        .navbar-toggler-icon {
+            display: inline-block;
+            width: 1.5em;
+            height: 1.5em;
+            vertical-align: middle;
+        }
+
+        .navbar-toggler:hover {
+            color: #a54586;
+        }
+
+        .navbar-nav .nav-link {
+            text-transform: uppercase;
+        }
+
+        .navbar-nav .nav-link.active {
+            color: #fff;
+
+        }
+
+        .nav-link a:hover {
+            text-align: center;
+            color: whitesmoke;
+
+        }
+
+        .nav-link:hover {
+            color: pink;
+        }
+
+        .nav-pills .nav-link.active,
+        .nav-pills .show>.nav-link {
+            color: #fff;
+            background-color: #a54586;
+
+        }
+
+        .container-flex img {
+            display: inline;
+            height: 18px;
+            margin-right: 2px;
+            text-decoration: none;
+        }
+
+        }
+    </style>
 
     <title>Espaço Família Saúde</title>
 
 </head>
 
 <body>
-    <a class="whatsapp-link" href="https://web.whatsapp.com/send?phone=5538999243451&text=Olá, estou vindo do site!"
+    <a class="whatsapp-link"
+        href="https://api.whatsapp.com/send/?phone=5538999243451&text=Ol%C3%A1%2C+estou+vindo+do+site%21&type=phone_number&app_absent=0"
         target="_blank">
         <i class="fa fa-whatsapp"></i>
     </a>
 
     <header id="principal">
-
-    
-    <header>
-        <div class="navbar navbar-expand-lg">
-            <div class="container">
-                <span class="logo-circular">
-                    <img src="./assets/images/logos/outubro_rosa logo.png" alt="espaco saude familia logo">
-                </span>
-                <h1>Espaço Família Saúde</h1>
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-    </header>
-    <!--<div class="botao-menu">
+        <header>
+            <div class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a href="./index.html">
+                        <span class="logo-circular">
+                            <img id="logo-rosa" src="./assets/images/logos/outubro_rosa logo.png"
+                                alt="espaco saude familia logo">
+                        </span>
+                    </a>
+                    <h1>Espaço Família Saúde</h1>
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+        </header>
+        <!--<div class="botao-menu">
             <button type="button">
                 Abrir menu
             </button>
         </div>-->
-    <header >
-        <nav id="menu">
-            <div class="container">
-                <ul class="menu">
-                    <li>
-                        <a href="./sobre.html" target="_blank">Quem Somos</a>
-                    </li>
-                    <li>
-                        <a href="./unidades.html">Unidades</a>
-                    </li>
-                    <li>
-                        <a href="./servicos.html">Nossos Serviços</a>
-                    </li>
-                    <li>
-                        <a href="./profissionais.html">Nossos profissionais</a>
-                    </li>
-                    <li>
-                        <a href="./convenios.html">Convênios</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contato</a>
-                    </li>
+        <header>
+            <nav id="menu">
+                <div class="container">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sobre.html" target="_blank">Quem Somos</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="./unidades.html">Unidades</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="./servicos.html">Nossos Serviços</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="./profissionais.html">Nossos profissionais</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="./convenios.html">Convênios</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#contact">Contato</a>
+                        </li>
 
-                    <!-- <ul class="container-flex">
-                        <li>
-                            <a href="https://www.facebook.com/espacofamiliasaude" target="_blank">
-                                <img src="./assets/images/logos/facebook-logo-5-1.png" alt="Facebook">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/espacofamiliasaude/" target="_blank">
-                                <img src="./assets/images/logos/instagram-icone-icon-1.png" alt="Instagram">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" target="_blank">
-                                <img src="./assets/images/logos/youtube.webp" alt="Youtube">
-                            </a>
-                        </li>
-                    </ul>-->
-                </ul>
-            </div>
-        </nav>
+                        <ul class="container-flex">
+                            <li>
+                                <a href="https://www.facebook.com/espacofamiliasaude" target="_blank">
+                                    <img src="./assets/images/logos/facebook-logo-5-1.png" alt="Facebook">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/espacofamiliasaude/" target="_blank">
+                                    <img src="./assets/images/logos/instagram-icone-icon-1.png" alt="Instagram">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <img src="./assets/images/logos/youtube.webp" alt="Youtube">
+                                </a>
+                            </li>
+                        </ul>
+                    </ul>
+                </div>
+            </nav>
+
+        </header>
 
     </header>
-
-</header>
     <h1 class="centro"></h1>
     <div class="container espaco">
 
@@ -378,7 +462,7 @@
 
         <div class="texto">
             <p> &nbsp&nbsp&nbsp&nbsp&nbsp&nbspO ESPAÇO FAMÍLIA SAÚDE atualmente atende mais de 30 planos de saúde e
-                atendimento particular,
+                particular,
                 temos
                 orgulho de dizer que funcionamos de segunda a segunda, tendo uma jornada de em torno 12 horas
                 diárias para
@@ -387,65 +471,93 @@
                 adaptados
                 para atendimentos profissionais; realizando atendimento infantil, adulto, casal e familiar nas
                 especialidades de
-                psicologia, fonoaudiologia, nutrição e medicina com profissionais renomados no mercado.</br>
+                Psicologia, Fonoaudiologia, Nutrição e Medicina com excelentes profissionais.</br>
                 &nbsp&nbsp&nbsp&nbsp&nbsp&nbspVenha conhecer nossas unidades:</br></br>
                 <b>🔸️Espaço Família Premier - Centro</br></b>
                 <b>🔸️Espaço Família Mais - Antônio Pimenta
             </p></b>
         </div>
-
-
     </div>
 
-
     <section id="em-destaque" style="background-color:#fff;"></br>
+        <!-- <div class="container espaco">-->
         <h1 class="bi bi-calendar3-event">Eventos e Destaques</h1>
+
+
         <div class="container">
-            <h3 style="margin-left:30px; color: #a54586; text-align: center;"><i>Eventos recentes</i></h3>
+            <!--  <h3><i>Eventos recentes</i></h3>
+                <div id="carousel-videos" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                    <div class="carousel-inner w-100">
+                        <div class="carousel-item active">
+                            <video class="" controls src="./assets/videos/Outubro/Evento Nutrição na Alpargatas.mp4">Evento
+                                Nutrição
+                                Alpargatas</video>
+                             <div class="carousel-caption">
+                            <h2>Evento Nutrição Alpargatas</h2>
+                        </div>-->
+            <!--   </div>
+                        <div class="carousel-item">
+                            <video controls src="./assets/videos/Outubro/dia_das_criancas_espaco_familia.mp4">Dia das
+                                crianças</video>
+                             <div class="carousel-caption">
+                            <h2>Dia das crianças</h2>
+                        </div>-->
+            <!--   </div>
+                        <div class="carousel-item">
+                            <video controls
+                                src="./assets/videos/Setembro amarelo/final_evento_setembro_amarelo.mp4">Final
+                                evento
+                                setembro amarelo Alpargatas
+                                <i>mais</i></video>
+                              <div class="carousel-caption">
+                            <h2>Evento Setembro amarelo Alpargatas</h2>
+                        </div>
+                        </div>
+                    </div>
+                   <button data-bs-target="#carousel-videos" data-bs-slide="prev" class="carousel-control-prev"
+                        type="button">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button data-bs-target="#carousel-videos" data-bs-slide="next" class="carousel-control-next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel-videos" class="active"
+                            data-bs-slide-to="0"></button>
+                        <button type="button" data-bs-target="#carousel-videos" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carousel-videos" data-bs-slide-to="2"></button>
+                    </div>
+                </div>-->
+
+            <h3><i>Eventos recentes</i></h3>
             <div id="carousel-videos">
+                <video controls src="./assets/videos/Outubro/Evento Nutrição na Alpargatas.mp4">Evento
+                    Nutrição</video>
                 <video controls src="./assets/videos/Outubro/dia_das_criancas_espaco_familia.mp4">Dia das
                     crianças</video>
-                <video controls src="./assets/videos/Setembro amarelo/final_evento_setembro_amarelo.mp4">Final evento
-                    setembro amarelo Alpargatas
-                    <i>mais</i></video>
-                <video controls src="./assets/videos/Setembro amarelo/espaco instagramavel.mp4">Encerramento
-                    evento</video>
-
-                <!-- <video controls autoplay loop src="./assets/videos/procrastinação.mp4"
-                    alt="recepcao clinica espaco saude familia"></video>-->
-                <!-- <video controls autoplay loop src="./assets/videos/"
-                    alt="consultorio clinica espaco saude familia"></video>
-                <video controls autoplay loop src="./assets/videos/consultorio_crianca.mp4"
-                    alt="recepcao clinica espaco saude familia"></video>
-                <video controls autoplay loop src="./assets/videos/parte_criancas.mp4"
-                    alt="recepcao clinica espaco saude familia"></video>
-                <video controls autoplay loop src="./assets/videos/Aquario.mp4"
-                    alt="recepcao clinica espaco saude familia"></video>
-                <video controls autoplay loop src="./assets/videos/pequeno_principe.mp4" id="brinquedo"
-                    alt="Brinquedos infantis espaco saude familia"></video>
-                <video controls autoplay loop src="./assets/videos/recepcao_boomerang.mp4" id="brinquedo"
-                    alt="criança espaco saude familia">
-                    <video controls autoplay loop style="width: 350px; margin-right: 16px; border-radius: 18px;"
-                        src="./assets/videos/consultorio2.mp4"></video>-->
+                <video controls src="./assets/videos/Setembro amarelo/final_evento_setembro_amarelo.mp4">Final
+                    evento
+                    setembro amarelo Alpargatas</video>
             </div>
 
-            <!--<img src="./assets/images/Destaques/Setembro amarelo.png" id="destaque" alt="Setembro amarelo">-->
-            <h3 style="margin-left:30px; color: #a54586; list-style-type: disc; text-align: center;"><i>Nosso Espaço</i>
-            </h3>
+
+            <h3><i>Nosso Espaço</i></h3>
             <div id="carousel-video-2">
-                <video controls src="./assets/videos/espaco_familia_premier.mp4">Espaco familia premier</video>
+                <video controls src="./assets/videos/espaco_familia_premier.mp4">Espaco familia
+                    premier</video>
                 <video controls src="./assets/videos/video_espaco_familia.mp4">Espaco Familia</video>
             </div>
+        </div>
         </div>
     </section>
     <section id="contact">
         <div class="container">
             <h2 class="display-3">Fale conosco</h2>
-            <div class="contact-methods">
+            <div class="row">
                 <form>
-                    <div class="row">
-                        <div class="col col-md-6">
-                        </div>
+
+                    <div class="col-6 col-md-6" id="contatos-col">
+
                         <label class="form-label" for="nome">Seu Nome:</label>
                         <input class="form-control form-control-lg" type="text" id="nome" name="nome">
                         <label class="form-label" for="telefone">Telefone:</label>
@@ -461,18 +573,56 @@
                             <option value="Nutrição">Nutrição</option>
                             <option value="Psicologia">Psicologia</option>
                             <option value="Fonoaudiologia">Fonoaudiologia</option>
-                        </select>
+                        </select></br>
                         <label class="form-label" for="mensagem">Mensagem:</label>
                         <textarea class="form-control" id="mensagem" name="mensagem"></textarea>
                         <div class="form-check form-switch">
-                            <label class="form-check-label" for="aceito-termos">Li e concordo com os termos do
+                            <label class="form-check-label" for="aceito-termos" id="label-termos">Li e concordo com os
+                                termos do
                                 site</label>
                             <input class="form-check-input" type="checkbox" id="aceito-termos">
                         </div>
                         <button class="btn btn-success" id="button-conosco">Enviar</button>
+                    </div>
+
                 </form>
+
+                <div class="col-6 col-md-6" id="contatos-col">
+
+
+                    <img src="./assets/images/logos/Logo espaco familia.jpeg" id="logorosa" alt="">
+                    <div class="col-3 col-md-3" id="contatos-col2">
+
+                        <a href="https://api.whatsapp.com/send/?phone=5538999243451&text=Ol%C3%A1%2C+estou+vindo+do+site%21&type=phone_number&app_absent=0"
+                            target="_blank">
+                            <button id="btn-consulta" type="button">
+
+                                <span class="consulta-text">Marque sua consulta</br>no Espaço Família <i
+                                        style="font-size:20px;">Premier</i>
+                                </span>
+                            </button>
+                        </a>
+
+
+                    </div>
+                    <div class="col-3 col-md-3" id="contatos-col2">
+
+                        <a href="https://api.whatsapp.com/send/?phone=5538991343451&text=Ol%C3%A1%2C+estou+vindo+do+site%21&type=phone_number&app_absent=0"
+                            target="_blank">
+                            <button id="btn-consulta" type="button">
+
+                                <span class="consulta-text">Marque sua consulta</br>no Espaço Família <i
+                                        style="font-size:20px;">Mais</i> </span>
+                            </button>
+                        </a>
+
+                    </div>
+                </div>
+
             </div>
         </div>
+
+
     </section>
     <!-- <li>
                             <a href="mailto:tatianemendes.psimoc@gmail.com"
@@ -526,41 +676,30 @@
 
         <footer id="responsibilidade-tecnica">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-12">
                     <h2 class="pt-2">RT - Tatiane Aparecida Mendes | Psicóloga - CRP 04/35803 </h2>
-
                     <h2>CNPJ: 33.973.268/0001-69</h2>
-                    <!-- <p class="h3">Psicóloga com formação em Terapia Familiar Sistêmica e Pedagogia.</p>-->
-                    <p></p>
-                </div>
-            </div>
-        </footer>
-        <footer id="espaco-familia">
-            <div class="row">
-                <div class="col-md-6">
                     <h2 class="tituloFooter">© 2022 Espaço Família Saúde | Todos os direitos reservados.</h2>
-                </div>
-                <div class="col-md-6 align-self-center">
-                    <div class="d-flex flex-row-reverse">
-                        <ul id="listaRedesSociais">
-                            <li class="d-inline"><a target="_blank"
-                                    href="https://www.facebook.com/espacofamiliasaude"><i class="fa fa-facebook"
-                                        aria-hidden="true"></i></a></li>
-                            <li class="d-inline"><a target="_blank"
-                                    href="https://www.instagram.com/espacofamiliasaude/"><i class="fa fa-instagram"
-                                        aria-hidden="true"></i></a></li>
-                            <li class="d-inline"><a target="_blank" href="https://twitter.com/"><i class="fa fa-twitter"
-                                        aria-hidden="true"></i></a></li>
-                            <li class="d-inline"><a target="_blank" href="https://pt.linkedin.com/"><i
-                                        class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                            <li class="d-inline"><a target="_blank" href="https://www.youtube.com/"><i
-                                        class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
-                        </ul>
-                    </div>
+                    <!-- <p class="h3">Psicóloga com formação em Terapia Familiar Sistêmica e Pedagogia.</p>-->
+                    <!--  <div class="d-flex flex-row-reverse">-->
+                    <ul id="listaRedesSociais">
+                        <li class="d-inline"><a target="_blank" href="https://www.facebook.com/espacofamiliasaude"><i
+                                    class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li class="d-inline"><a target="_blank" href="https://www.instagram.com/espacofamiliasaude/"><i
+                                    class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        <li class="d-inline"><a target="_blank" href="https://twitter.com/"><i class="fa fa-twitter"
+                                    aria-hidden="true"></i></a></li>
+                        <li class="d-inline"><a target="_blank" href="https://pt.linkedin.com/"><i
+                                    class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                        <li class="d-inline"><a target="_blank" href="https://www.youtube.com/"><i
+                                    class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                    </ul>
                 </div>
             </div>
-        </footer>
+            <!-- </div>-->
+        
     </div>
+</footer>
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

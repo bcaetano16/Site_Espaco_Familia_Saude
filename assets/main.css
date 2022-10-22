@@ -1,9 +1,9 @@
-* {
+/** {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+}*/
 
 
 /*Leelawadee UI
@@ -24,7 +24,7 @@ body {
     max-width: 1366px;
     width: 95%;
     margin: 0 auto;
-    
+
 }
 
 .container-flex {
@@ -47,7 +47,7 @@ header {
     z-index: 1;
 }
 
-header #principal{
+header #principal {
     position: sticky;
     top: 0;
     left: 0;
@@ -55,15 +55,17 @@ header #principal{
 }
 
 
+
 header span {
     display: flex;
     vertical-align: middle;
     border-radius: 50%;
     overflow: hidden;
-    width: 100px;
-    height: 100px;
+    width: 110px;
+    height: 110px;
     max-height: 400px;
     cursor: pointer;
+    background-color: #fff;
 }
 
 header span img {
@@ -73,6 +75,20 @@ header span img {
     height: 75%;
     object-fit: contain;
 }
+
+/*#logo-rosa {
+    color: #fff;
+    font-weight:bolder;
+    text-decoration:none !important
+    }*/
+
+/*#logo-rosa:hover {
+    width: 100%;
+    height: 75%;
+    background-color: #fff;
+    transition:all 0.5s ease-in;
+
+}*/
 
 header h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -111,8 +127,8 @@ nav li a {
     text-decoration: solid;
 }
 
-nav li a:hover{
-    color: #C0C0C0;
+nav li a:hover {
+    color: #DDA0DD;
 }
 
 .menu,
@@ -125,56 +141,37 @@ nav li a:hover{
 }
 
 ul.menu {
-    
+
     flex-wrap: wrap;
     justify-content: space-evenly;
     /* ao ocupar toda a largura da tela, cria-se uma nova linha*/
 }
 
 ul li {
-    
+
     max-width: 25%;
     position: relative;
     max-height: 280px;
     overflow-y: hidden;
-    font-style:normal;
+    font-style: normal;
     /*Cortar as imagens conforme configuração eixo y = eixo vertical*/
 }
 
-ul li a{
+ul li a {
     font-size: 25px;
-    
+
 }
 
-.social-links li,
-img {
+.social-links li {
     display: inline;
     height: 18px;
     margin-right: 2px;
     text-decoration: none;
 }
 
-
-
-.menu-hamburguer {
-    width: 32px;
+.flex-row-reverse {
+    flex-direction: row !important;
 }
-
-.menu-hamburguer span {
-    height: 4px;
-    width: 100%;
-    background-color: #a54586;
-    display: block;
-    margin-bottom: 4px;
-    margin-left: 16px;
-    cursor: pointer;
-    border-radius: 16px;
-}
-
-.menu-hamburguer span:hover {
-    background-color: #FF00FF;
-}
-
 
 /*SEÇÃO DESTAQUES E EVENTOS#########################################################################################################################################################
 /*SEÇÃO DESTAQUES E EVENTOS#########################################################################################################################################################
@@ -197,7 +194,7 @@ img {
     width: 650px;
 }
 
-#carousel-exemplo img{
+#carousel-exemplo img {
     max-width: 650px;
     max-height: 750px;
     width: 100%;
@@ -223,20 +220,20 @@ img {
 }
 
 
-.carousel-item{
+.carousel-item {
     width: 100%;
     height: 800px;
 }
 
-.carousel-inner div{
-    
+.carousel-inner div {
+
     max-width: 650px;
     max-height: 750px;
 
 }
 
 
-.container.espaco > .container{
+.container.espaco>.container {
     max-width: 650px;
     width: 100%;
     max-height: 850px;
@@ -264,7 +261,6 @@ img {
     max-height: 800px;
     overflow-y: hidden;
     overflow-x: hidden;
-    margin-right: 32px;
     border-radius: 8px;
     margin-top: 32px;
 }
@@ -278,21 +274,10 @@ img {
 }
 
 
-#alinhamento {
-    width: 350px;
-    height: 530px;
-    max-height: 100%;
-    margin-right: 32px;
-    margin-left: 16px;
-    border-radius: 8px;
-    margin-top: 24px;
-}
-
 .container.espaco {
     display: flex;
     max-height: 800px;
     justify-content: center;
-    border-bottom: 2px solid #fff;
 }
 
 .espaco p {
@@ -309,13 +294,13 @@ img {
 }
 
 
-section h2 {
+/*section h2 {
     margin-bottom: 16px;
-    font-size: 30px;
+    font-size: 20px;
     align-items: flex-start;
     margin-top: 16px;
     color: #fff;
-}
+}*/
 
 section p {
     max-height: 400px;
@@ -323,11 +308,21 @@ section p {
     text-align: justify;
 }
 
+#em-destaque {
+    border: 3px solid #a54586;
+}
+
 #em-destaque h1 {
     text-align: center;
     color: #a54586;
     text-transform: uppercase;
+    text-decoration: underline;
 
+}
+
+#em-destaque h3 {
+    text-align: center;
+    color: #a54586;
 }
 
 #em-destaque h3 {
@@ -353,28 +348,20 @@ h2 {
 
 }
 
-.contact-methods h3 {
-    text-decoration: underline;
-}
 
-.contact-methods form {
-    text-decoration: none;
-    color: #fff;
-    font-size: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    max-width: 360px;
-    width: 100%;
-}
-
-.contact-methods input,
+#contact form input,
 textarea {
     width: 256px;
     display: block;
     margin-top: 4px;
 }
 
-.contact-methods button {
-    width: 30%;
+#contact #aceito-termos {
+    width: 50px;
+}
+
+#button-conosco {
+    width: 20%;
     margin-top: 16px;
     font-size: 25px;
 }
@@ -383,24 +370,14 @@ textarea {
     background-color: #DDA0DD;
 }
 
-.form-campo label {
-    display: block;
+.form-check label {
     font-weight: bold;
+    margin-left: 16px;
+
 }
 
-.form-campo input,
-textarea {
-    width: 100%;
-    padding: 2px;
-    display: block;
-}
-
-#email {
-    width: 100%;
-}
-
-.form-campo textarea {
-    height: 200px;
+input#email.form-control {
+    width: 70%;
 }
 
 .form-check {
@@ -432,12 +409,13 @@ section #contact h2 {
     height: 160px;
     text-transform: uppercase;
     text-align: center;
+    border: 3px solid #a54586;
 
 }
 
 #convenios h1 {
-    margin-top: 60px;
     color: #a54586;
+    text-decoration: underline;
 }
 
 #convenios .carousel-2 {
@@ -464,34 +442,92 @@ section #contact h2 {
     height: 40px;
 }
 
-footer li {
-    list-style: none;
-    margin-left: 16px;
+
+.col-md-3 {
+    margin-bottom: 50px;
 }
 
-footer li img {
-    height: 32px;
-    cursor: pointer;
-}
-
-footer {
-    background-color: #DDA0DD;
+.col-md-6 {
+    margin-left: 32px;
     color: #fff;
-    text-align: center;
-    margin-top: 32px;
-    font-size: 12px;
-    margin-bottom: 16px;
-    border-top: 4px solid #a54586;
+    justify-content: space-between;
+    display: block;
+    font-weight: bold;
+    width: 70%;
+    margin-bottom: 4px;
+
 }
 
-#listaRedesSociais {
+#contatos-col {
+    border-right: 4px solid #a54586;
+}
+
+.col-md-6 img {
+    width: 250px;
+    border-radius: 40px;
+    margin-left: 95px;
+    margin-bottom: 32px;
+
+}
+
+#contatos-col2 {
+    margin-left: 32px;
+}
+
+textarea.form-control {
+    width: 80%;
+}
+
+.form-control-lg {
+    margin-bottom: 10px;
+
+}
+
+.form-label {
+    display: flex;
+}
+
+#contact form {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+#btn-consulta {
+    flex-basis: auto;
+    justify-content: center;
+    flex-direction: row;
+    flex-grow: 1;
+    align-items: center;
+    overflow: hidden;
+    height: 25%;
+    width: 400px;
+    transition: all .2s ease, visibility 0s;
+    border-radius: 60px;
+    /*border: 0px solid #DDA0DD;*/
+    background-color: #fff;
+    box-shadow: 0.71px 0.71px 0 0 rgb(16 63 84 / 88%);
+}
+
+.consulta-text {
+    transition: inherit;
+    font-style: normal;
+    letter-spacing: 0.05em;
     font-size: 24px;
-    margin-top: 16px;
-    display:flex;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #a54586;
+    font-weight: 400;
+    text-shadow: 1px 0 #a54586, -1px 0 #a54586, 0 1px #a54586, 0 -1px #a54586, 0.71px 0.71px 0 rgb(255 255 255 / 0%);
 }
 
-#listaRedesSociais .d-inline i {
-    color: #fff;
+.row {
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 .col-md-6 h3 {
@@ -503,27 +539,34 @@ footer {
 }
 
 .col-md-6 h2 {
-    text-align: left;
-    font-size: 1rem;
+    text-align: center;
+    font-size: calc(0.7rem + .5vw);
     width: 600px;
 }
 
 .col-md-6 .h3 {
-    text-align: left;
+    text-align: center;
     font-size: 1rem;
     margin-top: 16px;
 
 }
 
 .col-md-6 .tituloFooter {
-    text-align: left;
-    font-size: 1rem;
+    text-align: center;
+    font-size: calc(0.7rem + .5vw);
 }
 
 footer #responsabilidade-tecnica .row {
     margin-top: 32px;
+    text-align: center;
 }
 
+.col-md-12 h2 {
+    text-align: center;
+    font-size: calc(0.5rem + .5vw);
+    color: #fff;
+
+}
 
 .whatsapp-link {
     margin-bottom: 32px;
@@ -558,6 +601,35 @@ footer #responsabilidade-tecnica .row {
     margin-left: 100px;
 }
 
+
+footer li {
+    list-style: none;
+    margin-left: 16px;
+}
+
+footer li img {
+    height: 32px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #DDA0DD;
+    color: #fff;
+    text-align: center;
+    margin-top: 32px;
+    font-size: 12px;
+    margin-bottom: 16px;
+}
+
+/*#listaRedesSociais {
+    font-size: 24px;
+    margin-top: 16px;
+}*/
+
+#listaRedesSociais .d-inline i {
+    color: #fff;
+}
+
 @media screen and (max-width: 767px) {
     /* display mais blockado*/
 
@@ -567,7 +639,7 @@ footer #responsabilidade-tecnica .row {
     }
 
     .container.espaco {
-        display:contents;
+        display: contents;
         justify-content: center;
         max-height: 100%;
         /* max-height: fit-content;*/
@@ -601,6 +673,7 @@ footer #responsabilidade-tecnica .row {
         padding-bottom: 8px;
     }
 
+
     header span {
         display: flex;
         vertical-align: middle;
@@ -619,40 +692,51 @@ footer #responsabilidade-tecnica .row {
         padding-right: 24px;
     }
 
+    nav li {
+        font-size: 24px;
+    }
+
+    .nav{
+        --bs-nav-link-padding-y: 0.1rem;
+        --bs-nav-link-padding-x: 0.1rem;
+    }
+
     .navbar-expand-lg .navbar-collapse {
         display: flex !important;
         flex-basis: auto;
     }
-    
+
+
+
     .navbar-toggler-icon {
         display: inline-block;
         width: 1.5em;
         height: 1.5em;
         vertical-align: middle;
     }
-    
+
     .navbar-nav .nav-link {
         text-transform: uppercase;
     }
-    
+
     .navbar-nav .nav-link.active {
         color: #fff;
-    
+
     }
-    
-    
+
+
     .nav-link {
         text-align: center;
     }
-    
+
     .nav-pills .nav-link.active,
     .nav-pills .show>.nav-link {
         color: #fff;
         background-color: #a54586;
-    
+
     }
-    
-    #menu.collpase.show{
+
+    #menu.collpase.show {
         display: block;
         height: 350px;
     }
@@ -663,7 +747,7 @@ footer #responsabilidade-tecnica .row {
         background-color: #fff;
         /* flex-basis: auto;*/
     }
-    
+
     .navbar-expand-lg .navbar-collapse a {
         font-size: 20px;
         position: sticky;
@@ -673,7 +757,7 @@ footer #responsabilidade-tecnica .row {
         /* flex-basis: auto;*/
     }
 
-    .navbar>.container{
+    .navbar>.container {
         justify-content: center;
     }
 
@@ -701,43 +785,6 @@ footer #responsabilidade-tecnica .row {
         padding-bottom: 16px;
     }
 
-    /*.menu-hamburguer span {
-        height: 4px;
-        width: 100%;
-        background-color: #a54586;
-        display: block;
-        margin-bottom: 4px;
-        margin-left: 16px;
-        cursor: pointer;
-        border-radius: 16px;
-        margin-top: 6px;
-        text-align: center;
-
-    }
-
-    .menu-hamburguer span:hover {
-        background-color: #FF00FF;
-    }*/
-
-
-
-    .botao-menu button {
-        padding: 8px;
-    }
-
-    button {
-        background-color: rgb(199, 52, 162);
-        border: none;
-        font-weight: bold;
-        color: #fff;
-        cursor: pointer;
-    }
-
-    form button:hover {
-        background-color: #FF00FF;
-
-    }
-
     #carousel-images {
         height: 100%;
         width: 100%;
@@ -749,12 +796,12 @@ footer #responsabilidade-tecnica .row {
         border-radius: 8px;
         margin-bottom: 16px;
     }
-    
+
     #carousel-images img {
         height: 750px;
         width: 650px;
     }
-    
+
     #carousel-exemplo {
         max-width: 650px;
         max-height: 750px;
@@ -765,7 +812,7 @@ footer #responsabilidade-tecnica .row {
     }
 
 
-    #carousel-exemplo img{
+    #carousel-exemplo img {
         max-width: 650px;
         max-height: 750px;
         width: 100%;
@@ -776,22 +823,24 @@ footer #responsabilidade-tecnica .row {
         overflow-x: hidden;
     }
 
-    .carousel-item{
+    .carousel-item {
         width: 100%;
         height: 550px;
     }
-    .carousel-inner div{
-        
+
+    .carousel-inner div {
+
         max-width: 650px;
         max-height: 750px;
 
     }
+
     .carousel-fade .carousel-item.active {
         z-index: 0;
         opacity: 1;
     }
-    
-    .container.espaco > .container{
+
+    .container.espaco>.container {
         max-width: 650px;
         width: 100%;
         max-height: 550px;
@@ -799,7 +848,7 @@ footer #responsabilidade-tecnica .row {
         margin-bottom: 32px;
         border-bottom: none;
     }
-    
+
     .logo2 img {
         height: 100%;
         width: 100%;
@@ -959,7 +1008,7 @@ footer #responsabilidade-tecnica .row {
         height: 230px;
     }
 
-    .carousel-2 img{
+    .carousel-2 img {
         width: 80px;
         height: 40px;
     }
@@ -975,6 +1024,30 @@ footer #responsabilidade-tecnica .row {
 
     #listaRedesSociais .d-inline i {
         color: #fff;
+    }
+
+
+    .col-md-6 {
+        margin-left: 0;
+        color: #fff;
+        justify-content: space-between;
+        display: block;
+        font-weight: bold;
+        width: 100%;
+        margin-bottom: 4px;
+
+    }
+
+    #logorosa {
+        margin-left: 65px;
+    }
+
+    .col-md-6 img {
+        width: 200px;
+        border-radius: 40px;
+        margin-bottom: 32px;
+        margin-left: 0;
+
     }
 
     .col-md-6 h3 {
@@ -999,7 +1072,68 @@ footer #responsabilidade-tecnica .row {
         width: 280px;
     }
 
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
 
+    #contatos-col {
+        border-right: none;
+        border-bottom: 4px solid #a54586;
+    }
+
+
+    #button-conosco {
+        width: 30%;
+        margin-top: 16px;
+        font-size: 25px;
+        margin-bottom: 32px;
+    }
+
+    .botao-menu button {
+        padding: 8px;
+    }
+
+    #btn-consulta {
+        flex-basis: auto;
+        justify-content: center;
+        flex-direction: row;
+        flex-grow: 1;
+        align-items: center;
+        overflow: hidden;
+        height: 25%;
+        width: 300px;
+        transition: all .2s ease, visibility 0s;
+        border-radius: 60px;
+        /*border: 0px solid #DDA0DD;*/
+        color: #A8518A;
+        box-shadow: 0.71px 0.71px 0 0 rgb(16 63 84 / 88%);
+    }
+
+    .consulta-text {
+        transition: inherit;
+        font-style: normal;
+        letter-spacing: 0.05em;
+        font-size: 18px;
+        text-transform: uppercase;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #a54586;
+        font-weight: 600;
+        text-shadow: none;
+    }
+
+    /*button {
+        background-color: rgb(199, 52, 162);
+        border: none;
+        font-weight: bold;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    form button:hover {
+        background-color: #FF00FF;
+
+    }*/
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -1096,7 +1230,7 @@ footer #responsabilidade-tecnica .row {
     }
 
 
-    #carousel-exemplo img{
+    #carousel-exemplo img {
         max-width: 650px;
         max-height: 750px;
         width: 100%;
@@ -1107,40 +1241,34 @@ footer #responsabilidade-tecnica .row {
         overflow-x: hidden;
     }
 
-    .carousel-item{
+    .carousel-item {
         width: 100%;
         height: 650px;
     }
-    .carousel-inner div{
-        
+
+    .carousel-inner div {
+
         max-width: 650px;
         max-height: 750px;
 
     }
+
     .carousel-fade .carousel-item.active {
         z-index: 0;
         opacity: 1;
     }
-    #carousel-videos {
-        height: 95%;
-        width: 95%;
-        max-width: 100%;
-        max-height: 100%;
-        overflow-y: hidden;
-        overflow-x: hidden;
-        border-radius: 8px;
-        margin-top: 32px;
-    }
 
+    #carousel-videos,
     #carousel-video-2 {
-        height: 95%;
-        width: 95%;
+        height: 70%;
+        width: 80%;
         max-width: 100%;
         max-height: 100%;
         overflow-y: hidden;
         overflow-x: hidden;
         border-radius: 8px;
         margin-top: 32px;
+        margin-left: 80px;
     }
 
     #destaque {
@@ -1209,6 +1337,96 @@ footer #responsabilidade-tecnica .row {
         text-align: left;
         font-size: calc(1.0rem + .6vw);
         width: 280px;
+    }
+
+    .col-md-6 {
+        margin-left: 0;
+        color: #fff;
+        justify-content: space-between;
+        display: block;
+        font-weight: bold;
+        width: 100%;
+        margin-bottom: 4px;
+
+    }
+
+    #logorosa {
+        margin-left: 65px;
+    }
+
+    .col-md-6 img {
+        width: 200px;
+        border-radius: 40px;
+        margin-bottom: 32px;
+        margin-left: 0;
+
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+
+    .navbar>.container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+
+    }
+
+    #contact form {
+        text-decoration: none;
+        color: #fff;
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #contatos-col {
+        border-right: none;
+    }
+
+    #button-conosco {
+        width: 30%;
+        margin-top: 16px;
+        font-size: 25px;
+        margin-bottom: 32px;
+    }
+
+    .botao-menu button {
+        padding: 8px;
+    }
+
+    #btn-consulta {
+        flex-basis: auto;
+        justify-content: center;
+        flex-direction: row;
+        flex-grow: 1;
+        align-items: center;
+        overflow: hidden;
+        height: 25%;
+        width: 300px;
+        transition: all .2s ease, visibility 0s;
+        border-radius: 60px;
+        /*border: 0px solid #DDA0DD;*/
+        color: #A8518A;
+        box-shadow: 0.71px 0.71px 0 0 rgb(16 63 84 / 88%);
+    }
+
+    .consulta-text {
+        transition: inherit;
+        font-style: normal;
+        letter-spacing: 0.05em;
+        font-size: 18px;
+        text-transform: uppercase;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #a54586;
+        font-weight: 600;
+        text-shadow: none;
     }
 
 }
