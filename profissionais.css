@@ -254,6 +254,17 @@ footer #responsabilidade-tecnica .row {
     margin-top: 32px;
 }
 
+#contatos-col2 {
+    margin-left: 32px;
+}
+
+.col-md-12 h2 {
+    text-align: center;
+    font-size: calc(0.5rem + .5vw);
+    color: #a54586;
+
+}
+
 @media screen and (max-width: 767px) {
     /* display mais blockado*/
 
@@ -412,33 +423,60 @@ footer #responsabilidade-tecnica .row {
 
     header nav {
         background-color: #a54586;
-        padding: 0 0;
+        padding: 16px 0;
         font-weight: bold;
-
-    }
-
-    nav li {
         display: flex;
+    }
+    
+    /*Seções*/
+    nav li {
+        list-style: none;
+        display: inline;
         font-size: 18px;
         margin-right: 16px;
+        text-align: center;
         font-weight: bold;
         text-transform: uppercase;
     }
-
+    
     nav li a {
         color: #fff;
-        text-decoration: none;
+        text-decoration: solid;
     }
-
+    
+    nav li a:hover {
+        color: #DDA0DD;
+    }
+    
     .menu,
     .menu>li {
-        width: 100%;
         display: inline;
         max-width: 400px;
         margin-top: 8px;
         margin-bottom: 8px;
+        font-size: 20px;
+    }
+    
+    ul.menu {
+    
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        /* ao ocupar toda a largura da tela, cria-se uma nova linha*/
     }
 
+    ul.nav.nav-pills{
+        width: 800px;
+    }
+    
+    ul li {
+    
+        max-width: 25%;
+        position: relative;
+        max-height: 280px;
+        overflow-y: hidden;
+        font-style: normal;
+        /*Cortar as imagens conforme configuração eixo y = eixo vertical*/
+    }
     
     #profissionais p {
         color: #a54586;

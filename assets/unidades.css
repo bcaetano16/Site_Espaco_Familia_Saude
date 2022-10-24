@@ -9,7 +9,6 @@ html,
 body {
     /* height: 100%;*/
     overflow-x: hidden;
-    background-color: #DDA0DD;
     color: #fff;
 }
 
@@ -93,13 +92,15 @@ ul li {
     /*Cortar as imagens conforme configuração eixo y = eixo vertical*/
 }
 
-ul li a{
-    font-size: 25px;
 
+
+nav li a {
+    color: #fff;
+    text-decoration: solid;
 }
 
-nav li a:hover{
-    color: #C0C0C0;
+nav li a:hover {
+    color: #DDA0DD;
 }
 
 button {
@@ -283,6 +284,18 @@ h3 {
     text-align: left;
     font-size: 1rem;
     margin-top: 16px;
+
+}
+
+
+#contatos-col2 {
+    margin-left: 32px;
+}
+
+.col-md-12 h2 {
+    text-align: center;
+    font-size: calc(0.5rem + .5vw);
+    color: #a54586;
 
 }
 
@@ -596,48 +609,60 @@ footer {
 
     header nav {
         background-color: #a54586;
-        padding: 0 0;
+        padding: 16px 0;
         font-weight: bold;
-
+        display: flex;
     }
-
+    
+    /*Seções*/
     nav li {
+        list-style: none;
+        display: inline;
         font-size: 18px;
         margin-right: 16px;
+        text-align: center;
         font-weight: bold;
         text-transform: uppercase;
-        padding-right: 24px;
     }
-
+    
     nav li a {
         color: #fff;
-        text-decoration: none;
+        text-decoration: solid;
     }
-
-    ul {
+    
+    nav li a:hover {
+        color: #DDA0DD;
+    }
+    
+    .menu,
+    .menu>li {
         display: inline;
+        max-width: 400px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        font-size: 20px;
+    }
+    
+    ul.menu {
+    
         flex-wrap: wrap;
+        justify-content: space-evenly;
         /* ao ocupar toda a largura da tela, cria-se uma nova linha*/
     }
 
+    ul.nav.nav-pills{
+        width: 800px;
+    }
+    
     ul li {
+    
         max-width: 25%;
         position: relative;
+        max-height: 280px;
         overflow-y: hidden;
+        font-style: normal;
         /*Cortar as imagens conforme configuração eixo y = eixo vertical*/
     }
-
-    .menu,
-    .menu>li {
-        width: 100%;
-        display: inline;
-        margin-top: 8px;
-        margin-bottom: 8px;
-    }
-
-    /*.menu {
-        display: none;
-    }*/
 
     .sobre {
         display: flex;

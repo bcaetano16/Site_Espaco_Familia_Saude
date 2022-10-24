@@ -9,15 +9,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Manrope:wght@600&family=Open+Sans:wght@400;700&family=Qwitcher+Grypen:wght@700&family=Roboto:wght@700&family=Titillium+Web&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="./assets/servicos.css">
+      
     <!--<link rel="stylesheet" href="./assets/main.css">-->
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" href="./assets/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./assets/servicos.css">
     <!--Bootstrap link-->
     <style>
+           .nav {
+            --bs-nav-link-color: #fff;
+        }
+
+
+
         .navbar-expand-lg .navbar-collapse {
             display: flex !important;
             /*  flex-basis: auto;*/
@@ -25,6 +33,14 @@
 
         .navbar-expand-lg .navbar-toggler {
             display: block;
+        }
+
+        .nav a {
+            font-size: 22px;
+        }
+
+        .nav-link {
+            padding: 0px 8px;
         }
 
 
@@ -35,7 +51,6 @@
             vertical-align: middle;
         }
 
-        .navbar-toggler:hover,
         .navbar-toggler:hover {
             color: #a54586;
         }
@@ -49,8 +64,14 @@
 
         }
 
-        .nav-link {
+        .nav-link a:hover {
             text-align: center;
+            color: whitesmoke;
+
+        }
+
+        .nav-link:hover {
+            color: pink;
         }
 
         .nav-pills .nav-link.active,
@@ -60,6 +81,13 @@
 
         }
 
+        .container-flex img {
+            display: inline;
+            height: 18px;
+            margin-right: 2px;
+            text-decoration: none;
+        }
+        
         @media screen and (max-width: 767px) {
 
 
@@ -235,9 +263,7 @@
     </a>
 
 
-    <header  id="principal">
-
-    
+    <header id="principal">
     <header>
         <div class="navbar navbar-expand-lg">
             <div class="container">
@@ -264,29 +290,47 @@
             </button>
         </div>-->
         <header>
-    <nav id="menu">
-        <div class="container">
-            <ul class="menu">
-                <li>
-                    <a href="./index.html">Página Principal</a>
-                </li>
-                <li>
-                    <a href="./sobre.html" target="_blank">Quem Somos</a>
-                </li>
-                <li>
-                    <a href="./unidades.html">Nossas Unidades</a>
-                </li>
-                <li>
-                    <a href="./profissionais.html">Nossos profissionais</a>
-                </li>
-                <li>
-                    <a href="./convenios.html">Convênios</a>
-                </li>
-                <li>
-            </ul>
-    </nav>
-    </div>
-    </header>
+            <nav id="menu">
+                <div class="container">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html" target="_blank"> Página Principal</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="./sobre.html" target="_blank"> Quem Somos</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="./unidades.html">Unidades</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="./profissionais.html">Nossos profissionais</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="./convenios.html">Convênios</a>
+                        </li>
+
+                        <ul class="container-flex">
+                            <li>
+                                <a href="https://www.facebook.com/espacofamiliasaude" target="_blank">
+                                    <img src="./assets/images/logos/facebook-logo-5-1.png" alt="Facebook">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/espacofamiliasaude/" target="_blank">
+                                    <img src="./assets/images/logos/instagram-icone-icon-1.png" alt="Instagram">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <img src="./assets/images/logos/youtube.webp" alt="Youtube">
+                                </a>
+                            </li>
+                        </ul>
+                    </ul>
+                </div>
+            </nav>
+
+        </header>
 
 </header>
         <div class="container">
@@ -356,41 +400,30 @@
 
         <footer id="responsibilidade-tecnica">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-12">
                     <h2 class="pt-2">RT - Tatiane Aparecida Mendes | Psicóloga - CRP 04/35803 </h2>
-                    
                     <h2>CNPJ: 33.973.268/0001-69</h2>
-                     <!-- <p class="h3">Psicóloga com formação em Terapia Familiar Sistêmica e Pedagogia.</p>-->
-                    <p></p>
-                </div>
-            </div>
-        </footer>
-        <footer id="espaco-familia">
-            <div class="row">
-                <div class="col-md-6">
                     <h2 class="tituloFooter">© 2022 Espaço Família Saúde | Todos os direitos reservados.</h2>
-                </div>
-                <div class="col-md-6 align-self-center">
-                    <div class="d-flex flex-row-reverse">
-                        <ul id="listaRedesSociais">
-                            <li class="d-inline"><a target="_blank"
-                                    href="https://www.facebook.com/espacofamiliasaude"><i class="fa fa-facebook"
-                                        aria-hidden="true"></i></a></li>
-                            <li class="d-inline"><a target="_blank"
-                                    href="https://www.instagram.com/espacofamiliasaude/"><i class="fa fa-instagram"
-                                        aria-hidden="true"></i></a></li>
-                            <li class="d-inline"><a target="_blank" href="https://twitter.com/"><i class="fa fa-twitter"
-                                        aria-hidden="true"></i></a></li>
-                            <li class="d-inline"><a target="_blank" href="https://pt.linkedin.com/"><i
-                                        class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                            <li class="d-inline"><a target="_blank" href="https://www.youtube.com/"><i
-                                        class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
-                        </ul>
-                    </div>
+                    <!-- <p class="h3">Psicóloga com formação em Terapia Familiar Sistêmica e Pedagogia.</p>-->
+                    <!--  <div class="d-flex flex-row-reverse">-->
+                    <ul id="listaRedesSociais">
+                        <li class="d-inline"><a target="_blank" href="https://www.facebook.com/espacofamiliasaude"><i
+                                    class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li class="d-inline"><a target="_blank" href="https://www.instagram.com/espacofamiliasaude/"><i
+                                    class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        <li class="d-inline"><a target="_blank" href="https://twitter.com/"><i class="fa fa-twitter"
+                                    aria-hidden="true"></i></a></li>
+                        <li class="d-inline"><a target="_blank" href="https://pt.linkedin.com/"><i
+                                    class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                        <li class="d-inline"><a target="_blank" href="https://www.youtube.com/"><i
+                                    class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                    </ul>
                 </div>
             </div>
-        </footer>
+            <!-- </div>-->
+
     </div>
+    </footer>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>

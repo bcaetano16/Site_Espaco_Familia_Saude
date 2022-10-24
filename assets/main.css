@@ -1,9 +1,9 @@
-/** {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}*/
+}
 
 
 /*Leelawadee UI
@@ -155,11 +155,6 @@ ul li {
     overflow-y: hidden;
     font-style: normal;
     /*Cortar as imagens conforme configuração eixo y = eixo vertical*/
-}
-
-ul li a {
-    font-size: 25px;
-
 }
 
 .social-links li {
@@ -389,6 +384,11 @@ input#email.form-control {
     max-width: 100%;
 }
 
+section#contact{
+    width: 100%;
+}
+
+
 section #contact h2 {
     font-size: 20px;
     font-weight: bold;
@@ -406,7 +406,7 @@ section #contact h2 {
 
 #convenios {
     justify-content: space-between;
-    height: 160px;
+    height: 200px;
     text-transform: uppercase;
     text-align: center;
     border: 3px solid #a54586;
@@ -416,6 +416,7 @@ section #contact h2 {
 #convenios h1 {
     color: #a54586;
     text-decoration: underline;
+    margin: 16px 0;
 }
 
 #convenios .carousel-2 {
@@ -470,9 +471,6 @@ section #contact h2 {
 
 }
 
-#contatos-col2 {
-    margin-left: 32px;
-}
 
 textarea.form-control {
     width: 80%;
@@ -561,6 +559,10 @@ footer #responsabilidade-tecnica .row {
     text-align: center;
 }
 
+#contatos-col2 {
+    margin-left: 16px;
+}
+
 .col-md-12 h2 {
     text-align: center;
     font-size: calc(0.5rem + .5vw);
@@ -628,6 +630,7 @@ footer {
 
 #listaRedesSociais .d-inline i {
     color: #fff;
+    font-size: 24px;
 }
 
 @media screen and (max-width: 767px) {
@@ -992,7 +995,14 @@ footer {
 
     }
 
-
+#contact form {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     width: 100%; 
+    margin-bottom: 10px;
+}
 
     .carousel-2 {
         position: relative;
@@ -1175,13 +1185,68 @@ footer {
         /*object-fit: contain;*/
     }
 
+    header nav {
+        background-color: #a54586;
+        padding: 16px 0;
+        font-weight: bold;
+        display: flex;
+    }
+    
+    /*Seções*/
+    nav li {
+        list-style: none;
+        display: inline;
+        font-size: 18px;
+        margin-right: 16px;
+        text-align: center;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    
+    nav li a {
+        color: #fff;
+        text-decoration: solid;
+    }
+    
+    nav li a:hover {
+        color: #DDA0DD;
+    }
+    
     .menu,
     .menu>li {
-        width: 100%;
         display: inline;
         max-width: 400px;
         margin-top: 8px;
         margin-bottom: 8px;
+        font-size: 20px;
+    }
+    
+    ul.menu {
+    
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        /* ao ocupar toda a largura da tela, cria-se uma nova linha*/
+    }
+
+    ul.nav.nav-pills{
+        width: 800px;
+    }
+    
+    ul li {
+    
+        max-width: 25%;
+        position: relative;
+        max-height: 280px;
+        overflow-y: hidden;
+        font-style: normal;
+        /*Cortar as imagens conforme configuração eixo y = eixo vertical*/
+    }
+    
+    .social-links li {
+        display: inline;
+        height: 18px;
+        margin-right: 2px;
+        text-decoration: none;
     }
 
     .celular-flex {
@@ -1294,6 +1359,11 @@ footer {
 
     }
 
+
+    section#contact{
+        width: 50%;
+    }
+
     #listaRedesSociais {
         font-size: 24px;
         margin-top: 16px;
@@ -1347,7 +1417,12 @@ footer {
         font-weight: bold;
         width: 100%;
         margin-bottom: 4px;
+        margin-left: 32px;
 
+    }
+
+    div.carousel-inner .w-100{
+        margin-top: 32px;
     }
 
     #logorosa {
