@@ -18,15 +18,17 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./convenios.css">
     <style>
-       .nav {
-            --bs-nav-link-color: #fff;
+        .navbar {
+            display: inline;
         }
-
-
 
         .navbar-expand-lg .navbar-collapse {
             display: flex !important;
             /*  flex-basis: auto;*/
+        }
+
+        #convenio{
+            border: 3px solid #a54586;
         }
 
         .navbar-expand-lg .navbar-toggler {
@@ -36,6 +38,10 @@
         .nav a {
             font-size: 22px;
         }
+
+        #nav-quem-somos, #nav-convenios,  #nav-unidades{
+                padding: 16px;
+            }
 
         .nav-link {
             padding: 0px 8px;
@@ -62,14 +68,93 @@
 
         }
 
-        .nav-link a:hover {
-            text-align: center;
-            color: whitesmoke;
-
+        .navbar>.container {
+            justify-content: space-around;
         }
 
         .nav-link:hover {
+            text-align: center;
+            background-color: #a54478;
+            color: #fff;
+
+        }
+
+        .nav-link a:hover {
+            text-align: center;
+            background-color: #a54478;
+            color: #fff;
+
+        }
+
+        /*.nav-link:hover {
             color: pink;
+        }*/
+
+        .nav-pills .nav-link {
+            border: 3px solid #a54586;
+            color: #a54586;
+            background-color: #fff;
+            width: 200px;
+            height: 80px;
+            text-align: center;
+        }
+
+        #principal .nav .nav-link.active {
+            background-color: #fff;
+            color: #a54586;
+        }
+
+
+        h2.display-3 {
+            text-align: center;
+            margin-bottom: 32px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 2.5rem;
+        }
+
+        .dropdown-item {
+            display: inline;
+            font-weight: bold;
+
+        }
+
+        .dropdown-item:focus,
+        .dropdown-item:hover {
+            display: inline;
+            font-weight: bold;
+            background-color: #fff;
+            color: #a54478
+        }
+
+        .btn-primary {
+            color: #fff;
+            background-color: #a54586;
+        }
+
+        .btn-primary:hover {
+            background-color: #a54478;
+            --bs-btn-border-color: var(--bs-nav-link-color);
+            color: #fff
+        }
+
+        .btn.show {
+            background-color: #a54478;
+            color: #fff;
+        }
+
+        .nav-pills .nav-link {
+            border: 3px solid #a54586;
+            color: #a54586;
+            background-color: #fff;
+            width: 200px;
+            height: 80px;
+            text-align: center;
+        }
+
+        .nav-pills .nav-link:hover {
+            color: #fff;
+            background-color: #a54586;
         }
 
         .nav-pills .nav-link.active,
@@ -79,13 +164,49 @@
 
         }
 
+        header #principal {
+            background-color: #fff;
+        }
+
+        #principal .nav .nav-link.active {
+            background-color: #fff;
+            color: #a54586;
+        }
+
         .container-flex img {
             display: inline;
-            height: 18px;
+            height: 30px;
             margin-right: 2px;
             text-decoration: none;
         }
 
+
+       /* #filmes-li {
+            background-color: #fff;
+        }
+
+        #filmes-link {
+            color: #a54478;
+        }
+
+        #filmes-li:hover {
+            background-color: #a54586;
+        }
+
+        #filmes-link:hover {
+            color: #fff;
+        }*/
+
+        .dropdown-menu {
+            color: #fff;
+            background-color: #fff;
+            overflow: hidden;
+
+        }
+
+        .dropdown-menu:hover {
+            background-color: #a54586;
+        }
 
         @media screen and (max-width: 767px) {
 
@@ -102,6 +223,11 @@
 
             }
 
+            .nav {
+                --bs-nav-link-color: #fff;
+                display: block;
+            }
+
             .nav-link {
                 text-align: center;
             }
@@ -112,6 +238,21 @@
                 background-color: #a54586;
 
             }
+
+            #nav-quem-somos, #nav-principal,  #nav-unidades, #nav-servicos, #nav-profissionais, #nav-convenios{
+                margin-bottom: 32px;
+            }
+
+
+            .nav-pills .nav-link {
+                border: 3px solid #a54586;
+                color: #fff;
+                background-color: #a54586;
+                width: 100%;
+                height: 80%;
+                text-align: center;
+            }
+
 
             .navbar-expand-lg .navbar-toggler {
                 display: initial;
@@ -238,11 +379,23 @@
                 font-size: 20px;
             }
         }
+        .collapse:not(.show) {
+            display: none;
+        }
+
 
         @media screen and (min-width: 768px) and (max-width: 1023px) {
 
             header h1 {
                 font-size: 50px;
+            }
+
+            ul.nav.nav-pills {
+                display: block;
+            }
+
+            .nav a {
+                font-size: 30px;
             }
 
         }
@@ -257,21 +410,21 @@
         <i class="fa fa-whatsapp"></i>
     </a>
     <header id="principal">
-    <header>
-        <div class="navbar navbar-expand-lg">
-            <div class="container">
-                <a href="./index.html">
-                    <span class="logo-circular">
-                        <img src="./assets/images/logos/outubro_rosa logo.png" alt="espaco saude familia logo">
-                    </span>
-                </a>
-                <h1>Convênios</h1>
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-    </header>
-    <!--   <div class="menu-hamburguer">
+        <header id="header-titulo">
+            <div class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a href="./index.html">
+                        <span class="logo-circular">
+                            <img src="./assets/images/logos/outubro_rosa logo.png" alt="espaco saude familia logo">
+                        </span>
+                    </a>
+                    <h1>Convênios</h1>
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+        </header>
+        <!--   <div class="menu-hamburguer">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -287,20 +440,45 @@
                 <div class="container">
                     <ul class="nav nav-pills">
                         <li class="nav-item">
-                            <a class="nav-link" href="./index.html" target="_blank"> Página Principal</a>
+                            <a  class="nav-link" href="./index.html" target=""> Página Principal</a>
                         </li>
                         <li>
-                            <a class="nav-link" href="./unidades.html">Unidades</a>
+                            <a id="nav-quem-somos" class="nav-link" href="./sobre.html">Quem Somos</a>
                         </li>
                         <li>
-                            <a class="nav-link" href="./servicos.html">Nossos Serviços</a>
+                            <a id="nav-unidades" class="nav-link" href="./unidades.html">Unidades</a>
                         </li>
                         <li>
-                            <a class="nav-link" href="./profissionais.html">Nossos profissionais</a>
+                            <a id="nav-servicos" class="nav-link" href="./servicos.html">Nossos Serviços</a>
+                        </li>
+                        <!--
+                        <div class="btn-group">
+                            <a id="nav-servicos" class="nav-link" href="./servicos.html">Nossos Serviços
+                                <!--   <button class="btn btn-primary">
+                                    Nossos Serviços
+                                </button>
+                            </a>
+                            <button class="btn btn-primary dropdown-toggle dropdown-toggle-split"
+                                data-bs-toggle="dropdown"></button>
+                            <ul class="dropdown-menu ">
+                                <li id="filmes-li" class="dropdown-item">
+                                    <a id="filmes-link" href="./filmes.html">Filmes Indicados</a>
+                                </li>
+                                <!--<li class="dropdown-item">
+                                        <a href="#">Novo fornecedor</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#">Novo funcionário</a>
+                                    </li>
+                            </ul>
+                        </div>-->
+                        <li>
+                            <a id="nav-profissionais" class="nav-link" href="./profissionais.html">Nossos profissionais</a>
                         </li>
                         <li>
-                            <a class="nav-link" href="./convenios.html">Convênios</a>
+                            <a id="filmes-link" class="nav-link" href="./filmes.html">Filmes Recomendados</a>
                         </li>
+
 
                         <ul class="container-flex">
                             <li>
@@ -313,11 +491,11 @@
                                     <img src="./assets/images/logos/instagram-icone-icon-1.png" alt="Instagram">
                                 </a>
                             </li>
-                            <li>
+                            <!-- <li>
                                 <a href="#" target="_blank">
                                     <img src="./assets/images/logos/youtube.webp" alt="Youtube">
                                 </a>
-                            </li>
+                            </li>-->
                         </ul>
                     </ul>
                 </div>
@@ -344,16 +522,21 @@
                     <!-- <p class="h3">Psicóloga com formação em Terapia Familiar Sistêmica e Pedagogia.</p>-->
                     <!--  <div class="d-flex flex-row-reverse">-->
                     <ul id="listaRedesSociais">
-                        <li class="d-inline"><a target="_blank" href="https://www.facebook.com/espacofamiliasaude"><i
+                        <li class="d-inline "><a target="_blank" href="https://www.facebook.com/espacofamiliasaude"><i
                                     class="fa fa-facebook" aria-hidden="true"></i></a></li>
                         <li class="d-inline"><a target="_blank" href="https://www.instagram.com/espacofamiliasaude/"><i
                                     class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                        <li class="d-inline"><a target="_blank" href="https://twitter.com/"><i class="fa fa-twitter"
+                        <li class="d-inline">
+                            <a href="mailto:espacofamiliapsi@gmail.com" id="mailto" target="_blank tittle=" Entre em
+                                contato pelo email><i class="fa fa-google" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <!--   <li class="d-inline"><a target="_blank" href="https://twitter.com/"><i class="fa fa-twitter"
                                     aria-hidden="true"></i></a></li>
                         <li class="d-inline"><a target="_blank" href="https://pt.linkedin.com/"><i
                                     class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                         <li class="d-inline"><a target="_blank" href="https://www.youtube.com/"><i
-                                    class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                                    class="fa fa-youtube-play" aria-hidden="true"></i></a></li>-->
                     </ul>
                 </div>
             </div>

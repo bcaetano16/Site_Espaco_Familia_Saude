@@ -18,11 +18,9 @@
     <link rel="stylesheet" href="./profissionais.css">
     <!--Bootstrap link-->
     <style>
-          .nav {
-            --bs-nav-link-color: #fff;
+        .navbar {
+            display: inline;
         }
-
-
 
         .navbar-expand-lg .navbar-collapse {
             display: flex !important;
@@ -36,6 +34,9 @@
         .nav a {
             font-size: 22px;
         }
+        #nav-quem-somos, #nav-convenios,  #nav-unidades{
+                padding: 16px;
+            }
 
         .nav-link {
             padding: 0px 8px;
@@ -62,14 +63,85 @@
 
         }
 
-        .nav-link a:hover {
-            text-align: center;
-            color: whitesmoke;
-
+        .navbar>.container {
+            justify-content: space-around;
         }
 
         .nav-link:hover {
+            text-align: center;
+            background-color: #a54478;
+            color: #fff;
+
+        }
+
+        .nav-link a:hover {
+            text-align: center;
+            background-color: #a54478;
+            color: #fff;
+
+        }
+
+        /*.nav-link:hover {
             color: pink;
+        }*/
+
+        .nav-pills .nav-link {
+            border: 3px solid #a54586;
+            color: #a54586;
+            background-color: #fff;
+            width: 200px;
+            height: 80px;
+            text-align: center;
+        }
+
+        #principal .nav .nav-link.active {
+            background-color: #fff;
+            color: #a54586;
+        }
+
+
+        h2.display-3 {
+            text-align: center;
+            margin-bottom: 32px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 2.5rem;
+        }
+
+
+        .dropdown-item {
+            display: inline;
+            font-weight: bold;
+
+        }
+
+        .dropdown-item:focus,
+        .dropdown-item:hover {
+            display: inline;
+            font-weight: bold;
+            background-color: #fff;
+            color: #a54478
+        }
+
+        .btn-primary {
+            color: #fff;
+            background-color: #a54586;
+        }
+
+        .btn-primary:hover {
+            background-color: #a54478;
+            --bs-btn-border-color: var(--bs-nav-link-color);
+            color: #fff
+        }
+
+        .btn.show {
+            background-color: #a54478;
+            color: #fff;
+        }
+
+        .nav-pills .nav-link:hover {
+            color: #fff;
+            background-color: #a54586;
         }
 
         .nav-pills .nav-link.active,
@@ -79,13 +151,48 @@
 
         }
 
+        header #principal {
+            background-color: #fff;
+        }
+
+        #principal .nav .nav-link.active {
+            background-color: #fff;
+            color: #a54586;
+        }
+
         .container-flex img {
             display: inline;
-            height: 18px;
+            height: 30px;
             margin-right: 2px;
             text-decoration: none;
         }
-        
+
+  /* #filmes-li {
+            background-color: #fff;
+        }
+
+        #filmes-link {
+            color: #a54478;
+        }
+
+        #filmes-li:hover {
+            background-color: #a54586;
+        }
+
+        #filmes-link:hover {
+            color: #fff;
+        }*/
+
+        .dropdown-menu {
+            color: #fff;
+            background-color: #fff;
+            overflow: hidden;
+
+        }
+
+        .dropdown-menu:hover {
+            background-color: #a54586;
+        }
 
         @media screen and (max-width: 767px) {
 
@@ -129,6 +236,21 @@
                 background-color: #a54586;
 
             }
+
+            #nav-quem-somos, #nav-principal,  #nav-unidades, #nav-servicos, #nav-profissionais{
+                margin-bottom: 32px;
+            }
+
+
+            .nav-pills .nav-link {
+                border: 3px solid #a54586;
+                color: #fff;
+                background-color: #a54586;
+                width: 100%;
+                height: 80%;
+                text-align: center;
+            }
+
 
             .navbar-expand-lg .navbar-collapse {
                 display: flex !important;
@@ -178,6 +300,7 @@
                 font-weight: bold;
                 font-size: 44px;
                 text-align: center;
+                margin-bottom: 16px;
             }
 
             header span {
@@ -241,10 +364,23 @@
 
         }
 
+        .collapse:not(.show) {
+            display: none;
+        }
+
+        
         @media screen and (min-width: 768px) and (max-width: 1023px) {
 
             header h1 {
                 font-size: 44px;
+            }
+
+            ul.nav.nav-pills {
+                display: block;
+            }
+
+            .nav a {
+                font-size: 30px;
             }
 
         }
@@ -253,29 +389,30 @@
 </head>
 
 <body>
-    <a class="whatsapp-link" href="https://api.whatsapp.com/send/?phone=5538999243451&text=Ol%C3%A1%2C+estou+vindo+do+site%21&type=phone_number&app_absent=0"
-    target="_blank">
-    <i class="fa fa-whatsapp"></i>
-</a>
+    <a class="whatsapp-link"
+        href="https://api.whatsapp.com/send/?phone=5538999243451&text=Ol%C3%A1%2C+estou+vindo+do+site%21&type=phone_number&app_absent=0"
+        target="_blank">
+        <i class="fa fa-whatsapp"></i>
+    </a>
 
     <header id="principal">
-    <header>
-        <div class="navbar navbar-expand-lg">
-            <div class="container">
+        <header>
+            <div class="navbar navbar-expand-lg">
+                <div class="container">
 
-                <a href="./index.html">
-                    <span class="logo-circular">
-                        <img src="./assets/images/logos/outubro_rosa logo.png" alt="espaco saude familia logo">
-                    </span>
-                </a>
+                    <a href="./index.html">
+                        <span class="logo-circular">
+                            <img src="./assets/images/logos/outubro_rosa logo.png" alt="espaco saude familia logo">
+                        </span>
+                    </a>
 
-                <h1>Nossos Profissionais</h1>
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-    </header>
-    <!--   <div class="menu-hamburguer">
+                    <h1>Nossos Profissionais</h1>
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+        </header>
+        <!--   <div class="menu-hamburguer">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -291,19 +428,42 @@
                 <div class="container">
                     <ul class="nav nav-pills">
                         <li class="nav-item">
-                            <a class="nav-link" href="./index.html" target="_blank"> Página Principal</a>
+                            <a  class="nav-link" href="./index.html" target=""> Página Principal</a>
                         </li>
                         <li>
-                            <a class="nav-link" href="./sobre.html" target="_blank"> Quem Somos</a>
+                            <a id="nav-quem-somos" class="nav-link" href="./sobre.html" target=""> Quem Somos</a>
                         </li>
                         <li>
-                            <a class="nav-link" href="./unidades.html">Unidades</a>
+                            <a id="nav-unidades" class="nav-link" href="./unidades.html">Unidades</a>
                         </li>
                         <li>
-                            <a class="nav-link" href="./servicos.html">Nossos Serviços</a>
+                            <a id="nav-servicos" class="nav-link" href="./servicos.html">Nossos Serviços</a>
+                        </li>
+                    <!--    <div class="btn-group">
+                            <a id="nav-servicos" class="nav-link" href="./servicos.html">Nossos Serviços
+                                <!--   <button class="btn btn-primary">
+                                    Nossos Serviços
+                                </button>
+                            </a>
+                            <button class="btn btn-primary dropdown-toggle dropdown-toggle-split"
+                                data-bs-toggle="dropdown"></button>
+                            <ul class="dropdown-menu ">
+                                <li id="filmes-li" class="dropdown-item">
+                                    <a id="filmes-link" href="./filmes.html">Filmes Indicados</a>
+                                </li>
+                                <!--<li class="dropdown-item">
+                                        <a href="#">Novo fornecedor</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#">Novo funcionário</a>
+                                    </li>
+                            </ul>
+                        </div>-->
+                        <li>
+                            <a id="nav-convenios" class="nav-link" href="./convenios.html">Convênios</a>
                         </li>
                         <li>
-                            <a class="nav-link" href="./convenios.html">Convênios</a>
+                            <a id="filmes-link" class="nav-link" href="./filmes.html">Filmes Recomendados</a>
                         </li>
 
                         <ul class="container-flex">
@@ -317,22 +477,22 @@
                                     <img src="./assets/images/logos/instagram-icone-icon-1.png" alt="Instagram">
                                 </a>
                             </li>
-                            <li>
+                            <!-- <li>
                                 <a href="#" target="_blank">
                                     <img src="./assets/images/logos/youtube.webp" alt="Youtube">
                                 </a>
-                            </li>
+                            </li>-->
                         </ul>
                     </ul>
                 </div>
             </nav>
 
         </header>
-</header>
+    </header>
     <section id="profissionais" style=background-color:#fff>
         <div class="container"></br>
-            <p><b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspTemos uma ampla equipe de atendimento: 
-                22 psicólogos, Médica homepata, Psiquiatra, Pediatra, Fonoaudiologa e Nutricionistas.</b></p>
+            <p><b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspTemos uma ampla equipe de atendimento:
+                    22 psicólogos, Médica homepata, Psiquiatra, Pediatra, Fonoaudiologa e Nutricionistas.</b></p>
             <div class="profissionais-img">
                 <div>
                     <img src="./assets/images/Profissionais espaco familia/WhatsApp Image 2022-10-14 at 8.49.39 AM.jpeg"
@@ -385,12 +545,17 @@
                                     class="fa fa-facebook" aria-hidden="true"></i></a></li>
                         <li class="d-inline"><a target="_blank" href="https://www.instagram.com/espacofamiliasaude/"><i
                                     class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                        <li class="d-inline"><a target="_blank" href="https://twitter.com/"><i class="fa fa-twitter"
+                        <li class="d-inline">
+                            <a href="mailto:espacofamiliapsi@gmail.com" id="mailto" target="_blank tittle=" Entre em
+                                contato pelo email><i class="fa fa-google" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <!--   <li class="d-inline"><a target="_blank" href="https://twitter.com/"><i class="fa fa-twitter"
                                     aria-hidden="true"></i></a></li>
                         <li class="d-inline"><a target="_blank" href="https://pt.linkedin.com/"><i
                                     class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                         <li class="d-inline"><a target="_blank" href="https://www.youtube.com/"><i
-                                    class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                                    class="fa fa-youtube-play" aria-hidden="true"></i></a></li>-->
                     </ul>
                 </div>
             </div>

@@ -17,7 +17,6 @@ html,
 body {
     height: 100%;
     overflow-x: hidden;
-    background-color: #DDA0DD;
 }
 
 .container {
@@ -97,18 +96,25 @@ header h1 {
 }
 
 header>.container,
-footer>.container,
+footer>.container
+{
+display: block;
+justify-content: space-between;
+align-items: center;
+}
+
 #em-destaque>.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border: 3px solid #a54586;
 }
 
 header nav {
-    background-color: #a54586;
+    /*  background-color: #a54586;*/
     padding: 16px 0;
     font-weight: bold;
-    display: flex;
+
 }
 
 /*Seções*/
@@ -128,7 +134,7 @@ nav li a {
 }
 
 nav li a:hover {
-    color: #DDA0DD;
+    color: none;
 }
 
 .menu,
@@ -143,7 +149,7 @@ nav li a:hover {
 ul.menu {
 
     flex-wrap: wrap;
-    justify-content: space-evenly;
+  /*  justify-content: space-evenly;
     /* ao ocupar toda a largura da tela, cria-se uma nova linha*/
 }
 
@@ -273,14 +279,15 @@ ul li {
     display: flex;
     max-height: 800px;
     justify-content: center;
+    border: 3px solid #a54586;
 }
 
 .espaco p {
     text-align: justify;
     width: 500px;
-    color: #fff;
-    margin-top: 32px;
+    color: #a54586;
     font-size: 22px;
+    margin-right: 32px;
 }
 
 .espaco #unid-premier {
@@ -289,23 +296,15 @@ ul li {
 }
 
 
-/*section h2 {
-    margin-bottom: 16px;
-    font-size: 20px;
-    align-items: flex-start;
-    margin-top: 16px;
-    color: #fff;
-}*/
-
 section p {
     max-height: 400px;
     margin-right: 48px;
     text-align: justify;
 }
 
-#em-destaque {
+/*#em-destaque {
     border: 3px solid #a54586;
-}
+}*/
 
 #em-destaque h1 {
     text-align: center;
@@ -384,7 +383,7 @@ input#email.form-control {
     max-width: 100%;
 }
 
-section#contact{
+section#contact {
     width: 100%;
 }
 
@@ -433,14 +432,12 @@ section #contact h2 {
     max-height: 442px;
     overflow-y: hidden;
     overflow-x: hidden;
-    margin-right: 16px;
-    margin-left: 16px;
 
 }
 
 .carousel-2 img {
     max-height: 200px;
-    height: 40px;
+    height: 60px;
 }
 
 
@@ -618,9 +615,7 @@ footer {
     background-color: #DDA0DD;
     color: #fff;
     text-align: center;
-    margin-top: 32px;
     font-size: 12px;
-    margin-bottom: 16px;
 }
 
 /*#listaRedesSociais {
@@ -663,6 +658,7 @@ footer {
 
     header h1 {
         font-size: 50px;
+        margin-bottom: 16px;
     }
 
     header>.container,
@@ -699,7 +695,7 @@ footer {
         font-size: 24px;
     }
 
-    .nav{
+    .nav {
         --bs-nav-link-padding-y: 0.1rem;
         --bs-nav-link-padding-x: 0.1rem;
     }
@@ -772,13 +768,6 @@ footer {
         margin-top: 8px;
         margin-bottom: 8px;
         font-size: 20px;
-    }
-
-    .menu-hamburguer {
-        width: 32px;
-        margin-left: 125px;
-        margin-top: 24px;
-        margin-bottom: 32px;
     }
 
     .botao-menu {
@@ -879,15 +868,6 @@ footer {
         height: 80%;
     }
 
-    #alinhamento {
-        max-width: 600px;
-        width: 90%;
-        margin-right: 32px;
-        margin-left: 16px;
-        border-radius: 8px;
-        margin-top: 24px;
-    }
-
     /* .menu>li {
         clear: both;
     }*/
@@ -902,7 +882,7 @@ footer {
 
     .espaco p {
         text-align: justify;
-        color: #fff;
+        color: #a54586;
         font-size: 14px;
         margin-left: 20px;
         margin-bottom: 36px;
@@ -995,14 +975,14 @@ footer {
 
     }
 
-#contact form {
-    text-decoration: none;
-    color: #fff;
-    font-size: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-     width: 100%; 
-    margin-bottom: 10px;
-}
+    #contact form {
+        text-decoration: none;
+        color: #fff;
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        width: 100%;
+        margin-bottom: 10px;
+    }
 
     .carousel-2 {
         position: relative;
@@ -1191,7 +1171,7 @@ footer {
         font-weight: bold;
         display: flex;
     }
-    
+
     /*Seções*/
     nav li {
         list-style: none;
@@ -1202,16 +1182,16 @@ footer {
         font-weight: bold;
         text-transform: uppercase;
     }
-    
+
     nav li a {
         color: #fff;
         text-decoration: solid;
     }
-    
-    nav li a:hover {
+
+    /*nav li a:hover {
         color: #DDA0DD;
-    }
-    
+    }*/
+
     .menu,
     .menu>li {
         display: inline;
@@ -1220,20 +1200,20 @@ footer {
         margin-bottom: 8px;
         font-size: 20px;
     }
-    
+
     ul.menu {
-    
+
         flex-wrap: wrap;
         justify-content: space-evenly;
         /* ao ocupar toda a largura da tela, cria-se uma nova linha*/
     }
 
-    ul.nav.nav-pills{
+    /*ul.nav.nav-pills{
         width: 800px;
-    }
-    
+    }*/
+
     ul li {
-    
+
         max-width: 25%;
         position: relative;
         max-height: 280px;
@@ -1241,7 +1221,7 @@ footer {
         font-style: normal;
         /*Cortar as imagens conforme configuração eixo y = eixo vertical*/
     }
-    
+
     .social-links li {
         display: inline;
         height: 18px;
@@ -1359,15 +1339,13 @@ footer {
 
     }
 
-
-    section#contact{
+    section#contact {
         width: 50%;
     }
 
     #listaRedesSociais {
         font-size: 24px;
         margin-top: 16px;
-        margin-right: 64px;
     }
 
     #listaRedesSociais .d-inline i {
@@ -1421,7 +1399,11 @@ footer {
 
     }
 
-    div.carousel-inner .w-100{
+    .container-flex {
+        display: none;
+    }
+
+    div.carousel-inner .w-100 {
         margin-top: 32px;
     }
 

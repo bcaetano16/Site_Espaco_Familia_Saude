@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Manrope:wght@600&family=Open+Sans:wght@400;700&family=Qwitcher+Grypen:wght@700&family=Roboto:wght@700&family=Titillium+Web&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Manrope:wght@600&family=Open+Sans:wght@400;700&family=Qwitcher+Grypen:wght@700&family=Roboto:wght@700&family=Titillium+Web&display=swap"
         rel="stylesheet">
-      
-    <!--<link rel="stylesheet" href="./assets/main.css">-->
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
@@ -20,11 +19,9 @@
     <link rel="stylesheet" href="./assets/servicos.css">
     <!--Bootstrap link-->
     <style>
-           .nav {
-            --bs-nav-link-color: #fff;
+        .navbar {
+            display: inline;
         }
-
-
 
         .navbar-expand-lg .navbar-collapse {
             display: flex !important;
@@ -33,6 +30,12 @@
 
         .navbar-expand-lg .navbar-toggler {
             display: block;
+        }
+
+        #nav-quem-somos,
+        #nav-convenios,
+        #nav-unidades {
+            padding: 16px;
         }
 
         .nav a {
@@ -64,30 +67,124 @@
 
         }
 
-        .nav-link a:hover {
-            text-align: center;
-            color: whitesmoke;
-
+        .navbar>.container {
+            justify-content: space-around;
         }
 
         .nav-link:hover {
+            text-align: center;
+            background-color: #a54478;
+            color: #fff;
+
+        }
+
+        .nav-link a:hover {
+            text-align: center;
+            background-color: #a54478;
+            color: #fff;
+
+        }
+
+        /*.nav-link:hover {
             color: pink;
+        }*/
+
+        .nav-pills .nav-link {
+            border: 3px solid #a54586;
+            color: #a54586;
+            background-color: #fff;
+            height: 80px;
+            width: 200px;
+            text-align: center;
+        }
+
+        #principal .nav .nav-link.active {
+            background-color: #fff;
+            color: #a54586;
+        }
+
+
+        h2.display-3 {
+            text-align: center;
+            margin-bottom: 32px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 2.5rem;
+        }
+
+
+        .dropdown-item {
+            display: inline;
+            font-weight: bold;
+
+        }
+
+        .btn-primary {
+            color: #fff;
+            background-color: #a54586;
+        }
+
+        .btn-primary:hover {
+            background-color: #a54478;
+            --bs-btn-border-color: var(--bs-nav-link-color);
+            color: #fff
+        }
+
+        .btn.show {
+            background-color: #a54478;
+            color: #fff;
+        }
+
+        .nav-pills .nav-link:hover {
+            color: #fff;
+            background-color: #a54586;
         }
 
         .nav-pills .nav-link.active,
         .nav-pills .show>.nav-link {
             color: #fff;
             background-color: #a54586;
+        }
 
+        header #principal {
+            background-color: #fff;
         }
 
         .container-flex img {
             display: inline;
-            height: 18px;
+            height: 30px;
             margin-right: 2px;
             text-decoration: none;
         }
-        
+
+
+         /* #filmes-li {
+            background-color: #fff;
+        }
+
+        #filmes-link {
+            color: #a54478;
+        }
+
+        #filmes-li:hover {
+            background-color: #a54586;
+        }
+
+        #filmes-link:hover {
+            color: #fff;
+        }*/
+
+        .dropdown-menu {
+            color: #fff;
+            background-color: #fff;
+            overflow: hidden;
+
+        }
+
+        .dropdown-menu:hover {
+            background-color: #a54586;
+        }
+
         @media screen and (max-width: 767px) {
 
 
@@ -100,9 +197,7 @@
 
             }
 
-
             .navbar>.container {
-
                 justify-content: center;
                 position: sticky;
                 top: 0;
@@ -110,13 +205,15 @@
                 background-color: #fff;
                 display: block;
 
+            }
 
+            .navbar-expand-lg .navbar-collapse {
+                display: flex !important;
+                /*  flex-basis: auto;*/
             }
 
             .navbar-expand-lg .navbar-toggler {
-                display: initial;
-                margin-top: 16px;
-                margin-bottom: 16px;
+                display: inline;
             }
 
 
@@ -129,6 +226,26 @@
                 color: #fff;
                 background-color: #a54586;
 
+            }
+
+
+            #nav-quem-somos,
+            #nav-principal,
+            #nav-unidades,
+            #nav-servicos,
+            #nav-profissionais,
+            #nav-convenios {
+                margin-bottom: 32px;
+            }
+
+
+            .nav-pills .nav-link {
+                border: 3px solid #a54586;
+                color: #fff;
+                background-color: #a54586;
+                width: 100%;
+                height: 80%;
+                text-align: center;
             }
 
             .navbar-expand-lg .navbar-collapse {
@@ -155,7 +272,6 @@
                 width: 1.5em;
                 height: 1.5em;
                 vertical-align: middle;
-                display: flex;
             }
 
 
@@ -179,6 +295,7 @@
                 font-weight: bold;
                 font-size: 50px;
                 text-align: center;
+                margin-bottom: 16px;
             }
 
             header span {
@@ -217,11 +334,12 @@
             }
 
             ul li {
-                max-width: 25%;
+                max-width: 100%;
                 position: relative;
                 max-height: 280px;
                 overflow-y: hidden;
                 font-style: normal;
+                margin-top: 16px;
             }
 
             /*Cortar as imagens conforme configuração eixo y = eixo vertical*/
@@ -231,82 +349,74 @@
                 font-size: 25px;
             }
 
-            .menu,
-            .menu>li {
-                display: block;
-                max-width: 400px;
-                margin-top: 8px;
-                margin-bottom: 8px;
-                font-size: 20px;
-            }
-
 
             /*Cortar as imagens conforme configuração eixo y = eixo vertical*/
 
         }
 
+        
 
         @media screen and (min-width: 768px) and (max-width: 1023px) {
 
-            header h1{
+
+            header h1 {
                 font-size: 50px;
+            }
+
+            ul.nav.nav-pills {
+                display: block;
+            }
+
+            .nav a {
+                font-size: 30px;
             }
 
         }
     </style>
     <title>Servicos</title>
 </head>
+
 <body>
-    <a class="whatsapp-link" href="https://api.whatsapp.com/send/?phone=5538999243451&text=Ol%C3%A1%2C+estou+vindo+do+site%21&type=phone_number&app_absent=0"
-        target="_blank">
-        <i class="fa fa-whatsapp"></i>
-    </a>
+
+    <header id="principal" class="navbar navbar-expand-lg p-4">
 
 
-    <header id="principal">
-    <header>
-        <div class="navbar navbar-expand-lg">
-            <div class="container">
-                <a href="./index.html">
-                    <span class="logo-circular">
-                        <img src="./assets/images/logos/outubro_rosa logo.png" alt="espaco saude familia logo">
-                    </span>
-                </a>
-                <h1>Nossos Serviços</h1>
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-    </header>
-    <!--   <div class="menu-hamburguer">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-        <div class="botao-menu">
-            <button type="button">
-                Abrir menu
-            </button>
-        </div>-->
+        <header>
+            <div class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a href="./index.html">
+                        <span class="logo-circular">
+                            <img src="./assets/images/logos/outubro_rosa logo.png" alt="espaco saude familia logo">
+                        </span>
+                    </a>
+                    <h1>Nossos Serviços</h1>
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+        </header>
         <header>
             <nav id="menu">
                 <div class="container">
                     <ul class="nav nav-pills">
-                        <li class="nav-item">
-                            <a class="nav-link" href="./index.html" target="_blank"> Página Principal</a>
+                        <li class="nav-item  fw-bold ">
+                            <a class="nav-link" href="./index.html" target=""> Página Principal</a>
                         </li>
-                        <li>
-                            <a class="nav-link" href="./sobre.html" target="_blank"> Quem Somos</a>
+                        <li class="nav-item  fw-bold">
+                            <a id="nav-quem-somos" class="nav-link" href="./sobre.html" target=""> Quem Somos</a>
                         </li>
-                        <li>
-                            <a class="nav-link" href="./unidades.html">Unidades</a>
+
+                        <li class="nav-item  fw-bold">
+                            <a id="nav-unidades" class="nav-link" href="./unidades.html">Unidades</a>
                         </li>
-                        <li>
+                        <li class="nav-item  fw-bold">
                             <a class="nav-link" href="./profissionais.html">Nossos profissionais</a>
                         </li>
-                        <li>
-                            <a class="nav-link" href="./convenios.html">Convênios</a>
+                        <li class="nav-item  fw-bold">
+                            <a id="nav-convenios" class="nav-link" href="./convenios.html">Convênios</a>
+                        </li>
+                        <li class="nav-item  fw-bold">
+                            <a class="nav-link" href="./filmes.html" target=""> Filmes Recomendados</a>
                         </li>
 
                         <ul class="container-flex">
@@ -320,11 +430,11 @@
                                     <img src="./assets/images/logos/instagram-icone-icon-1.png" alt="Instagram">
                                 </a>
                             </li>
-                            <li>
+                            <!-- <li>
                                 <a href="#" target="_blank">
                                     <img src="./assets/images/logos/youtube.webp" alt="Youtube">
                                 </a>
-                            </li>
+                            </li>-->
                         </ul>
                     </ul>
                 </div>
@@ -332,70 +442,102 @@
 
         </header>
 
-</header>
+    </header>
+    <section class="lista-servicos">
         <div class="container">
 
-        
-    <section class="lista-servicos">
-        <div class="lista">
-        <div>
-            <strong>Atendimento psicológico;</strong>
-        </div>
-        <div>
-            <strong>Atendimento médico</strong>
-        </div>
-        <div>
-            <strong>Avaliação psicológica;</strong>
-        </div>
-        <div>
-            <strong>Terapia infantil;</strong>
-        </div>
-        <div>
-            <strong>Avaliação e acompanhamento com nutricionista;</strong>
-        </div>
-        <div>
-            <strong>Avaliação para cirurgia bariátrica;</strong>
-        </div>
-        <div>
-            <strong>Avaliação para planejamento familiar;</strong>
-        </div>
-        <div>
-            <strong>Avaliação e acompanhamento psicopedagógico;</strong>
-        </div>
-        <div>
-            <strong>Terapia individual, casal e familiar;</strong>
-        </div>
-        <div>
-            <strong>Palestras;</strong>
-        </div>
-        <div>
-            <strong>Ludoterapia;</strong>
-        </div>
-        <div>
-            <strong>Supervisão clínica;</strong>
-        </div>
-        <div>
-            <strong>Orientação profissional;</strong>
-        </div>
-        <div>
-            <strong>Avaliação de bioimpedância;</strong>
-        </div>
-        <div>
-            <strong>Estética e aromaterapia;</strong>
-        </div>
-        <div>
-            <strong>Avaliação e acompanhamento com fonoaudiólogo;</strong>
-        </div>
-        <div>
-            <strong>Avaliação neuropsicológica;</strong>
-        </div>
-        <div>
-            <strong>Reabilitação vestibular;</strong>
-        </div>
-      </div>
+            <div class="lista-psi ">
+                <h2 class="sticky-top"><strong>Psicologia</strong></h2>
+                <ul>
+                    <li>
+                        <strong>Atendimento psicológico, individual, casal e família;</strong>
+                    </li>
+                    <li>
+                        <strong>Psicoterapia infantil/Ludoterapia;</strong>
+                    </li>
+                    <li>
+                        <strong>Psicoterapia de adolescentes;</strong>
+                    </li>
+                    <li>
+                        <strong>Psicoterapia online/remota;</strong>
+                    </li>
+                    <li>
+                        <strong>Avaliação psicológica;</strong>
+                    </li>
+                    <li>
+                        <strong>Avaliação para Planejamento familiar/laqueadura e vasectomia;</strong>
+                    </li>
+                    <li>
+                        <strong>Avaliação e acompanhamento psicopedagógico;</strong>
+                    </li>
+                    <li>
+                        <strong>Orientação Profissional;</strong>
+                    </li>
+                    <li>
+                        <strong>Supervisão clínica;</strong>
+                    </li>
+                    <li>
+                        <strong>Palestras;</strong>
+                    </li>
+                    <li>
+                        <strong>Avaliação neuropsicológica;</strong>
+                    </li>
+                </ul>
+            </div>
 
-</div>
-</section>
+
+            <div class="lista-nutri">
+                <h2 class="sticky-top"><strong> Nutrição</strong></h2>
+                <ul>
+                    <li>
+                        <strong>Consulta nutricional;</strong>
+                    </li>
+                    <li>
+                        <strong>Avaliação e acompanhamento para cirurgia bariátrica;</strong>
+                    </li>
+                    <li>
+                        <strong>Acompanhamento nutricional;</strong>
+                    </li>
+                    <li>
+                        <strong>Grupo de acompanhamento nutricional e emagrecimento;</strong>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="lista-fono">
+                <h2 class="sticky-top">
+                    <strong> Fonoaudiologia</strong>
+                </h2>
+
+                <ul>
+                    <li>
+                        <strong>Avaliação e acompanhamento com fonoaudiólogo;</strong>
+                    </li>
+                    <li>
+                        <strong>Reabilitação vestibular;</strong>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="lista-med">
+                <h2 class="sticky-top"><strong>Medicina</strong></h2>
+                <ul>
+                    <li>
+                        <strong>Consulta e acompanhamento pediátrico;</strong>
+                    </li>
+                    <li>
+                        <strong>Consulta e acompanhamento homeopático;</strong>
+                    </li>
+                    <li>
+                        <strong>Consulta e acompanhamento psiquiátrico;</strong>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </section>
     <div class="container">
 
         <footer id="responsibilidade-tecnica">
@@ -411,29 +553,39 @@
                                     class="fa fa-facebook" aria-hidden="true"></i></a></li>
                         <li class="d-inline"><a target="_blank" href="https://www.instagram.com/espacofamiliasaude/"><i
                                     class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                        <li class="d-inline"><a target="_blank" href="https://twitter.com/"><i class="fa fa-twitter"
+                        <li class="d-inline">
+                            <a href="mailto:espacofamiliapsi@gmail.com" id="mailto" target="_blank tittle=" Entre em
+                                contato pelo email><i class="fa fa-google" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <!--   <li class="d-inline"><a target="_blank" href="https://twitter.com/"><i class="fa fa-twitter"
                                     aria-hidden="true"></i></a></li>
                         <li class="d-inline"><a target="_blank" href="https://pt.linkedin.com/"><i
                                     class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                         <li class="d-inline"><a target="_blank" href="https://www.youtube.com/"><i
-                                    class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                                    class="fa fa-youtube-play" aria-hidden="true"></i></a></li>-->
                     </ul>
                 </div>
             </div>
             <!-- </div>-->
-
+            <a class="whatsapp-link"
+                href="https://api.whatsapp.com/send/?phone=5538999243451&text=Ol%C3%A1%2C+estou+vindo+do+site%21&type=phone_number&app_absent=0"
+                target="_blank">
+                <i class="fa fa-whatsapp"></i>
+            </a>
     </div>
     </footer>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./assets/lib/bootstrap.bundle.min.js"></script>
-    <script>  $(document).ready(function () {
+    <!-- <script>  $(document).ready(function () {
 
-           $('.menu-hamburguer').click(function () {
+            $('.menu-hamburguer').click(function () {
                 $('nav').slideToggle();
             })
 
-        }) </script>
+        }) </script>-->
 </body>
+
 </html>

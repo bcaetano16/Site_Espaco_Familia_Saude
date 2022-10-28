@@ -17,7 +17,7 @@ body {
     width: 95%;
     margin: 0 auto;
     flex-wrap: wrap;
-    
+
 }
 
 header {
@@ -58,6 +58,10 @@ header h1 {
     font-size: 64px;
 }
 
+h1 img {
+    height: 60px;
+}
+
 header>.container,
 footer>.container,
 #em-destaque>.container {
@@ -68,18 +72,16 @@ footer>.container,
 
 
 header nav {
-    background-color: #a54586;
-    padding: 16px 0;
-    font-weight: bold;
-    display: none;
-
-}
+    /*  background-color: #a54586;*/
+      padding: 16px 0;
+      font-weight: bold;
+  
+  }
 
 ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-   
+
     /* ao ocupar toda a largura da tela, cria-se uma nova linha*/
 }
 
@@ -87,8 +89,8 @@ ul li {
     max-width: 25%;
     position: relative;
     max-height: 280px;
-    overflow-y: hidden;
-    font-style:normal;
+   /* overflow-y: hidden;*/
+    font-style: normal;
     /*Cortar as imagens conforme configuração eixo y = eixo vertical*/
 }
 
@@ -97,30 +99,6 @@ ul li {
 nav li a {
     color: #fff;
     text-decoration: solid;
-}
-
-nav li a:hover {
-    color: #DDA0DD;
-}
-
-button {
-    display: none;
-}
-
-.menu-hamburguer {
-    width: 32px;
-    align-content: center;
-}
-
-.menu-hamburguer span {
-    height: 4px;
-    width: 100%;
-    background-color: #a54586;
-    display: block;
-    margin-bottom: 4px;
-    margin-left: 16px;
-    cursor: pointer;
-    border-radius: 16px;
 }
 
 section {
@@ -138,14 +116,6 @@ section h2 {
     font-size: 30px;
 }
 
-
-header nav {
-    background-color: #a54586;
-    padding: 16px 0;
-    font-weight: bold;
-    display: flex;
-}
-
 nav li {
     display: flex;
     font-size: 20px;
@@ -159,36 +129,54 @@ nav li a {
     text-decoration: none;
 }
 
-#carousel-unidade3 {
-    height: 80%;
-    width: 80%;
-    position: relative;
-    max-width: 100%;
+
+.carousel-fade .carousel-item.active {
+    z-index: 0;
+    opacity: 1;
+    text-align: center;
+}
+
+.carousel-item {
+    width: 100%;
+    height: 700px;
+}
+
+.carousel-inner div {
+    margin-top: 32px;
+    max-width: 650px;
     max-height: 100%;
+
+}
+
+#carousel-exemplo {
+    max-width: 650px;
+    max-height: 750px;
+    border-radius: 16px;
+    margin-bottom: 32px;
     overflow-y: hidden;
     overflow-x: hidden;
-    margin-right: 16px;
-    border-radius: 8px;
-    margin-top: 32px;
-    margin-left: 100px;
 }
 
-#carousel-unidade3 img {
-    width: 600px;
-    height: 600px;
+#carousel-exemplo img {
+    max-width: 650px;
+    max-height: 850px;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    margin-bottom: 32px;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
-
 
 #unid-premier {
-    margin-right: 32px;
+    /*margin-right: 32px;*/
     width: 90%;
     height: 700px;
 }
 
 #unid-pimenta {
-    width: 90%;
+    width: 100%;
     height: 700px;
-    margin-left: 50px;
 }
 
 .articles {
@@ -215,20 +203,8 @@ nav li a {
 
 .articles article a span {
     color: #a54586;
-    display: block;
 }
 
-.articles article #endereco2 {
-    margin-left: 50px;
-}
-
-
-.articles .h3,
-h3 {
-    font-size: calc(1.8rem + .6vw);
-    color: #a54586;
-    margin-top: 32px;
-}
 
 #unidades #projeto3 .h3,
 h3 {
@@ -237,19 +213,13 @@ h3 {
 }
 
 #projeto3 {
-    margin-top: 32px;
-}
-
-.articles h3 .h3 {
-    margin-left: 100px;
-    text-align: center;
+    margin-top: 64px;
+    color: #a54586;
 }
 
 
 #listaRedesSociais {
     font-size: 24px;
-    margin-right: 64px;
-    margin-left: 10px;
     display: inline;
 }
 
@@ -345,7 +315,7 @@ footer {
     /* display mais blockado*/
 
     .container {
-        max-width: 90%;
+        max-width: 95%;
     }
 
     .container {
@@ -374,37 +344,51 @@ footer {
 
     header nav {
         background-color: #a54586;
-        padding: 0 0;
+        padding: 16px 0;
         font-weight: bold;
-        text-decoration: none;
-
     }
-
-    nav li {
+    
+    ul {
         display: flex;
-        font-size: 18px;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        /* ao ocupar toda a largura da tela, cria-se uma nova linha*/
+    }
+    
+    ul li {
+        max-width: 25%;
+        position: relative;
+        max-height: 280px;
+        overflow-y: hidden;
+        font-style:normal;
+        /*Cortar as imagens conforme configuração eixo y = eixo vertical*/
+    }
+    
+    ul li a{
+        font-size: 25px;
+    
+    }
+    
+    
+    nav li a:hover{
+        color: #C0C0C0;
+    }
+    nav li {
+        list-style: none;
+        display: inline;
+        font-size: 20px;
         margin-right: 16px;
         font-weight: bold;
         text-transform: uppercase;
-        padding-right: 24px;
     }
-
+    
     nav li a {
         color: #fff;
         text-decoration: none;
     }
 
-    ul {
-        display: inline;
-        flex-wrap: wrap;
-        /* ao ocupar toda a largura da tela, cria-se uma nova linha*/
-    }
-
-    ul li {
-        max-width: 25%;
-        position: relative;
-        overflow-y: hidden;
-        /*Cortar as imagens conforme configuração eixo y = eixo vertical*/
+    h1 img {
+        display: none;
     }
 
     header span {
@@ -418,7 +402,14 @@ footer {
         cursor: pointer;
     }
 
-   
+    ul.container-flex{
+        display: none;
+    }
+
+    .nav {
+        --bs-nav-link-color: #fff;
+        display: block;
+    }
 
     .menu,
     .menu>li {
@@ -429,32 +420,6 @@ footer {
         margin-bottom: 8px;
     }
 
-
-    .menu-hamburguer {
-        margin-right: 32px;
-        width: 32px;
-        margin-top: 8px;
-    }
-
-    .menu-hamburguer span {
-        height: 4px;
-        width: 100%;
-        background-color: #a54586;
-        display: block;
-        margin-top: 8px;
-        cursor: pointer;
-        border-radius: 16px;
-        margin-right: 16px;
-    }
-
-    button {
-        background-color: rgb(199, 52, 162);
-        border: none;
-        font-weight: bold;
-        color: #fff;
-        cursor: pointer;
-        display: none;
-    }
 
     form button:hover {
         background-color: #FF00FF;
@@ -485,23 +450,42 @@ footer {
         text-align: center;
     }
 
-    #carousel-unidade3 {
-        height: 70%;
+    .carousel-fade .carousel-item.active {
+        z-index: 0;
+        opacity: 1;
+        text-align: center;
+    }
+    
+    .carousel-item {
         width: 100%;
-        position: relative;
-        max-width: 700px;
-        max-height: 500px;
+        height: 700px;
+    }
+    
+    .carousel-inner div {
+        margin-top: 32px;
+        max-width: 650px;
+        max-height: 100%;
+    
+    }
+    
+    #carousel-exemplo {
+        max-width: 650px;
+        max-height: 550px;
+        border-radius: 16px;
+        margin-bottom: 32px;
         overflow-y: hidden;
         overflow-x: hidden;
-        margin-right: 16px;
-        border-radius: 8px;
-        margin-top: 32px;
-        margin-left: 0;
     }
-
-    #carousel-unidade3 img {
-        height: 400px;
-        width: 600px;
+    
+    #carousel-exemplo img {
+        max-width: 650px;
+        max-height: 550px;
+        width: 100%;
+        height: 100%;
+        border-radius: 16px;
+        margin-bottom: 32px;
+        overflow-y: hidden;
+        overflow-x: hidden;
     }
 
 
@@ -539,8 +523,7 @@ footer {
 
     #listaRedesSociais {
         font-size: 24px;
-        margin-right: 64px;
-        margin-left: 10px;
+       /* margin-left: 10px;*/
     }
 
     #listaRedesSociais .d-inline i {
@@ -613,7 +596,7 @@ footer {
         font-weight: bold;
         display: flex;
     }
-    
+
     /*Seções*/
     nav li {
         list-style: none;
@@ -624,16 +607,16 @@ footer {
         font-weight: bold;
         text-transform: uppercase;
     }
-    
+
     nav li a {
         color: #fff;
         text-decoration: solid;
     }
-    
+
     nav li a:hover {
         color: #DDA0DD;
     }
-    
+
     .menu,
     .menu>li {
         display: inline;
@@ -642,20 +625,20 @@ footer {
         margin-bottom: 8px;
         font-size: 20px;
     }
-    
+
     ul.menu {
-    
+
         flex-wrap: wrap;
         justify-content: space-evenly;
         /* ao ocupar toda a largura da tela, cria-se uma nova linha*/
     }
 
-    ul.nav.nav-pills{
+    ul.nav.nav-pills {
         width: 800px;
     }
-    
+
     ul li {
-    
+
         max-width: 25%;
         position: relative;
         max-height: 280px;
@@ -682,9 +665,12 @@ footer {
         margin-left: 32px;
     }
 
+    /*ICONES REDES SOCIAIS CABEÇALHO NAV*/
+    .container-flex{
+        display: none;
+    }
     #listaRedesSociais {
         font-size: 28px;
-        margin-right: 64px;
     }
 
     #listaRedesSociais .d-inline i {

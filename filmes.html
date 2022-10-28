@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Manrope:wght@600&family=Open+Sans:wght@400;700&family=Qwitcher+Grypen:wght@700&family=Roboto:wght@700&family=Titillium+Web&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="./assets/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./assets/filmes.css">
+
+    <style>
+        .navbar {
+            display: inline;
+        }
+
+        .navbar-expand-lg .navbar-collapse {
+            display: flex !important;
+            /*  flex-basis: auto;*/
+        }
+
+        .navbar-expand-lg .navbar-toggler {
+            display: block;
+        }
+
+        #nav-quem-somos,
+        #nav-convenios,
+        #nav-unidades {
+            padding: 16px;
+        }
+
+        .nav a {
+            font-size: 22px;
+        }
+
+        .nav-link {
+            padding: 0px 8px;
+        }
+
+
+        .navbar-toggler-icon {
+            display: inline-block;
+            width: 1.5em;
+            height: 1.5em;
+            vertical-align: middle;
+        }
+
+        .navbar-toggler:hover {
+            color: #a54586;
+        }
+
+        .navbar-nav .nav-link {
+            text-transform: uppercase;
+        }
+
+        .navbar-nav .nav-link.active {
+            color: #fff;
+
+        }
+
+        .navbar>.container {
+            justify-content: space-around;
+        }
+
+        .nav-link:hover {
+            text-align: center;
+            background-color: #a54478;
+            color: #fff;
+
+        }
+
+
+        #nav-quem-somos, #nav-principal,  #nav-unidades, #nav-servicos, #nav-profissionais{
+                margin-bottom: 32px;
+            }
+        .nav-link a:hover {
+            text-align: center;
+            background-color: #a54478;
+            color: #fff;
+
+        }
+
+        /*.nav-link:hover {
+            color: pink;
+        }*/
+
+        .nav-pills .nav-link {
+            border: 3px solid #a54586;
+            color: #a54586;
+            background-color: #fff;
+            height: 80px;
+            width: 200px;
+            text-align: center;
+        }
+
+        #principal .nav .nav-link.active {
+            background-color: #fff;
+            color: #a54586;
+        }
+
+
+        h2.display-3 {
+            text-align: center;
+            margin-bottom: 32px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 2.5rem;
+        }
+
+
+        .dropdown-item {
+            display: inline;
+            font-weight: bold;
+
+        }
+
+        .btn-primary {
+            color: #fff;
+            background-color: #a54586;
+        }
+
+        .btn-primary:hover {
+            background-color: #a54478;
+            --bs-btn-border-color: var(--bs-nav-link-color);
+            color: #fff
+        }
+
+        .btn.show {
+            background-color: #a54478;
+            color: #fff;
+        }
+
+        .nav-pills .nav-link:hover {
+            color: #fff;
+            background-color: #a54586;
+        }
+
+        .nav-pills .nav-link.active,
+        .nav-pills .show>.nav-link {
+            color: #fff;
+            background-color: #a54586;
+        }
+
+        header #principal {
+            background-color: #fff;
+        }
+
+        .container-flex img {
+            display: inline;
+            height: 30px;
+            margin-right: 2px;
+            text-decoration: none;
+        }
+
+
+         /* #filmes-li {
+            background-color: #fff;
+        }
+
+        #filmes-link {
+            color: #a54478;
+        }
+
+        #filmes-li:hover {
+            background-color: #a54586;
+        }
+
+        #filmes-link:hover {
+            color: #fff;
+        }*/
+
+        .dropdown-menu {
+            color: #fff;
+            background-color: #fff;
+            overflow: hidden;
+
+        }
+
+        .dropdown-menu:hover {
+            background-color: #a54586;
+        }
+
+        #filmes-nomes h3 {
+            font-size: 40px;
+            color: #a54586;
+            text-transform: uppercase;
+        }
+
+        #filmes-nomes>.container{
+            border: 3px solid #a54586;
+        }
+
+        #filmes-nomes p,
+        #text {
+            margin-top: 16px;
+            font-weight: bold;
+            font-size: 18px;
+            font-style: italic;
+            color: rgb(149, 89, 157);
+        }
+
+        .row h5 {
+            color: #a54586;
+            text-transform: uppercase;
+        }
+
+        @media screen and (max-width: 767px) {
+
+
+            .navbar-nav .nav-link {
+                text-transform: uppercase;
+            }
+
+            .navbar-nav .nav-link.active {
+                color: #fff;
+
+            }
+
+            .nav a {
+                font-size: 26px;
+            }
+
+
+            .nav-link {
+                text-align: center;
+            }
+
+            .nav-pills .nav-link.active,
+            .nav-pills .show>.nav-link {
+                color: #fff;
+                background-color: #a54586;
+
+            }
+
+            .navbar-expand-lg .navbar-collapse {
+                display: flex !important;
+                background-color: #fff;
+                /* flex-basis: auto;*/
+            }
+
+            .navbar-expand-lg .navbar-collapse a {
+                font-size: 20px;
+                position: sticky;
+                top: 0;
+                left: 0;
+                z-index: 1;
+                /* flex-basis: auto;*/
+            }
+
+            .navbar-toggler:hover,
+            .navbar-toggler:hover {
+                color: #a54586;
+            }
+
+            .navbar-toggler-icon {
+                display: inline-block;
+                width: 1.5em;
+                height: 1.5em;
+            }
+
+
+            .justify-content-end {
+                justify-content: center !important;
+            }
+
+            .nav-pills .nav-link {
+                border: 3px solid #a54586;
+                color: #fff;
+                background-color: #a54586;
+                width: 100%;
+                height: 80%;
+                text-align: center;
+            }
+
+            .navbar-expand-lg .navbar-collapse {
+                display: flex !important;
+                background-color: #fff;
+                /* flex-basis: auto;*/
+            }
+
+            .navbar-expand-lg .navbar-collapse a {
+                font-size: 20px;
+                position: sticky;
+                top: 0;
+                left: 0;
+                z-index: 1;
+                /* flex-basis: auto;*/
+            }
+
+            .navbar-toggler:hover {
+                color: #a54586;
+            }
+
+            .navbar-toggler-icon {
+                display: inline-block;
+                width: 1.5em;
+                height: 1.5em;
+                vertical-align: middle;
+                display: flex;
+            }
+
+
+            .justify-content-end {
+                justify-content: center !important;
+            }
+
+            /* section {
+                height: 100vh;
+                background-color: #fff;
+                padding-top: 115px;
+                margin-left: 16px;
+                color: #a54586;
+                text-transform: uppercase;
+            }*/
+
+            header h1 {
+                text-transform: uppercase;
+                color: #a54586;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: bold;
+                font-size: 40px;
+                text-align: center;
+                margin-bottom: 16px;
+            }
+
+            header span {
+                display: flex;
+                vertical-align: middle;
+                border-radius: 50%;
+                overflow: hidden;
+                width: 100%;
+                height: 100px;
+                max-height: 400px;
+                cursor: pointer;
+            }
+
+            header span img {
+                margin-top: 16px;
+                position: relative;
+                width: 100%;
+                height: 75%;
+                object-fit: contain;
+                display: flex;
+            }
+
+
+
+            header nav {
+                background-color: #a54586;
+                font-weight: bold;
+                display: block;
+                position: relative;
+            }
+
+            ul {
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                /* ao ocupar toda a largura da tela, cria-se uma nova linha*/
+            }
+
+            ul li {
+                max-width: 100%;
+                position: relative;
+                max-height: 280px;
+                overflow-y: hidden;
+                font-style: normal;
+                margin-top: 16px;
+            }
+
+            /*Cortar as imagens conforme configuração eixo y = eixo vertical*/
+
+
+            ul li a {
+                font-size: 25px;
+            }
+
+            .menu,
+            .menu>li {
+                display: block;
+                max-width: 400px;
+                margin-top: 8px;
+                margin-bottom: 8px;
+                font-size: 20px;
+            }
+
+            #filmes-link {
+            color: #fff;
+        }
+
+            /*Cortar as imagens conforme configuração eixo y = eixo vertical*/
+
+        }
+
+
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+
+
+            header h1 {
+                font-size: 50px;
+            }
+
+            ul.nav.nav-pills {
+                display: block;
+            }
+
+            .nav a {
+                font-size: 30px;
+            }
+
+        }
+    </style>
+    <title>Indicação de Filmes</title>
+</head>
+
+<body>
+
+    <header id="principal" class="navbar navbar-expand-lg p-4">
+
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <a href="./index.html">
+                    <span class="logo-circular">
+                        <img src="./assets/images/logos/outubro_rosa logo.png" alt="espaco saude familia logo">
+                    </span>
+                </a>
+                <h1>Filmes Recomendados</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+    </header>
+    <header>
+        <nav id="menu">
+            <div class="container">
+                <ul class="nav nav-pills">
+                    <li class="nav-item  fw-bold ">
+                        <a class="nav-link" href="./index.html" target=""> Página Principal</a>
+                    </li>
+                    <li class="nav-item  fw-bold">
+                        <a id="nav-quem-somos" class="nav-link" href="./sobre.html" target=""> Quem Somos</a>
+                    </li>
+                    <li class="nav-item  fw-bold">
+                        <a id="nav-servicos" class="nav-link" href="./servicos.html" target=""> Nossos Serviços</a>
+                    </li>
+                    <li class="nav-item  fw-bold">
+                        <a id="nav-unidades" class="nav-link" href="./unidades.html">Unidades</a>
+                    </li>
+                    <li class="nav-item  fw-bold">
+                        <a class="nav-link" href="./profissionais.html">Nossos Profissionais</a>
+                    </li>
+                    <li class="nav-item  fw-bold">
+                        <a id="nav-convenios" class="nav-link" href="./convenios.html">Convênios</a>
+                    </li>
+
+                    <ul class="container-flex">
+                        <li>
+                            <a href="https://www.facebook.com/espacofamiliasaude" target="_blank">
+                                <img src="./assets/images/logos/facebook-logo-5-1.png" alt="Facebook">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/espacofamiliasaude/" target="_blank">
+                                <img src="./assets/images/logos/instagram-icone-icon-1.png" alt="Instagram">
+                            </a>
+                        </li>
+                        <!-- <li>
+                                <a href="#" target="_blank">
+                                    <img src="./assets/images/logos/youtube.webp" alt="Youtube">
+                                </a>
+                            </li>-->
+                    </ul>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+
+    <section id="filmes-nomes">
+        <h3 class="text-center">
+            <i class="bi bi-film"></i>
+            Recomendações de Filmes
+        </h3>
+        <div class="container">
+            <div class="row d-flex w-100">
+                <div class="col md-4">
+                    <ul>
+
+                        <li>
+                            <h5><b> Violência contra a mulher:</br></b></h5>
+                            <p> - Maid;</br>
+                                - Crimes de família;</br>
+                                - A história de Tina Tunner</br>
+                                - Grandes Olhos</br>
+                                - Uma garota de sorte</p>
+                        </li>
+
+                        <li>
+                            <h5><b> Codependência Emocional:</br></b></h5>
+                            <p> - Ella e John;</br>
+                                - My Happy Family;</br>
+                                - Anjo de vidro;</br>
+                                - 6 balões;</p>
+                        </li>
+
+                        <li>
+                            <h5><b> Relacionamento familiar:</br></b></h5>
+                            <p> - Casamento Grego 1 e 2;</br>
+                                - O clube da felicidade e da sorte;</p>
+                        </li>
+
+
+                        <li>
+                            <h5><b> Relação com o pai:</br></b></h5>
+                            <p> - Tal pai, tal filha;</br>
+                                - Os garotos da minha vida</br>
+                                - Bar doce lar;</br>
+                                - Viver duas vezes;</br>
+                                - Estão todos bem;</p>
+                        </li>
+
+
+                        <li>
+                            <h5><b> Relação com a mãe:</br></b></h5>
+                            <p> - Três corpos e uma dança;</br>
+                                - O despertar de Motti;</br>
+                                - Mon bébé;</br>
+                                - 37 segundos;</p>
+                        </li>
+                        <li>
+                            <h5><b> Casamento/Relação de casal:</br></b></h5>
+                            <p> - Casomai;</br>
+                                - A história de nós dois;</br>
+                                - À prova de fogo;</br>
+                                - Táticas do amor;</br>
+                                - A história de um casamento;</br>
+                                - Guerra dos Roses;</br>
+                                - Separados pelo casamento;</br>
+                                - Meu amor</p>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="col md-4">
+                    <ul>
+
+                        <!--  <h5><b> Ciclos de vida:</b></h5>-->
+
+
+
+
+                        <li>
+                            <h5><b> Autoestima:</br></b></h5>
+                            <p> - Felicidade por um fio;</br>
+                                - O quebra cabeça;</br>
+                                - Bagdad café;</br>
+                                - Comer, rezar e amar;</br>
+                                - Sob o sol da Toscana;</p>
+                        </li>
+                        <li>
+                            <h5><b> Lealdade familiar/Deslealdade familiar:</br></b></h5>
+                            <p> - Cruzeiro em família;</br>
+                                - Tempestade de areia;</br>
+                                - Era uma vez um sonho;</br>
+                                -Red: crescer é uma fera (animação);</br>
+                                - Encanto (animação);</br>
+                                - Garota estranha;</br>
+                                - Cruzeiro em família;</p>
+                        </li>
+
+
+                        <li>
+                            <h5><b> Resiliência:</br></b></h5>
+                            <p> - As Aventuras de Pi;</br>
+                                - Antônia: uma sinfonia;</br>
+                                - Maudie;</br>
+                                - O menino que descobriu o vento;</br>
+                                - Querida Vida;</br>
+                                -Rainha de Katwe;</br>
+                                - Bem vindo a Marly-Gomont;</br>
+                                - A vida é bela;</p>
+                        </li>
+
+                        <li>
+                            <h5><b> Término de relacionamento/Reconstrução:</br></b></h5>
+                            <p> - Queen;
+                                - Sob o sol de Toscana;</br>
+                                - Gente que vai e volta;</p>
+                        </li>
+                        <li>
+                            <h5><b> Trauma:</br></b></h5>
+                            <p> - Filhos de Istambul;</br>
+                                - Fratura;</br>
+                                - Preciosa</p>
+                        </li>
+
+
+
+
+                    </ul>
+                </div>
+                <div class="col md-4">
+
+                    <ul>
+                        <li>
+                            <h5><b> Segredos:</br></b></h5>
+                            <p> - Árvore de sangue;</br>
+                                - O clube da felicidade e da sorte;</br>
+                                - A vila;</p>
+                        </li>
+                        <li>
+                            <h5><b> Transtorno alimentar:</br></b></h5>
+                            <p> - O mínimo para viver;</p>
+                        </li>
+
+                        <li>
+                            <h5><b> Perda e Luto:</br></b></h5>
+                            <p> - Sete minutos depois da meia noite;</br>
+                                - P.S. Eu te amo;</br>
+                                - Um ninho para dois;</br>
+                                - Chocolate;</p>
+                        </li>
+
+                        <li>
+                            <h5><b>Individuação:</br></b></h5>
+                            <p> - No ritmo do coração;</br>
+                                - A família Bélier;</p>
+                        </li>
+
+
+                        <li>
+                            <h5><b> Relacionamento entre irmãos</br></b></h5>
+                            <p> - Meu irmão, minha irmã;</p>
+                        </li>
+
+                        <li>
+                            <h5><b> Drogas e dependência química:</br></b></h5>
+                            <p> - 28 dias;</p>
+                        </li>
+
+                        <li>
+                            <h5><b> Sentido de vida/Permissão de vida:</br></b></h5>
+                            <p> - Antes de partir;</br>
+                                - Soul;</br>
+                                - A vida de outra mulher;</br>
+                                - Um banho de vida;</br>
+                                - Juanita;</br>
+                                - Last Holiday;</p>
+                        </li>
+
+                        <li>
+                            <h5><b> Adolescência:</br></b></h5>
+                            <p> - Juno;</br>
+                                - Os garotos da minha vida;</br>
+                                - Por lugares incríveis;</br>
+                                - De volta aos 15(série);</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--<section id="indicacao-semana">
+        <h3 class="text-center bi bi-calendar3-event">Indicações da Semana</h3>
+        <div class="container">
+
+
+
+
+        </div>
+    </section>-->
+
+    <div class="container">
+
+        <footer id="responsibilidade-tecnica">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="pt-2">RT - Tatiane Aparecida Mendes | Psicóloga - CRP 04/35803 </h2>
+                    <h2>CNPJ: 33.973.268/0001-69</h2>
+                    <h2 class="tituloFooter">© 2022 Espaço Família Saúde | Todos os direitos reservados.</h2>
+                    <!-- <p class="h3">Psicóloga com formação em Terapia Familiar Sistêmica e Pedagogia.</p>-->
+                    <!--  <div class="d-flex flex-row-reverse">-->
+                    <ul id="listaRedesSociais">
+                        <li class="d-inline"><a target="_blank" href="https://www.facebook.com/espacofamiliasaude"><i
+                                    class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li class="d-inline"><a target="_blank" href="https://www.instagram.com/espacofamiliasaude/"><i
+                                    class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        <li class="d-inline">
+                            <a href="mailto:espacofamiliapsi@gmail.com" id="mailto" target="_blank tittle=" Entre em
+                                contato pelo email><i class="fa fa-google" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <!--   <li class="d-inline"><a target="_blank" href="https://twitter.com/"><i class="fa fa-twitter"
+                                    aria-hidden="true"></i></a></li>
+                        <li class="d-inline"><a target="_blank" href="https://pt.linkedin.com/"><i
+                                    class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                        <li class="d-inline"><a target="_blank" href="https://www.youtube.com/"><i
+                                    class="fa fa-youtube-play" aria-hidden="true"></i></a></li>-->
+                    </ul>
+                </div>
+            </div>
+            <!-- </div>-->
+            <a class="whatsapp-link"
+                href="https://api.whatsapp.com/send/?phone=5538999243451&text=Ol%C3%A1%2C+estou+vindo+do+site%21&type=phone_number&app_absent=0"
+                target="_blank">
+                <i class="fa fa-whatsapp"></i>
+            </a>
+    </div>
+    </footer>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./assets/lib/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

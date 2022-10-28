@@ -32,12 +32,19 @@ header {
     text-align: center;*/
 }
 
+/*header #principal {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}*/
+
 header>.container,
 footer>.container,
 #em-destaque>.container {
     display: flex;
     justify-content: space-between;
-align-items: center;
+    align-items: center;
 }
 
 header>.container h1 {
@@ -71,31 +78,30 @@ header span img {
     object-fit: contain;
 }
 
-
 header nav {
-    /*  background-color: #a54586;*/
-      padding: 16px 0;
-      font-weight: bold;
-  }
-  
+  /*  background-color: #a54586;*/
+    padding: 16px 0;
+    font-weight: bold;
+
+}
 
 ul {
-    display: flex;
+    display: block;
     flex-wrap: wrap;
-   
     /* ao ocupar toda a largura da tela, cria-se uma nova linha*/
 }
 
 ul li {
-    max-width: 25%;
+    max-width: 100%;
     position: relative;
-    max-height: 280px;
-  /*  overflow-y: hidden;*/
-    font-style:normal;
+    max-height: 600px;
+    /* overflow-y: hidden;*/
+    font-style: normal;
+    list-style-type: disclosure-closed;
     /*Cortar as imagens conforme configuração eixo y = eixo vertical*/
 }
 
-ul li a{
+ul li a {
     font-size: 25px;
 
 }
@@ -103,7 +109,7 @@ ul li a{
 nav li {
     list-style: none;
     display: inline;
-    font-size: 20px;
+    font-size: 22px;
     margin-right: 16px;
     font-weight: bold;
     text-transform: uppercase;
@@ -114,6 +120,16 @@ nav li a {
     text-decoration: none;
 }
 
+section>.container {
+    margin-top: 32px;
+    display: flex;
+}
+
+section.lista-servicos h2 {
+    background-color: #a54586;
+    color: #fff;
+}
+
 .menu,
 .menu>li {
     width: 100%;
@@ -122,37 +138,6 @@ nav li a {
     margin-top: 8px;
     margin-bottom: 8px;
 }
-
-h1 img{
-    height: 80px;
-}
-
-.sobre{
-    display: flex;
-}
-
-.sobre p {
-    display: flex;
-    color: #a54586;
-    background-color: #fff;
-    width: 100%;
-    font-size: 18px;
-    margin-top: 32px;
-    margin-left: 32px;
-    text-align: justify;
-    border: 3px solid #a54586;
-}
-
-#tatiane {
-    margin-bottom: 100px;
-    width: 300px;
-    margin-top: 32px;
-}
-
-button {
-    display: none;
-}
-
 
 .whatsapp-link {
     margin-bottom: 32px;
@@ -176,8 +161,6 @@ button {
     margin-top: 16px;
 }
 
-
-
 footer {
     background-color: #fff;
     color: #a54586;
@@ -185,18 +168,29 @@ footer {
     margin-top: 32px;
     font-size: 12px;
     margin-bottom: 16px;
-    border-top: 4px solid #a54586;
+   /* border-top: 4px solid #a54586;*/
 
 }
 
 #listaRedesSociais {
     font-size: 24px;
-    display: block;
+    display: inline;
+    padding-left: 0rem;
 }
 
 #listaRedesSociais .d-inline i {
     color: #a54586;
 }
+
+#listaRedesSociais {
+    font-size: 24px;
+}
+
+#listaRedesSociais .d-inline i {
+    color: #a54586;
+    font-size: 24px;
+}
+
 
 
 .col-md-6 h3 {
@@ -229,10 +223,6 @@ footer #responsabilidade-tecnica .row {
     margin-top: 32px;
 }
 
-footer #responsabilidade-tecnica .row {
-    margin-top: 32px;
-}
-
 #contatos-col2 {
     margin-left: 32px;
 }
@@ -244,36 +234,23 @@ footer #responsabilidade-tecnica .row {
 
 }
 
+
 @media screen and (max-width: 767px) {
     /* display mais blockado*/
+
+
 
     .container {
         max-width: 90%;
     }
 
-    header>.container,
-    footer>.container {
-        display: block;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-    }
-
-    header>.container h1 {
-        font-size: 40px;
-    }
-
-
-    header nav {
-        background-color: #a54586;
-        font-weight: bold;
-        text-decoration: none;
-        text-align: center;
-
-    }
-
     header {
         text-align: center;
+        justify-content: space-between;
+        position: relative;
+        top: 0;
+        left: 0;
+        z-index: 1;
     }
 
     header span {
@@ -296,18 +273,22 @@ footer #responsabilidade-tecnica .row {
         object-fit: contain;
     }
 
-    nav li {
-        display: flex;
-        font-size: 18px;
-        margin-right: 16px;
-        font-weight: bold;
-        text-transform: uppercase;
-        padding-right: 24px;
+    header>.container,
+    footer>.container {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
     }
 
-    nav li a {
-        color: #fff;
-        text-decoration: none;
+    header>.container h1 {
+        font-size: 40px;
+    }
+
+    header nav {
+        background-color: #a54586;
+        font-weight: bold;
+        display: none;
     }
 
     .menu,
@@ -318,8 +299,74 @@ footer #responsabilidade-tecnica .row {
         margin-top: 8px;
         margin-bottom: 8px;
         text-decoration: none;
+        font-size: 20px;
     }
 
+    .menu {
+        display: block;
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding-left: 0rem;
+        /* ao ocupar toda a largura da tela, cria-se uma nova linha*/
+    }
+
+    ul li {
+        max-width: 100%;
+        position: relative;
+        max-height: 600px;
+        /* overflow-y: hidden;*/
+        font-style: normal;
+        list-style-type: disclosure-closed;
+        border: none;
+        /*Cortar as imagens conforme configuração eixo y = eixo vertical*/
+    }
+
+    ul.container-flex {
+        display: none;
+    }
+
+    .nav {
+        --bs-nav-link-color: #fff;
+        display: block;
+    }
+
+    form button:hover {
+        background-color: #FF00FF;
+
+    }
+
+    section>.container {
+        text-align: center;
+        margin-top: 32px;
+        display: block;
+    }
+
+    section.lista-servicos {
+        text-align: center;
+        margin-top: 32px;
+        display: block;
+    }
+
+    section.lista-servicos h2{
+        font-size: 30px;
+    }
+
+    .lista-psi {
+        font-size: 24px;
+        margin-top: 16px;
+        color: #a54586;
+        text-transform: uppercase;
+        list-style: disc;
+        border: none;
+    }
+
+    form button:hover {
+        background-color: #FF00FF;
+    }
 
     .sobre {
         display: block;
@@ -331,8 +378,8 @@ footer #responsabilidade-tecnica .row {
     .sobre p {
         color: #a54586;
         background-color: #fff;
-        max-width: 600px;
-        width: 90%;
+        max-width: 100%;
+        width: 100%;
         margin-top: 20px;
         text-align: justify;
     }
@@ -349,22 +396,10 @@ footer #responsabilidade-tecnica .row {
         padding: 8px;
     }
 
-    #tatiane {
-        margin-top: 32px;
-        width: 100%;
-        max-height: 400px;
-        background-color: #fff;
-        margin-bottom: 10px;
-    }
-
-    .container-flex{
-        display: none;
-    }
 
     #listaRedesSociais {
         font-size: 20px;
         margin-top: 16px;
-      
     }
 
     #listaRedesSociais .d-inline i {
@@ -394,11 +429,13 @@ footer #responsabilidade-tecnica .row {
 
 }
 
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 
     .container {
         max-width: 90%;
     }
+
 
     header>.container h1 {
         font-size: 40px;
@@ -411,7 +448,7 @@ footer #responsabilidade-tecnica .row {
         font-weight: bold;
         display: flex;
     }
-    
+
     /*Seções*/
     nav li {
         list-style: none;
@@ -422,16 +459,16 @@ footer #responsabilidade-tecnica .row {
         font-weight: bold;
         text-transform: uppercase;
     }
-    
+
     nav li a {
         color: #fff;
         text-decoration: solid;
     }
-    
+
     nav li a:hover {
         color: #DDA0DD;
     }
-    
+
     .menu,
     .menu>li {
         display: inline;
@@ -440,9 +477,9 @@ footer #responsabilidade-tecnica .row {
         margin-bottom: 8px;
         font-size: 20px;
     }
-    
+
     ul.menu {
-    
+
         flex-wrap: wrap;
         justify-content: space-evenly;
         /* ao ocupar toda a largura da tela, cria-se uma nova linha*/
@@ -451,9 +488,9 @@ footer #responsabilidade-tecnica .row {
     /*ul.nav.nav-pills{
         width: 800px;
     }*/
-    
+
     ul li {
-    
+
         max-width: 25%;
         position: relative;
         max-height: 280px;
@@ -462,25 +499,24 @@ footer #responsabilidade-tecnica .row {
         /*Cortar as imagens conforme configuração eixo y = eixo vertical*/
     }
 
-    .sobre {
-        display: block;
-        width: 100%;
-        max-width: 100%;
-        background-color: #fff;
+    .menu-hamburguer {
+        width: 32px;
+        font-weight: bold;
     }
 
-    .sobre p {
-        color: #a54586;
-        background-color: #fff;
-        max-width: 100%;
+    .menu-hamburguer span {
+        height: 4px;
         width: 100%;
-        margin-top: 20px;
-        text-align: justify;
-        margin-left: 32px;
+        background-color: #a54586;
+        display: block;
+        margin-bottom: 4px;
+        margin-left: 16px;
+        cursor: pointer;
+        border-radius: 16px;
     }
 
     /*ICONES REDES SOCIAIS CABEÇALHO NAV*/
-    .container-flex{
+    .container-flex {
         display: none;
     }
 
@@ -546,15 +582,5 @@ footer #responsabilidade-tecnica .row {
         margin-top: 32px;
         font-size: 12px;
         width: 100%;
-    }
-
-    #tatiane {
-        margin-top: 32px;
-        padding-left: 64px;
-        width: 500px;
-        max-height: 500px;
-        display: block;
-        margin-bottom: 10px;
-
     }
 }

@@ -24,6 +24,14 @@ header {
     color: #a54586;
     text-transform: uppercase;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /*  position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    text-align: center;*/
+}
+
+#principal {
     position: sticky;
     top: 0;
     left: 0;
@@ -80,7 +88,7 @@ header span img {
 }
 
 header nav {
-    background-color: #a54586;
+    /*  background-color: #a54586;*/
     padding: 16px 0;
     font-weight: bold;
 
@@ -89,8 +97,7 @@ header nav {
 ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-   
+
     /* ao ocupar toda a largura da tela, cria-se uma nova linha*/
 }
 
@@ -98,17 +105,17 @@ ul li {
     max-width: 25%;
     position: relative;
     max-height: 280px;
-    overflow-y: hidden;
-    font-style:normal;
+    /* overflow-y: hidden;*/
+    font-style: normal;
     /*Cortar as imagens conforme configuração eixo y = eixo vertical*/
 }
 
-ul li a{
+ul li a {
     font-size: 25px;
 
 }
 
-nav li a:hover{
+nav li a:hover {
     color: #C0C0C0;
 }
 
@@ -126,13 +133,14 @@ nav li a {
     text-decoration: none;
 }
 
-section div{
+section div {
     text-align: center;
     max-width: 100%;
 }
 
-#convenio img{
-    width:100% ;
+#convenio {
+    width: 50%;
+    margin-top: 32px;
 }
 
 section #convenios {
@@ -140,6 +148,7 @@ section #convenios {
     text-align: center;
 
 }
+
 .menu-hamburguer {
     width: 32px;
     margin-right: 10px;
@@ -299,7 +308,8 @@ footer #responsabilidade-tecnica .row {
         padding-right: 24px;
     }
 
-    .menu, .menu>li {
+    .menu,
+    .menu>li {
         width: 100%;
         display: block;
         max-width: 400px;
@@ -310,25 +320,31 @@ footer #responsabilidade-tecnica .row {
     }
 
     ul {
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
         justify-content: space-evenly;
-       
+        padding-left: 0rem;
+
         /* ao ocupar toda a largura da tela, cria-se uma nova linha*/
     }
-    
+
+
     ul li {
         max-width: 25%;
         position: relative;
         max-height: 280px;
         overflow-y: hidden;
-        font-style:normal;
+        font-style: normal;
         /*Cortar as imagens conforme configuração eixo y = eixo vertical*/
     }
-    
-    ul li a{
+
+    ul li a {
         font-size: 25px;
     }
 
+    ul.container-flex {
+        display: none;
+    }
 
     .menu-hamburguer {
         margin-right: 32px;
@@ -355,8 +371,8 @@ footer #responsabilidade-tecnica .row {
 
     }
 
-    div img{
-        width:95% ;
+    div img {
+        width: 95%;
     }
 
     #listaRedesSociais {
@@ -409,7 +425,7 @@ footer #responsabilidade-tecnica .row {
         font-weight: bold;
         display: flex;
     }
-    
+
     /*Seções*/
     nav li {
         list-style: none;
@@ -420,16 +436,16 @@ footer #responsabilidade-tecnica .row {
         font-weight: bold;
         text-transform: uppercase;
     }
-    
+
     nav li a {
         color: #fff;
         text-decoration: solid;
     }
-    
+
     nav li a:hover {
         color: #DDA0DD;
     }
-    
+
     .menu,
     .menu>li {
         display: inline;
@@ -438,20 +454,20 @@ footer #responsabilidade-tecnica .row {
         margin-bottom: 8px;
         font-size: 20px;
     }
-    
+
     ul.menu {
-    
+
         flex-wrap: wrap;
         justify-content: space-evenly;
         /* ao ocupar toda a largura da tela, cria-se uma nova linha*/
     }
 
-    ul.nav.nav-pills{
+    /*ul.nav.nav-pills{
         width: 800px;
-    }
-    
+    }*/
+
     ul li {
-    
+
         max-width: 25%;
         position: relative;
         max-height: 280px;
@@ -467,18 +483,22 @@ footer #responsabilidade-tecnica .row {
 
     }
 
-    div img{
-        width:95% ;
+    div img {
+        width: 95%;
     }
 
 
-    #espaco-familia h2{
+    #espaco-familia h2 {
         margin-bottom: 16px;
+    }
+
+    /*ICONES REDES SOCIAIS CABEÇALHO NAV*/
+    .container-flex {
+        display: none;
     }
 
     #listaRedesSociais {
         font-size: 28px;
-        margin-right: 64px;
         display: block;
     }
 
@@ -502,7 +522,7 @@ footer #responsabilidade-tecnica .row {
     }
 
 
-    .flex-row-reverse{
+    .flex-row-reverse {
         margin-top: 16px;
     }
 

@@ -10,7 +10,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Manrope:wght@600&family=Open+Sans:wght@400;700&family=Qwitcher+Grypen:wght@700&family=Roboto:wght@700&family=Titillium+Web&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./assets/sobre.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <!--Links pra carousel por Jquery-->
@@ -20,11 +19,9 @@
     <link rel="stylesheet" href="./assets/sobre.css">
     <!--Bootstrap link-->
     <style>
-           .nav {
-            --bs-nav-link-color: #fff;
+        .navbar {
+            display: inline;
         }
-
-
 
         .navbar-expand-lg .navbar-collapse {
             display: flex !important;
@@ -35,6 +32,10 @@
             display: block;
         }
 
+        #nav-quem-somos, #nav-convenios,  #nav-unidades{
+                padding: 16px;
+            }
+
         .nav a {
             font-size: 22px;
         }
@@ -42,7 +43,6 @@
         .nav-link {
             padding: 0px 8px;
         }
-
 
         .navbar-toggler-icon {
             display: inline-block;
@@ -64,14 +64,85 @@
 
         }
 
-        .nav-link a:hover {
-            text-align: center;
-            color: whitesmoke;
-
+        .navbar>.container {
+            justify-content: space-around;
         }
 
         .nav-link:hover {
+            text-align: center;
+            background-color: #a54478;
+            color: #fff;
+
+        }
+
+        .nav-link a:hover {
+            text-align: center;
+            background-color: #a54478;
+            color: #fff;
+
+        }
+
+        /*.nav-link:hover {
             color: pink;
+        }*/
+
+        .nav-pills .nav-link {
+            border: 3px solid #a54586;
+            color: #a54586;
+            background-color: #fff;
+            width: 200px;
+            height: 80px;
+            text-align: center;
+        }
+
+        #principal .nav .nav-link.active {
+            background-color: #fff;
+            color: #a54586;
+        }
+
+
+        h2.display-3 {
+            text-align: center;
+            margin-bottom: 32px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 2.5rem;
+        }
+
+        .dropdown-menu {
+            color: #fff;
+            background-color: #a54586;
+            overflow: hidden;
+            --bs-dropdown-link-hover-bg: #fff;
+
+        }
+
+        .dropdown-item {
+            display: inline;
+            font-weight: bold;
+
+        }
+
+        .btn-primary {
+            color: #fff;
+            background-color: #a54586;
+        }
+
+        .btn-primary:hover {
+            background-color: #a54478;
+            --bs-btn-border-color: var(--bs-nav-link-color);
+            color: #fff
+        }
+
+        .btn.show {
+            background-color: #a54478;
+            color: #fff;
+        }
+
+
+        .nav-pills .nav-link:hover {
+            color: #fff;
+            background-color: #a54586;
         }
 
         .nav-pills .nav-link.active,
@@ -81,13 +152,61 @@
 
         }
 
+        header #principal {
+            background-color: #fff;
+        }
+
+        #principal .nav .nav-link.active {
+            background-color: #fff;
+            color: #a54586;
+        }
+
         .container-flex img {
             display: inline;
-            height: 18px;
+            height: 30px;
             margin-right: 2px;
             text-decoration: none;
         }
+
+
+          /* #filmes-li {
+            background-color: #fff;
+        }
+
+        #filmes-link {
+            color: #a54478;
+        }
+
+        #filmes-li:hover {
+            background-color: #a54586;
+        }
+
+        #filmes-link:hover {
+            color: #fff;
+        }*/
+
+        .dropdown-menu {
+            color: #fff;
+            background-color: #fff;
+            overflow: hidden;
+
+        }
+
+        .dropdown-menu:hover {
+            background-color: #a54586;
+        }
+
         @media screen and (max-width: 767px) {
+
+
+            .nav {
+                --bs-nav-link-color: #fff;
+                display: block;
+            }
+
+            .nav a {
+                font-size: 26px;
+            }
 
 
             .navbar-nav .nav-link {
@@ -99,28 +218,51 @@
 
             }
 
+            .nav-link {
+                text-align: center;
+            }
+
+            #nav-quem-somos,
+            #nav-principal,
+            #nav-unidades,
+            #nav-servicos,
+            #nav-profissionais {
+                margin-bottom: 32px;
+            }
+
+            .nav-pills .nav-link.active,
+            .nav-pills .show>.nav-link {
+                color: #fff;
+                background-color: #a54586;
+
+            }
+
+            .nav-pills .nav-link {
+                border: 3px solid #a54586;
+                color: #fff;
+                background-color: #a54586;
+                width: 100%;
+                height: 80%;
+                text-align: center;
+            }
+
+            h1 img {
+                display: none;
+            }
 
             .navbar>.container {
-
                 justify-content: center;
                 position: sticky;
                 top: 0;
                 left: 0;
                 background-color: #fff;
                 display: block;
-
-
             }
 
             .navbar-expand-lg .navbar-toggler {
                 display: initial;
                 margin-top: 16px;
                 margin-bottom: 16px;
-            }
-
-
-            .nav-link {
-                text-align: center;
             }
 
             .nav-pills .nav-link.active,
@@ -162,6 +304,10 @@
                 justify-content: center !important;
             }
 
+            .sobre p {
+                border: none;
+            }
+
             /* section {
                     height: 100vh;
                     background-color: #fff;
@@ -178,6 +324,7 @@
                 font-weight: bold;
                 font-size: 53px;
                 text-align: center;
+                margin-bottom: 16px;
             }
 
             header span {
@@ -204,7 +351,7 @@
 
             header nav {
                 background-color: #a54586;
-                padding: 16px 0;
+                /*padding: 16px 0;*/
                 font-weight: bold;
                 display: block;
                 position: relative;
@@ -213,15 +360,17 @@
             ul {
                 flex-wrap: wrap;
                 justify-content: space-evenly;
+                padding-left: 0rem;
                 /* ao ocupar toda a largura da tela, cria-se uma nova linha*/
             }
 
             ul li {
-                max-width: 25%;
+                max-width: 100%;
                 position: relative;
                 max-height: 280px;
                 overflow-y: hidden;
                 font-style: normal;
+                text-align: center;
             }
 
             /*Cortar as imagens conforme configuração eixo y = eixo vertical*/
@@ -241,10 +390,24 @@
             }
         }
 
+        .collapse:not(.show) {
+            display: none;
+        }
+
+       
+
         @media screen and (min-width: 768px) and (max-width: 1023px) {
 
             header h1 {
                 font-size: 50px;
+            }
+
+            ul.nav.nav-pills {
+                display: block;
+            }
+
+            .nav a {
+                font-size: 30px;
             }
 
         }
@@ -259,23 +422,24 @@
         <i class="fa fa-whatsapp"></i>
     </a>
     <header id="principal">
-    <header>
-        <div class="navbar navbar-expand-lg">
-            <div class="container">
-                <a href="./index.html">
-                    <span class="logo-circular">
-                        <img src="./assets/images/logos/outubro_rosa logo.png" alt="espaco saude familia logo">
-                    </span>
-                </a>
-                <h1>
-                    <img src="./assets/images/logos/Ico/quem somos.png" alt="">
-                    Quem Somos</h1>
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-    </header>
-    <!--   <div class="menu-hamburguer">
+        <header>
+            <div class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a href="./index.html">
+                        <span class="logo-circular">
+                            <img src="./assets/images/logos/outubro_rosa logo.png" alt="espaco saude familia logo">
+                        </span>
+                    </a>
+                    <h1>
+                        <img src="./assets/images/logos/Ico/quem somos.png" alt="">
+                        Quem Somos
+                    </h1>
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+        </header>
+        <!--   <div class="menu-hamburguer">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -291,19 +455,44 @@
                 <div class="container">
                     <ul class="nav nav-pills">
                         <li class="nav-item">
-                            <a class="nav-link" href="./index.html" target="_blank"> Página Principal</a>
+                            <a id="nav-principal" class="nav-link" href="./index.html" target=""> Página Principal</a>
+                        </li>
+                       
+                        <li>
+                            <a id="nav-unidades" class="nav-link" href="./unidades.html">Unidades</a>
                         </li>
                         <li>
-                            <a class="nav-link" href="./unidades.html">Unidades</a>
+                            <a id="nav-servicos" class="nav-link" href="./servicos.html">Nossos Serviços</a>
+                        </li>
+                       <!-- <div class="btn-group">
+                            <a id="nav-servicos" class="nav-link" href="./servicos.html">Nossos Serviços
+                                   <button class="btn btn-primary">
+                                    Nossos Serviços
+                                </button>
+                            </a>
+                            <button class="btn btn-primary dropdown-toggle dropdown-toggle-split"
+                                data-bs-toggle="dropdown"></button>
+                            <ul class="dropdown-menu ">
+                                <li id="filmes-li" class="dropdown-item">
+                                    <a id="filmes-link" href="./filmes.html">Filmes Indicados</a>
+                                </li>
+                                <!--<li class="dropdown-item">
+                                        <a href="#">Novo fornecedor</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#">Novo funcionário</a>
+                                    </li>
+                            </ul>
+                        </div>-->
+                        <li>
+                            <a id="nav-profissionais" class="nav-link" href="./profissionais.html">Nossos
+                                profissionais</a>
                         </li>
                         <li>
-                            <a class="nav-link" href="./servicos.html">Nossos Serviços</a>
+                            <a id="filmes-link" class="nav-link" href="./filmes.html">Filmes Recomendados</a>
                         </li>
                         <li>
-                            <a class="nav-link" href="./profissionais.html">Nossos profissionais</a>
-                        </li>
-                        <li>
-                            <a class="nav-link" href="./convenios.html">Convênios</a>
+                            <a id="nav-convenios" class="nav-link" href="./convenios.html">Convênios</a>
                         </li>
 
                         <ul class="container-flex">
@@ -317,11 +506,11 @@
                                     <img src="./assets/images/logos/instagram-icone-icon-1.png" alt="Instagram">
                                 </a>
                             </li>
-                            <li>
+                            <!-- <li>
                                 <a href="#" target="_blank">
                                     <img src="./assets/images/logos/youtube.webp" alt="Youtube">
                                 </a>
-                            </li>
+                            </li>-->
                         </ul>
                     </ul>
                 </div>
@@ -372,12 +561,17 @@
                                     class="fa fa-facebook" aria-hidden="true"></i></a></li>
                         <li class="d-inline"><a target="_blank" href="https://www.instagram.com/espacofamiliasaude/"><i
                                     class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                        <li class="d-inline"><a target="_blank" href="https://twitter.com/"><i class="fa fa-twitter"
+                        <li class="d-inline">
+                            <a href="mailto:espacofamiliapsi@gmail.com" id="mailto" target="_blank tittle=" Entre em
+                                contato pelo email><i class="fa fa-google" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <!--   <li class="d-inline"><a target="_blank" href="https://twitter.com/"><i class="fa fa-twitter"
                                     aria-hidden="true"></i></a></li>
                         <li class="d-inline"><a target="_blank" href="https://pt.linkedin.com/"><i
                                     class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                         <li class="d-inline"><a target="_blank" href="https://www.youtube.com/"><i
-                                    class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                                    class="fa fa-youtube-play" aria-hidden="true"></i></a></li>-->
                     </ul>
                 </div>
             </div>

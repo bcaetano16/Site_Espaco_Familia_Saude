@@ -9,8 +9,8 @@ html,
 body {
     height: 100%;
     overflow-x: hidden;
-    background-color: #DDA0DD;
-    color: #fff;
+    background-color: #fff;
+    color: #a54586;
 }
 
 header {
@@ -99,27 +99,27 @@ footer>.container,
 
 .profissionais-img {
     text-align: center;
+    
 }
 
 .profissionais-img img {
     max-width: 100%;
     max-height: 100%;
-    width: 70%;
-    height: 80%;
+    width: 60%;
+    height: 70%;
+    border: 3px solid #a54586;
 }
 
 header nav {
-    background-color: #a54586;
-    padding: 16px 0;
-    font-weight: bold;
-
-}
+    /*  background-color: #a54586;*/
+      padding: 16px 0;
+      font-weight: bold;
+  
+  }
 
 ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-
     /* ao ocupar toda a largura da tela, cria-se uma nova linha*/
 }
 
@@ -127,7 +127,7 @@ ul li {
     max-width: 25%;
     position: relative;
     max-height: 280px;
-    overflow-y: hidden;
+   /* overflow-y: hidden;*/
     font-style: normal;
     /*Cortar as imagens conforme configuração eixo y = eixo vertical*/
 }
@@ -215,7 +215,6 @@ footer {
 #listaRedesSociais {
     font-size: 20px;
     margin-top: 16px;
-    margin-right: 10px;
     display: block;
 }
 
@@ -331,6 +330,24 @@ footer #responsabilidade-tecnica .row {
         margin-bottom: 8px;
         text-decoration: none;
         font-size: 20px;
+    }
+
+    ul.container-flex{
+        display: none;
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding-left: 0rem;
+    
+        /* ao ocupar toda a largura da tela, cria-se uma nova linha*/
+    }
+
+    .nav {
+        --bs-nav-link-color: #fff;
+        display: block;
     }
 
     .menu {
@@ -464,9 +481,9 @@ footer #responsabilidade-tecnica .row {
         /* ao ocupar toda a largura da tela, cria-se uma nova linha*/
     }
 
-    ul.nav.nav-pills{
+    /*ul.nav.nav-pills{
         width: 800px;
-    }
+    }*/
     
     ul li {
     
@@ -488,9 +505,13 @@ footer #responsabilidade-tecnica .row {
         text-align: center;
         width: 100%;
     }
+
+    /*ICONES REDES SOCIAIS CABEÇALHO NAV*/
+    .container-flex{
+        display: none;
+    }
     #listaRedesSociais {
         font-size: 28px;
-        margin-right: 64px;
         display: block;
     }
 

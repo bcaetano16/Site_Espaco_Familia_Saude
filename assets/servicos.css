@@ -25,19 +25,19 @@ header {
     color: #a54586;
     text-transform: uppercase;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    position: sticky;
+    /*position: sticky;
     top: 0;
     left: 0;
     z-index: 1;
-    text-align: center;
+    text-align: center;*/
 }
 
-header #principal{
+/*header #principal {
     position: sticky;
     top: 0;
     left: 0;
     z-index: 1;
-}
+}*/
 
 header>.container,
 footer>.container,
@@ -79,30 +79,32 @@ header span img {
 }
 
 header nav {
-    background-color: #a54586;
+  /*  background-color: #a54586;*/
     padding: 16px 0;
     font-weight: bold;
 
 }
 
 ul {
-    display: flex;
+    display: block;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+
     /* ao ocupar toda a largura da tela, cria-se uma nova linha*/
 }
 
 ul li {
-    max-width: 25%;
+    max-width: 100%;
     position: relative;
     max-height: 280px;
-    overflow-y: hidden;
-    font-style:normal;
+    /* overflow-y: hidden;*/
+    font-style: normal;
+    margin-top: 16px;
+    list-style: none;
     /*Cortar as imagens conforme configuração eixo y = eixo vertical*/
 }
 
-ul li a{
-    font-size: 25px;
+ul li a {
+    font-size: 30px;
 
 }
 
@@ -120,20 +122,6 @@ nav li a {
     text-decoration: none;
 }
 
-nav li a:hover{
-    color: #C0C0C0;
-}
-
-.lista div{
-    font-size: 24px;
-    margin-top: 16px;
-    color:#a54586;
-    text-transform: uppercase;
-    list-style:disc;
-    display: list-item;
-    background-color: #cfb3c1;
-}
-
 .menu,
 .menu>li {
     width: 100%;
@@ -144,21 +132,61 @@ nav li a:hover{
 }
 
 
-.menu-hamburguer {
-    width: 32px;
-    font-weight: bold;
+
+section>.container {
+    text-align: center;
+    margin-top: 32px;
+    display: flex;
 }
 
-.menu-hamburguer span {
-    height: 4px;
-    width: 100%;
+section.lista-servicos h2 {
     background-color: #a54586;
-    display: block;
-    margin-bottom: 4px;
-    margin-left: 16px;
-    cursor: pointer;
-    border-radius: 16px;
+    color: #fff;
+    font-size: 26px;
 }
+
+.lista-psi {
+    font-size: 22px;
+    margin-top: 16px;
+    color: #a54586;
+    text-transform: uppercase;
+    /*list-style: disc;*/   
+    /* background-color: #cfb3c1;*/
+    border-color: #a54586;
+    border: 3px solid #a54586;
+}
+
+.lista-nutri {
+    font-size: 22px;
+    margin-top: 16px;
+    color: #a54586;
+    text-transform: uppercase;
+    list-style: disc;
+    border: 3px solid #a54586;
+}
+
+.lista-fono {
+    font-size: 22px;
+    margin-top: 16px;
+    color: #a54586;
+    text-transform: uppercase;
+    list-style: disc;
+    border: 3px solid #a54586;
+}
+
+.lista-med {
+    font-size: 22px;
+    margin-top: 16px;
+    color: #a54586;
+    text-transform: uppercase;
+    list-style: disc;
+    border: 3px solid #a54586;
+
+
+}
+
+
+
 form button:hover {
     background-color: #FF00FF;
 
@@ -193,15 +221,14 @@ footer {
     margin-top: 32px;
     font-size: 12px;
     margin-bottom: 16px;
-    border-top: 4px solid #a54586;
+   /* border-top: 4px solid #a54586;*/
 
 }
 
 #listaRedesSociais {
     font-size: 24px;
-    margin-right: 64px;
-    margin-left: 10px;
     display: inline;
+    padding-left: 0rem;
 }
 
 #listaRedesSociais .d-inline i {
@@ -214,8 +241,8 @@ footer {
 
 #listaRedesSociais .d-inline i {
     color: #a54586;
-        font-size: 24px;
-    }
+    font-size: 24px;
+}
 
 
 
@@ -265,11 +292,19 @@ footer #responsabilidade-tecnica .row {
     /* display mais blockado*/
 
 
-    
+
     .container {
         max-width: 90%;
     }
 
+
+    header>.container,
+    footer>.container {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
     header {
         text-align: center;
         justify-content: space-between;
@@ -298,23 +333,21 @@ footer #responsabilidade-tecnica .row {
         height: 75%;
         object-fit: contain;
     }
-    header>.container,
-    footer>.container {
-        display: block;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
+
+    
 
     header>.container h1 {
         font-size: 40px;
     }
 
+    
     header nav {
         background-color: #a54586;
         font-weight: bold;
-        display: none;
-        padding-right: 24px;
+        text-decoration: none;
+        text-align: center;
+        display: block;
+
     }
 
     .menu,
@@ -328,46 +361,42 @@ footer #responsabilidade-tecnica .row {
         font-size: 20px;
     }
 
-    .menu{
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding-left: 0rem;
+        /* ao ocupar toda a largura da tela, cria-se uma nova linha*/
+    }
+
+    form button:hover {
+        background-color: #FF00FF;
+
+    }
+
+    section>.container {
+        text-align: center;
+        margin-top: 32px;
         display: block;
     }
 
-    .menu-hamburguer {
-        margin-right: 32px;
+    section.lista-servicos {
+        text-align: center;
+        margin-top: 32px;
+        display: block;
+    }
+
+    section.lista-servicos h2{
+        font-size: 30px;
+    }
+
+    .lista-psi {
+        font-size: 24px;
         margin-top: 16px;
-        display: block;
-        margin-left: 120px;
-        margin-bottom: 32px;
-    }
-
-    .menu-hamburguer span {
-        height: 4px;
-        width: 100%;
-        background-color: #a54586;
-        display: block;
-        margin-top: 8px;
-        cursor: pointer;
-        border-radius: 16px;
-        margin-right: 16px;
-    }
-
-    form button:hover {
-        background-color: #FF00FF;
-
-    }
-
-    /*button {
-        background-color: rgb(199, 52, 162);
-        border: none;
-        font-weight: bold;
-        color: #fff;
-        cursor: pointer;
-        display: none;
-    }*/
-
-    form button:hover {
-        background-color: #FF00FF;
-
+        color: #a54586;
+        text-transform: uppercase;
+        list-style: disc;
+        border: 3px solid #a54586;
     }
 
     .sobre {
@@ -439,7 +468,6 @@ footer #responsabilidade-tecnica .row {
     }
 
 
-
     header>.container h1 {
         font-size: 40px;
     }
@@ -451,7 +479,7 @@ footer #responsabilidade-tecnica .row {
         font-weight: bold;
         display: flex;
     }
-    
+
     /*Seções*/
     nav li {
         list-style: none;
@@ -462,16 +490,16 @@ footer #responsabilidade-tecnica .row {
         font-weight: bold;
         text-transform: uppercase;
     }
-    
+
     nav li a {
         color: #fff;
         text-decoration: solid;
     }
-    
+
     nav li a:hover {
         color: #DDA0DD;
     }
-    
+
     .menu,
     .menu>li {
         display: inline;
@@ -480,20 +508,20 @@ footer #responsabilidade-tecnica .row {
         margin-bottom: 8px;
         font-size: 20px;
     }
-    
+
     ul.menu {
-    
+
         flex-wrap: wrap;
         justify-content: space-evenly;
         /* ao ocupar toda a largura da tela, cria-se uma nova linha*/
     }
 
-    ul.nav.nav-pills{
+    /*ul.nav.nav-pills{
         width: 800px;
-    }
-    
+    }*/
+
     ul li {
-    
+
         max-width: 25%;
         position: relative;
         max-height: 280px;
@@ -501,25 +529,14 @@ footer #responsabilidade-tecnica .row {
         font-style: normal;
         /*Cortar as imagens conforme configuração eixo y = eixo vertical*/
     }
-    .menu-hamburguer {
-        width: 32px;
-        font-weight: bold;
-    }
-    
-    .menu-hamburguer span {
-        height: 4px;
-        width: 100%;
-        background-color: #a54586;
-        display: block;
-        margin-bottom: 4px;
-        margin-left: 16px;
-        cursor: pointer;
-        border-radius: 16px;
+
+    /*ICONES REDES SOCIAIS CABEÇALHO NAV*/
+    .container-flex {
+        display: none;
     }
 
-  #listaRedesSociais {
+    #listaRedesSociais {
         font-size: 28px;
-        margin-right: 64px;
         display: block;
         margin-top: 16px;
     }

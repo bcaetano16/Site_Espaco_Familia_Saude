@@ -22,11 +22,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./assets/unidades.css">
     <style>
-        .nav {
-            --bs-nav-link-color: #fff;
+        .navbar {
+            display: inline;
         }
 
-
+        #nav-quem-somos, #nav-convenios,  #nav-unidades{
+                padding: 16px;
+            }
 
         .navbar-expand-lg .navbar-collapse {
             display: flex !important;
@@ -66,15 +68,85 @@
 
         }
 
-        .nav-link a:hover {
-            text-align: center;
-            color: whitesmoke;
-
+        .navbar>.container {
+            justify-content: space-around;
         }
 
         .nav-link:hover {
-            color: pink;
+            text-align: center;
+            background-color: #a54478;
+            color: #fff;
+
         }
+
+        .nav-link a:hover {
+            text-align: center;
+            background-color: #a54478;
+            color: #fff;
+
+        }
+
+        /*.nav-link:hover {
+            color: pink;
+        }*/
+
+        .nav-pills .nav-link {
+            border: 3px solid #a54586;
+            color: #a54586;
+            background-color: #fff;
+            width: 200px;
+            height: 80px;
+            text-align: center;
+        }
+
+        #principal .nav .nav-link.active {
+            background-color: #fff;
+            color: #a54586;
+        }
+
+
+        h2.display-3 {
+            text-align: center;
+            margin-bottom: 32px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 2.5rem;
+        }
+
+
+        .dropdown-item {
+            display: inline;
+            font-weight: bold;
+
+        }
+
+        .dropdown-item:focus,
+        .dropdown-item:hover {
+            display: inline;
+            font-weight: bold;
+            background-color: #fff;
+            color: #a54478
+        }
+
+        .btn-primary {
+            color: #fff;
+            background-color: #a54586;
+        }
+
+        .btn-primary:hover {
+            background-color: #a54478;
+            --bs-btn-border-color: var(--bs-nav-link-color);
+            color: #fff
+        }
+
+        .btn.show {
+            background-color: #a54478;
+            color: #fff;
+        }
+
+        #nav-quem-somos, #nav-principal,  #nav-unidades, #nav-servicos, #nav-profissionais{
+                margin-bottom: 32px;
+            }
 
         .nav-pills .nav-link.active,
         .nav-pills .show>.nav-link {
@@ -83,11 +155,71 @@
 
         }
 
+        .nav-pills .nav-link:hover {
+            color: #fff;
+            background-color: #a54586;
+        }
+
+
+        header #principal {
+            background-color: #fff;
+        }
+
+        #principal .nav .nav-link.active {
+            background-color: #fff;
+            color: #a54586;
+        }
+
         .container-flex img {
             display: inline;
-            height: 18px;
+            height: 30px;
             margin-right: 2px;
             text-decoration: none;
+        }
+
+        .articles h3 {
+            color: #a54478;
+            font-size: 36px;
+            margin-right: 32px;
+
+        }
+
+        .btn-group {
+            height: 80px;
+        }
+
+        .articles p,
+        a {
+            font-size: 20px;
+            margin-bottom: 0rem;
+        }
+
+
+          /* #filmes-li {
+            background-color: #fff;
+        }
+
+        #filmes-link {
+            color: #a54478;
+        }
+
+        #filmes-li:hover {
+            background-color: #a54586;
+        }
+
+        #filmes-link:hover {
+            color: #fff;
+        }*/
+
+        .dropdown-menu {
+            color: #fff;
+            background-color: #fff;
+            overflow: hidden;
+
+        }
+
+        .dropdown-menu:hover {
+            background-color: #a54586;
         }
 
         @media screen and (max-width: 767px) {
@@ -99,6 +231,11 @@
                 color: #fff;
 
             }
+
+            .nav a {
+                font-size: 26px;
+            }
+
 
             .nav-link {
                 text-align: center;
@@ -142,6 +279,19 @@
                 justify-content: center !important;
             }
 
+            .nav-pills .nav-link {
+                border: 3px solid #a54586;
+                color: #fff;
+                background-color: #a54586;
+                width: 100%;
+                height: 80%;
+                text-align: center;
+            }
+
+            .btn-group {
+                height: 80px;
+            }
+
             /* section {
                 height: 100vh;
                 background-color: #fff;
@@ -158,6 +308,7 @@
                 font-weight: bold;
                 font-size: 53px;
                 text-align: center;
+                margin-bottom: 16px;
             }
 
             header span {
@@ -201,6 +352,7 @@
             ul {
                 flex-wrap: wrap;
                 justify-content: space-evenly;
+                padding-left: 0rem;
                 /* ao ocupar toda a largura da tela, cria-se uma nova linha*/
             }
 
@@ -229,10 +381,23 @@
             }
         }
 
+        .collapse:not(.show) {
+            display: none;
+        }
+
+       
         @media screen and (min-width: 768px) and (max-width: 1023px) {
 
             header h1 {
-                font-size: 50px;
+                font-size: 44px;
+            }
+
+            ul.nav.nav-pills {
+                display: block;
+            }
+
+            .nav a {
+                font-size: 30px;
             }
 
         }
@@ -256,7 +421,10 @@
                             <img src="./assets/images/logos/outubro_rosa logo.png" alt="espaco saude familia logo">
                         </span>
                     </a>
-                    <h1>Nossas Unidades</h1>
+                    <h1>
+                        <img src="./assets/images/logos/Ico/prédio comercial.png" alt="">
+                        Nossas Unidades
+                    </h1>
                     <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -278,19 +446,45 @@
                 <div class="container">
                     <ul class="nav nav-pills">
                         <li class="nav-item">
-                            <a class="nav-link" href="./index.html" target="_blank"> Página Principal</a>
+                            <a class="nav-link" href="./index.html" target=""> Página Principal</a>
                         </li>
                         <li>
-                            <a class="nav-link" href="./sobre.html" target="_blank"> Quem Somos</a>
+                            <a id="nav-quem-somos" class="nav-link" href="./sobre.html" target=""> Quem Somos</a>
                         </li>
                         <li>
-                            <a class="nav-link" href="./servicos.html">Nossos Serviços</a>
+                            <a id="nav-servicos" class="nav-link" href="./servicos.html" target=""> Nossos Serviços</a>
+                        </li>
+
+                        <!--
+                        <div class="btn-group">
+                            <a id="nav-servicos" class="nav-link" href="./servicos.html">Nossos Serviços
+                                <!--   <button class="btn btn-primary">
+                                    Nossos Serviços
+                                </button>-
+                            </a>
+                            <button class="btn btn-primary dropdown-toggle dropdown-toggle-split"
+                                data-bs-toggle="dropdown"></button>
+                            <ul class="dropdown-menu ">
+                                <li id="filmes-li" class="dropdown-item">
+                                    <a id="filmes-link" href="./filmes.html">Filmes Indicados</a>
+                                </li>
+                                <!--<li class="dropdown-item">
+                                        <a href="#">Novo fornecedor</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#">Novo funcionário</a>
+                                    </li>
+                            </ul>
+                        </div>-->
+                        <li>
+                            <a id="nav-profissionais" class="nav-link" href="./profissionais.html">Nossos
+                                profissionais</a>
                         </li>
                         <li>
-                            <a class="nav-link" href="./profissionais.html">Nossos profissionais</a>
+                            <a id="filmes-link" class="nav-link" href="./filmes.html" target=""> Filmes Recomendados</a>
                         </li>
                         <li>
-                            <a class="nav-link" href="./convenios.html">Convênios</a>
+                            <a id="nav-convenios" class="nav-link" href="./convenios.html">Convênios</a>
                         </li>
 
                         <ul class="container-flex">
@@ -304,11 +498,11 @@
                                     <img src="./assets/images/logos/instagram-icone-icon-1.png" alt="Instagram">
                                 </a>
                             </li>
-                            <li>
+                            <!-- <li>
                                 <a href="#" target="_blank">
                                     <img src="./assets/images/logos/youtube.webp" alt="Youtube">
                                 </a>
-                            </li>
+                            </li>-->
                         </ul>
                     </ul>
                 </div>
@@ -322,17 +516,21 @@
             <!--<h2 style="text-align:center;">Unidades</h2>-->
             <div class="articles">
                 <article>
-                    <h3 class="h3">Espaço Familia <i>Premier</i></h3>
+                    <h3 class="h3">Espaço Família <i>Premier</i></h3>
 
                     <img id="unid-premier" src="./assets/images/Espaco familia premier.jpeg"
                         alt="recepcao clinica espaco saude familia premier">
 
-
+                    <h4><strong>Horário de funcionamento:</strong></h4>
+                    <p>Segunda a Sexta: 08h às 22h</br>Sábado: 08h às 19h</br>Domingo: 08h às 12h</p>
                     <a href="https://www.google.com/maps?ll=-16.730341,-43.872332&z=15&t=m&hl=pt-BR&gl=BR&mapclient=embed"
                         target="_blank" rel="nofollow noopener" class="store-address"><br>
-                        <span id="endereco1">Endereço: R.
+                        <span id="endereco1">
+                            <i class="bi bi-geo-alt"></i>
+                            Endereço: R.
                             Correia Machado , 1025
                             - Centro </br> Montes Claros - MG</span></a>
+
                     <!-- <iframe
                         src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3820.9300556676712!2d-43.87233238255615!3d-16.730341399999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1663791830033!5m2!1spt-BR!2sbr"
                         id="local" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
@@ -343,9 +541,13 @@
                     <h3 class="h3">Espaço Família <i>Mais</i></h3>
                     <img src="./assets/images/Espaço Família mais.jpeg" id="unid-pimenta"
                         alt="fachada unidade familia mais">
+                    <h4><strong>Horário de funcionamento:</strong></h4>
+                    <p>Segunda a Sexta: 08h às 19h</br>Sábado: 08h às 12h</p>
                     <a href="  https://goo.gl/maps/rFAsLVuQGEZCqXcz7" target="_blank" rel="nofollow noopener"
                         class="store-address"><br>
-                        <span id="endereco2">Endereço: R. Alípio de Paula Silveira , 250 - Antonio
+                        <span id="endereco2">
+                            <i class="bi bi-geo-alt"></i>
+                            Endereço: R. Alípio de Paula Silveira , 250 - Antonio
                             Pimenta</br>Montes Claros - MG</span></a>
 
                     <!--   <iframe
@@ -353,12 +555,12 @@
                         id="local" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>-->
                 </article>
+
             </div>
+
+            <!--
             <article>
-                <h3 id="projeto3" class="h3">
-                    <i class="bi bi-building"></i>
-                    Projeto Unidade 3
-                </h3>
+                
                 <div id="carousel-unidade3">
                     <img src="./assets/images/terceira unidade/img consultorio1.jpeg" id="brinquedo"
                         alt="imagem consultorio clinica">
@@ -381,7 +583,142 @@
                     <img src="./assets/images/terceira unidade/recepcao5.jpeg" alt="imagem recepcao clinica">
                     <img src="./assets/images/terceira unidade/lavabo.jpeg" alt="imagem lavabo clinica">
                 </div>
-            </article>
+            </article>-->
+
+
+
+
+
+            <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                <h3 id="projeto3" class="h3">
+                    <i class="bi bi-building"></i>
+                    Projeto Unidade 3
+                </h3>
+                <div class="carousel-inner w-100 h-100">
+                    <div data-bs-interval="3000" class="carousel-item active">
+                        <img src="./assets/images/terceira unidade/img consultorio1.jpeg" />
+                        <div class="carousel-caption">
+                            <!-- <h2>Fachada Espaço Família <i>Premier</i></h2>-->
+                        </div>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100 h-100" src="./assets/images/terceira unidade/img consultorio2.jpeg" />
+                        <div class="carousel-caption">
+                            <!--  <h2>Recepção</h2>-->
+                        </div>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100 h-100" src="./assets/images/terceira unidade/img consultorio3.jpeg" />
+                        <div class="carousel-caption">
+                            <!--  <h2>Recepção</h2>-->
+                        </div>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100 h-100" src="./assets/images/terceira unidade/img consultorio4.jpeg" />
+                        <div class="carousel-caption">
+                            <!--  <h2>Recepção</h2>-->
+                        </div>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100 h-100" src="./assets/images/terceira unidade/img consultorio5.jpeg" />
+                        <div class="carousel-caption">
+                            <!-- <h2>Consultório</h2>-->
+                        </div>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img id="familia-mais" class="d-block w-100 h-100"
+                            src="./assets/images/terceira unidade/img consultorio6.jpeg" />
+                        <div class="carousel-caption">
+                            <!--<h2>Fachada Espaço Família <i>Mais</i></h2>-->
+                        </div>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100 h-100" src="./assets/images/terceira unidade/img consultorio7.jpeg" />
+                        <div class="carousel-caption">
+                            <!--<h2>Recepção</h2>-->
+                        </div>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100 h-100"
+                            src="./assets/images/terceira unidade/consultorio infantil2.jpeg" />
+                        <div class="carousel-caption">
+                            <!-- <h2>Espaço infantil</h2>-->
+                        </div>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100 h-100"
+                            src="./assets/images/terceira unidade/img consultorio infantil1.jpeg" />
+                        <div class="carousel-caption">
+                            <!--<h2>Espaço infantil</h2>-->
+                        </div>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100 h-100" src="./assets/images/terceira unidade/recepcao1.jpeg" />
+                        <div class="carousel-caption">
+                            <!--<h2>Espaço infantil</h2>-->
+                        </div>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100 h-100 h-100" src="./assets/images/terceira unidade/recepcao2.jpeg" />
+                        <div class="carousel-caption">
+                            <!--<h2>Espaço infantil</h2>-->
+                        </div>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100 h-100" src="./assets/images/terceira unidade/recepcao3.jpeg" />
+                        <div class="carousel-caption">
+                            <!--<h2>Espaço infantil</h2>-->
+                        </div>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100 h-100" src="./assets/images/terceira unidade/recepcao4.jpeg" />
+                        <div class="carousel-caption">
+                            <!--<h2>Espaço infantil</h2>-->
+                        </div>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100 h-100" src="./assets/images/terceira unidade/recepcao5.jpeg" />
+                        <div class="carousel-caption">
+                            <!--<h2>Espaço infantil</h2>-->
+                        </div>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100 h-100" src="./assets/images/terceira unidade/lavabo.jpeg" />
+                        <div class="carousel-caption">
+                            <!--<h2>Espaço infantil</h2>-->
+                        </div>
+                    </div>
+                </div>
+                <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev"
+                    type="button">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel-exemplo" class="active"
+                        data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="3"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="4"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="5"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="6"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="7"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="8"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="9"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="10"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="11"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="12"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="13"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="14"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="15"></button>
+                </div>
+            </div>
+
+
+
         </div>
     </section>
 
@@ -400,12 +737,19 @@
                                     class="fa fa-facebook" aria-hidden="true"></i></a></li>
                         <li class="d-inline"><a target="_blank" href="https://www.instagram.com/espacofamiliasaude/"><i
                                     class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                        <li class="d-inline"><a target="_blank" href="https://twitter.com/"><i class="fa fa-twitter"
+                        <li class="d-inline">
+                            <a href="mailto:espacofamiliapsi@gmail.com" id="mailto" target="_blank tittle=" Entre em
+                                contato pelo email><i class="fa fa-google" aria-hidden="true"></i>
+                            </a>
+                        </li>
+
+
+                        <!--   <li class="d-inline"><a target="_blank" href="https://twitter.com/"><i class="fa fa-twitter"
                                     aria-hidden="true"></i></a></li>
                         <li class="d-inline"><a target="_blank" href="https://pt.linkedin.com/"><i
                                     class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                         <li class="d-inline"><a target="_blank" href="https://www.youtube.com/"><i
-                                    class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                                    class="fa fa-youtube-play" aria-hidden="true"></i></a></li>-->
                     </ul>
                 </div>
             </div>
