@@ -78,9 +78,9 @@
         }
 
 
-        #nav-quem-somos, #nav-principal,  #nav-unidades, #nav-servicos, #nav-profissionais{
+        /*#nav-quem-somos, #nav-principal,  #nav-unidades, #nav-servicos, #nav-profissionais{
                 margin-bottom: 32px;
-            }
+            }*/
         .nav-link a:hover {
             text-align: center;
             background-color: #a54478;
@@ -125,6 +125,24 @@
         .btn-primary {
             color: #fff;
             background-color: #a54586;
+            font-weight: bold;
+            text-transform: uppercase;
+            --bs-btn-color: #fff;
+            --bs-btn-bg: #a54586;
+            --bs-btn-border-color: #a54586;
+            --bs-btn-hover-color: #fff;
+            --bs-btn-hover-bg: #a54586;
+            --bs-btn-hover-border-color: #a54586;
+            --bs-btn-focus-shadow-rgb: 49, 132, 253;
+            --bs-btn-active-color: #fff;
+            --bs-btn-active-bg: #a54586;
+            --bs-btn-active-border-color: #a54586;
+            --bs-btn-active-shadow: inset 0 3px 5pxrgba(0, 0, 0, 0.125);
+            --bs-btn-disabled-color: #fff;
+            --bs-btn-disabled-bg: none;
+            --bs-btn-disabled-border-color: #a54586;
+            width: 70%;
+            font-size: 18px;
         }
 
         .btn-primary:hover {
@@ -136,6 +154,7 @@
         .btn.show {
             background-color: #a54478;
             color: #fff;
+
         }
 
         .nav-pills .nav-link:hover {
@@ -161,40 +180,34 @@
         }
 
 
-         /* #filmes-li {
-            background-color: #fff;
-        }
-
-        #filmes-link {
-            color: #a54478;
-        }
-
-        #filmes-li:hover {
-            background-color: #a54586;
-        }
-
-        #filmes-link:hover {
-            color: #fff;
-        }*/
-
         .dropdown-menu {
             color: #fff;
             background-color: #fff;
             overflow: hidden;
 
+
+        }
+
+        .dropdown-menu-dark {
+            --bs-dropdown-link-active-bg: #a54586;
         }
 
         .dropdown-menu:hover {
-            background-color: #a54586;
+            background-color: #fff;
         }
 
         #filmes-nomes h3 {
             font-size: 40px;
             color: #a54586;
             text-transform: uppercase;
+            margin-top: 32px;
         }
 
-        #filmes-nomes>.container{
+        #filmes-nomes h2 {
+            margin-bottom: 32px;
+        }
+
+        #filmes-nomes>.container {
             border: 3px solid #a54586;
         }
 
@@ -202,9 +215,15 @@
         #text {
             margin-top: 16px;
             font-weight: bold;
-            font-size: 18px;
+            font-size: 24px;
             font-style: italic;
             color: rgb(149, 89, 157);
+        }
+
+        #linha1,
+        #linha2 {
+            text-align: center;
+            width: 80%;
         }
 
         .row h5 {
@@ -226,6 +245,12 @@
 
             .nav a {
                 font-size: 26px;
+            }
+
+            #nav-quem-somos,
+            #nav-convenios,
+            #nav-unidades {
+                padding: 0px;
             }
 
 
@@ -264,6 +289,25 @@
                 display: inline-block;
                 width: 1.5em;
                 height: 1.5em;
+            }
+
+            .navbar-expand-lg .navbar-toggler {
+            display: inline;
+        }
+
+            #nav-quem-somos,
+            #nav-unidades,
+            #nav-servicos,
+            #nav-principal,
+            #nav-convenios,
+            #nav-profissionais,
+            #nav-filmes {
+                border: 3px solid #fff;
+            }
+
+
+            .navbar-toggler {
+                margin-bottom: 32px;
             }
 
 
@@ -351,8 +395,6 @@
                 display: flex;
             }
 
-
-
             header nav {
                 background-color: #a54586;
                 font-weight: bold;
@@ -392,13 +434,66 @@
             }
 
             #filmes-link {
-            color: #fff;
-        }
+                color: #fff;
+            }
 
             /*Cortar as imagens conforme configuração eixo y = eixo vertical*/
 
-        }
 
+
+            .btn-primary {
+                color: #fff;
+                background-color: #a54586;
+                font-weight: bold;
+                text-transform: uppercase;
+                --bs-btn-color: #fff;
+                --bs-btn-bg: #a54586;
+                --bs-btn-border-color: #a54586;
+                --bs-btn-hover-color: #fff;
+                --bs-btn-hover-bg: #a54586;
+                --bs-btn-hover-border-color: #a54586;
+                --bs-btn-focus-shadow-rgb: 49, 132, 253;
+                --bs-btn-active-color: #fff;
+                --bs-btn-active-bg: #a54586;
+                --bs-btn-active-border-color: #a54586;
+                --bs-btn-active-shadow: inset 0 3px 5pxrgba(0, 0, 0, 0.125);
+                --bs-btn-disabled-color: #fff;
+                --bs-btn-disabled-bg: none;
+                --bs-btn-disabled-border-color: #a54586;
+                font-size: 18px;
+                width: 100%;
+            }
+
+            .btn-primary:hover {
+                background-color: #a54478;
+                --bs-btn-border-color: var(--bs-nav-link-color);
+                color: #fff
+            }
+
+            #linha1,
+            #linha2 {
+                text-align: center;
+                width: 100%;
+            }
+
+            #btn-casamento,
+            #btn-mulher {
+                font-size: 16px;
+            }
+
+            #btn-lealdade,
+            #btn-termino,
+            #btn-irmaos,
+            #btn-vida,
+            #btn-drogas {
+                font-size: 14px;
+                white-space: pre-wrap;
+            }
+
+            .navbar>.container{
+                display: block;
+            }
+        }
 
         @media screen and (min-width: 768px) and (max-width: 1023px) {
 
@@ -442,7 +537,7 @@
             <div class="container">
                 <ul class="nav nav-pills">
                     <li class="nav-item  fw-bold ">
-                        <a class="nav-link" href="./index.html" target=""> Página Principal</a>
+                        <a id="nav-principal" class="nav-link" href="./index.html" target=""> Página Principal</a>
                     </li>
                     <li class="nav-item  fw-bold">
                         <a id="nav-quem-somos" class="nav-link" href="./sobre.html" target=""> Quem Somos</a>
@@ -454,7 +549,7 @@
                         <a id="nav-unidades" class="nav-link" href="./unidades.html">Unidades</a>
                     </li>
                     <li class="nav-item  fw-bold">
-                        <a class="nav-link" href="./profissionais.html">Nossos Profissionais</a>
+                        <a id="nav-profissionais" class="nav-link" href="./profissionais.html">Nossos Profissionais</a>
                     </li>
                     <li class="nav-item  fw-bold">
                         <a id="nav-convenios" class="nav-link" href="./convenios.html">Convênios</a>
@@ -487,188 +582,296 @@
     <section id="filmes-nomes">
         <h3 class="text-center">
             <i class="bi bi-film"></i>
-            Recomendações de Filmes
+            Recomendações de Filmes por Temas
         </h3>
+
         <div class="container">
-            <div class="row d-flex w-100">
-                <div class="col md-4">
-                    <ul>
+            <div id="linha1" class="row d-flex w-100">
+                <div class="col md-6">
+                    <div>
+                        <button id="btn-mulher" class="btn btn-primary dropdown-toggle dropdown-toggle-split mt-4 mb-4"
+                            data-bs-toggle="dropdown">Violência contra a mulher</button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li class="dropdown-item">
+                                <p> - Maid;</br>
+                                    - Crimes de família;</br>
+                                    - A história de Tina Tunner;</br>
+                                    - Grandes Olhos;</br>
+                                    - Uma garota de sorte.</p>
+                            </li>
+                        </ul>
+                    </div>
 
-                        <li>
-                            <h5><b> Violência contra a mulher:</br></b></h5>
-                            <p> - Maid;</br>
-                                - Crimes de família;</br>
-                                - A história de Tina Tunner</br>
-                                - Grandes Olhos</br>
-                                - Uma garota de sorte</p>
-                        </li>
+                    <div>
+                        <button class="btn btn-primary dropdown-toggle dropdown-toggle-split mt-4 mb-4"
+                            data-bs-toggle="dropdown">Codependência Emocional</button>
 
-                        <li>
-                            <h5><b> Codependência Emocional:</br></b></h5>
-                            <p> - Ella e John;</br>
-                                - My Happy Family;</br>
-                                - Anjo de vidro;</br>
-                                - 6 balões;</p>
-                        </li>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li class="dropdown-item">
+                                <p> - Ella e John;</br>
+                                    - My Happy Family;</br>
+                                    - Anjo de vidro;</br>
+                                    - 6 balões.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary dropdown-toggle dropdown-toggle-split mt-4 mb-4"
+                            data-bs-toggle="dropdown">Relacionamento familiar</button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li class="dropdown-item">
+                                <p> - Casamento Grego 1 e 2;</br>
+                                    - O clube da felicidade e da sorte.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary dropdown-toggle dropdown-toggle-split mt-4 mb-4"
+                            data-bs-toggle="dropdown">Relação com o pai</button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li class="dropdown-item">
+                                <p> - Tal pai, tal filha;</br>
+                                    - Os garotos da minha vida</br>
+                                    - Bar doce lar;</br>
+                                    - Viver duas vezes;</br>
+                                    - Estão todos bem.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary dropdown-toggle dropdown-toggle-split mt-4 mb-4"
+                            data-bs-toggle="dropdown">Relação com a mãe</button>
 
-                        <li>
-                            <h5><b> Relacionamento familiar:</br></b></h5>
-                            <p> - Casamento Grego 1 e 2;</br>
-                                - O clube da felicidade e da sorte;</p>
-                        </li>
-
-
-                        <li>
-                            <h5><b> Relação com o pai:</br></b></h5>
-                            <p> - Tal pai, tal filha;</br>
-                                - Os garotos da minha vida</br>
-                                - Bar doce lar;</br>
-                                - Viver duas vezes;</br>
-                                - Estão todos bem;</p>
-                        </li>
-
-
-                        <li>
-                            <h5><b> Relação com a mãe:</br></b></h5>
-                            <p> - Três corpos e uma dança;</br>
-                                - O despertar de Motti;</br>
-                                - Mon bébé;</br>
-                                - 37 segundos;</p>
-                        </li>
-                        <li>
-                            <h5><b> Casamento/Relação de casal:</br></b></h5>
-                            <p> - Casomai;</br>
-                                - A história de nós dois;</br>
-                                - À prova de fogo;</br>
-                                - Táticas do amor;</br>
-                                - A história de um casamento;</br>
-                                - Guerra dos Roses;</br>
-                                - Separados pelo casamento;</br>
-                                - Meu amor</p>
-                        </li>
-                    </ul>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li class="dropdown-item">
+                                <p> - Três corpos e uma dança;</br>
+                                    - O despertar de Motti;</br>
+                                    - Mon bébé;</br>
+                                    - 37 segundos.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <button id="btn-casamento"
+                            class="btn btn-primary dropdown-toggle dropdown-toggle-split mt-4 mb-4"
+                            data-bs-toggle="dropdown">Casamento/Relação de casal</button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li class="dropdown-item">
+                                <p> - Casomai;</br>
+                                    - A história de nós dois;</br>
+                                    - À prova de fogo;</br>
+                                    - Táticas do amor;</br>
+                                    - A história de um casamento;</br>
+                                    - Guerra dos Roses;</br>
+                                    - Separados pelo casamento;</br>
+                                    - Meu amor.</p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
 
-                <div class="col md-4">
-                    <ul>
+                <div class="col md-6">
 
-                        <!--  <h5><b> Ciclos de vida:</b></h5>-->
+                    <div>
+                        <button class="btn btn-primary dropdown-toggle dropdown-toggle-split mt-4 mb-4"
+                            data-bs-toggle="dropdown">Autoestima</button>
 
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li class="dropdown-item">
 
+                                <p> - Felicidade por um fio;</br>
+                                    - O quebra cabeça;</br>
+                                    - Bagdad café;</br>
+                                    - Comer, rezar e amar;</br>
+                                    - Sob o sol da Toscana.</p>
 
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <button id="btn-lealdade"
+                            class="btn btn-primary dropdown-toggle dropdown-toggle-split mt-4 mb-4"
+                            data-bs-toggle="dropdown">Lealdade familiar/Deslealdade familiar</button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li class="dropdown-item">
+                                <h5><b> :</br></b></h5>
+                                <p> - Cruzeiro em família;</br>
+                                    - Tempestade de areia;</br>
+                                    - Era uma vez um sonho;</br>
+                                    -Red: crescer é uma fera (animação);</br>
+                                    - Encanto (animação);</br>
+                                    - Garota estranha;</br>
+                                    - Cruzeiro em família.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary dropdown-toggle dropdown-toggle-split mt-4 mb-4"
+                            data-bs-toggle="dropdown">Resiliência</button>
 
-                        <li>
-                            <h5><b> Autoestima:</br></b></h5>
-                            <p> - Felicidade por um fio;</br>
-                                - O quebra cabeça;</br>
-                                - Bagdad café;</br>
-                                - Comer, rezar e amar;</br>
-                                - Sob o sol da Toscana;</p>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li class="dropdown-item">
+                                <p> - As Aventuras de Pi;</br>
+                                    - Antônia: uma sinfonia;</br>
+                                    - Maudie;</br>
+                                    - O menino que descobriu o vento;</br>
+                                    - Querida Vida;</br>
+                                    -Rainha de Katwe;</br>
+                                    - Bem vindo a Marly-Gomont;</br>
+                                    - A vida é bela.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <button id="btn-termino" class="btn btn-primary dropdown-toggle dropdown-toggle-split mt-4 mb-4"
+                            data-bs-toggle="dropdown">Término de relacionamento/Reconstrução</button>
+
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li class="dropdown-item">
+
+                                <p> - Queen;</br>
+                                    - Sob o sol de Toscana;</br>
+                                    - Gente que vai e volta.</p>
+
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary dropdown-toggle dropdown-toggle-split mt-4 mb-4"
+                            data-bs-toggle="dropdown">Trauma</button>
                         </li>
-                        <li>
-                            <h5><b> Lealdade familiar/Deslealdade familiar:</br></b></h5>
-                            <p> - Cruzeiro em família;</br>
-                                - Tempestade de areia;</br>
-                                - Era uma vez um sonho;</br>
-                                -Red: crescer é uma fera (animação);</br>
-                                - Encanto (animação);</br>
-                                - Garota estranha;</br>
-                                - Cruzeiro em família;</p>
-                        </li>
-
-
-                        <li>
-                            <h5><b> Resiliência:</br></b></h5>
-                            <p> - As Aventuras de Pi;</br>
-                                - Antônia: uma sinfonia;</br>
-                                - Maudie;</br>
-                                - O menino que descobriu o vento;</br>
-                                - Querida Vida;</br>
-                                -Rainha de Katwe;</br>
-                                - Bem vindo a Marly-Gomont;</br>
-                                - A vida é bela;</p>
-                        </li>
-
-                        <li>
-                            <h5><b> Término de relacionamento/Reconstrução:</br></b></h5>
-                            <p> - Queen;
-                                - Sob o sol de Toscana;</br>
-                                - Gente que vai e volta;</p>
-                        </li>
-                        <li>
-                            <h5><b> Trauma:</br></b></h5>
-                            <p> - Filhos de Istambul;</br>
-                                - Fratura;</br>
-                                - Preciosa</p>
-                        </li>
-
-
-
-
-                    </ul>
-                </div>
-                <div class="col md-4">
-
-                    <ul>
-                        <li>
-                            <h5><b> Segredos:</br></b></h5>
-                            <p> - Árvore de sangue;</br>
-                                - O clube da felicidade e da sorte;</br>
-                                - A vila;</p>
-                        </li>
-                        <li>
-                            <h5><b> Transtorno alimentar:</br></b></h5>
-                            <p> - O mínimo para viver;</p>
-                        </li>
-
-                        <li>
-                            <h5><b> Perda e Luto:</br></b></h5>
-                            <p> - Sete minutos depois da meia noite;</br>
-                                - P.S. Eu te amo;</br>
-                                - Um ninho para dois;</br>
-                                - Chocolate;</p>
-                        </li>
-
-                        <li>
-                            <h5><b>Individuação:</br></b></h5>
-                            <p> - No ritmo do coração;</br>
-                                - A família Bélier;</p>
-                        </li>
-
-
-                        <li>
-                            <h5><b> Relacionamento entre irmãos</br></b></h5>
-                            <p> - Meu irmão, minha irmã;</p>
-                        </li>
-
-                        <li>
-                            <h5><b> Drogas e dependência química:</br></b></h5>
-                            <p> - 28 dias;</p>
-                        </li>
-
-                        <li>
-                            <h5><b> Sentido de vida/Permissão de vida:</br></b></h5>
-                            <p> - Antes de partir;</br>
-                                - Soul;</br>
-                                - A vida de outra mulher;</br>
-                                - Um banho de vida;</br>
-                                - Juanita;</br>
-                                - Last Holiday;</p>
-                        </li>
-
-                        <li>
-                            <h5><b> Adolescência:</br></b></h5>
-                            <p> - Juno;</br>
-                                - Os garotos da minha vida;</br>
-                                - Por lugares incríveis;</br>
-                                - De volta aos 15(série);</p>
-                        </li>
-                    </ul>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li class="dropdown-item">
+                                <p> - Filhos de Istambul;</br>
+                                    - Fratura;</br>
+                                    - Preciosa.</p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
             </div>
+
+            <div id="linha2" class="row d-block w-100">
+                <div class="col md-12">
+
+                    <div>
+                        <button class="btn btn-primary dropdown-toggle dropdown-toggle-split mt-4 mb-4"
+                            data-bs-toggle="dropdown">Segredos</button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li class="dropdown-item">
+                                <p>- O clube da felicidade e da sorte;</br>
+                                    - Árvore de sangue;</br>
+                                    - O clube da felicidade e da sorte;</br>
+                                    - A vila.</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <button class="btn btn-primary dropdown-toggle dropdown-toggle-split mt-4 mb-4"
+                            data-bs-toggle="dropdown">Transtorno Alimentar</button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li class="dropdown-item">
+                                <p> - O mínimo para viver.</p>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div>
+                        <button class="btn btn-primary dropdown-toggle dropdown-toggle-split mt-4 mb-4"
+                            data-bs-toggle="dropdown">Perda e Luto</button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li class="dropdown-item">
+
+                                <p> - Sete minutos depois da meia noite</br>
+                                    - P.S. Eu te amo;</br>
+                                    - Um ninho para dois;</br>
+                                    - Chocolate.</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <button class="btn btn-primary dropdown-toggle dropdown-toggle-split mt-4 mb-4"
+                            data-bs-toggle="dropdown">Individuação</button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li class="dropdown-item">
+                                <p> - No ritmo do coração;</br>
+                                    - A família Bélier;
+                                    - 100 medos.
+                                </p></br>
+                            </li>
+                        </ul>
+                    </div>
+
+
+
+                    <div>
+                        <button id="btn-irmaos" class="btn btn-primary dropdown-toggle dropdown-toggle-split mt-4 mb-4"
+                            data-bs-toggle="dropdown">Relacionamento entre irmãos</button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li class="dropdown-item">
+                                <p> - Meu irmão, minha irmã.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <button id="btn-drogas" class="btn btn-primary dropdown-toggle dropdown-toggle-split mt-4 mb-4"
+                            data-bs-toggle="dropdown">Drogas e dependência química</button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li class="dropdown-item">
+                                <p> - 28 dias.</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <button id="btn-vida" class="btn btn-primary dropdown-toggle dropdown-toggle-split mt-4 mb-4"
+                            data-bs-toggle="dropdown">Sentido de vida/Permissão de vida</button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li class="dropdown-item">
+
+                                <p> - Antes de partir;</br>
+                                    - Soul;</br>
+                                    - A vida de outra mulher;</br>
+                                    - Um banho de vida;</br>
+                                    - Juanita;</br>
+                                    - Last Holiday.</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <button class="btn btn-primary dropdown-toggle dropdown-toggle-split mt-4 mb-4"
+                            data-bs-toggle="dropdown">Adolescência</button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li class="dropdown-item">
+                                <p> - Juno;</br>
+                                    - Os garotos da minha vida;</br>
+                                    - Por lugares incríveis;</br>
+                                    - De volta aos 15(série).</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <button class="btn btn-primary dropdown-toggle dropdown-toggle-split mt-4 mb-4"
+                            data-bs-toggle="dropdown">Ansiedade</button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li class="dropdown-item">
+                                <p> - Click;</br>
+                                    -100 medos.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
+
+
     </section>
 
     <!--<section id="indicacao-semana">

@@ -298,11 +298,9 @@ footer #responsabilidade-tecnica .row {
 
     nav li {
         display: flex;
-        font-size: 18px;
-        margin-right: 16px;
+        font-size: 22px;
         font-weight: bold;
         text-transform: uppercase;
-        padding-right: 24px;
     }
 
     nav li a {

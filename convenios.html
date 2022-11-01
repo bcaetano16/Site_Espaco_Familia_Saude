@@ -86,10 +86,6 @@
 
         }
 
-        /*.nav-link:hover {
-            color: pink;
-        }*/
-
         .nav-pills .nav-link {
             border: 3px solid #a54586;
             color: #a54586;
@@ -111,20 +107,6 @@
             font-weight: bold;
             text-transform: uppercase;
             font-size: 2.5rem;
-        }
-
-        .dropdown-item {
-            display: inline;
-            font-weight: bold;
-
-        }
-
-        .dropdown-item:focus,
-        .dropdown-item:hover {
-            display: inline;
-            font-weight: bold;
-            background-color: #fff;
-            color: #a54478
         }
 
         .btn-primary {
@@ -180,23 +162,6 @@
             text-decoration: none;
         }
 
-
-       /* #filmes-li {
-            background-color: #fff;
-        }
-
-        #filmes-link {
-            color: #a54478;
-        }
-
-        #filmes-li:hover {
-            background-color: #a54586;
-        }
-
-        #filmes-link:hover {
-            color: #fff;
-        }*/
-
         .dropdown-menu {
             color: #fff;
             background-color: #fff;
@@ -239,9 +204,22 @@
 
             }
 
-            #nav-quem-somos, #nav-principal,  #nav-unidades, #nav-servicos, #nav-profissionais, #nav-convenios{
+            /*#nav-quem-somos, #nav-principal,  #nav-unidades, #nav-servicos, #nav-profissionais, #nav-convenios{
                 margin-bottom: 32px;
+            }*/
+
+            
+            #nav-quem-somos, #nav-convenios,  #nav-unidades{
+                padding: 0px;
             }
+
+            #nav-quem-somos, #nav-unidades, #nav-servicos, #nav-principal, #nav-convenios, #nav-profissionais, #nav-filmes{
+                border: 3px solid #fff;
+            }
+            .nav a {
+                font-size: 26px;
+            }
+
 
 
             .nav-pills .nav-link {
@@ -440,7 +418,7 @@
                 <div class="container">
                     <ul class="nav nav-pills">
                         <li class="nav-item">
-                            <a  class="nav-link" href="./index.html" target=""> Página Principal</a>
+                            <a id="nav-principal" class="nav-link" href="./index.html" target=""> Página Principal</a>
                         </li>
                         <li>
                             <a id="nav-quem-somos" class="nav-link" href="./sobre.html">Quem Somos</a>
@@ -476,7 +454,7 @@
                             <a id="nav-profissionais" class="nav-link" href="./profissionais.html">Nossos profissionais</a>
                         </li>
                         <li>
-                            <a id="filmes-link" class="nav-link" href="./filmes.html">Filmes Recomendados</a>
+                            <a id="nav-filmes" class="nav-link" href="./filmes.html">Filmes Recomendados</a>
                         </li>
 
 

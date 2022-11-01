@@ -158,22 +158,6 @@
         }
 
 
-         /* #filmes-li {
-            background-color: #fff;
-        }
-
-        #filmes-link {
-            color: #a54478;
-        }
-
-        #filmes-li:hover {
-            background-color: #a54586;
-        }
-
-        #filmes-link:hover {
-            color: #fff;
-        }*/
-
         .dropdown-menu {
             color: #fff;
             background-color: #fff;
@@ -230,12 +214,23 @@
 
 
             #nav-quem-somos,
-            #nav-principal,
+            #nav-convenios,
+            #nav-unidades {
+                padding: 0px;
+            }
+
+            #nav-quem-somos,
             #nav-unidades,
             #nav-servicos,
+            #nav-principal,
+            #nav-convenios,
             #nav-profissionais,
-            #nav-convenios {
-                margin-bottom: 32px;
+            #nav-filmes {
+                border: 3px solid #fff;
+            }
+
+            .nav a {
+                font-size: 26px;
             }
 
 
@@ -244,7 +239,7 @@
                 color: #fff;
                 background-color: #a54586;
                 width: 100%;
-                height: 80%;
+                height: 100%;
                 text-align: center;
             }
 
@@ -279,14 +274,6 @@
                 justify-content: center !important;
             }
 
-            /* section {
-                    height: 100vh;
-                    background-color: #fff;
-                    padding-top: 115px;
-                    margin-left: 16px;
-                    color: #a54586;
-                    text-transform: uppercase;
-                }*/
 
             header h1 {
                 text-transform: uppercase;
@@ -328,6 +315,7 @@
             }
 
             ul {
+                display: block;
                 flex-wrap: wrap;
                 justify-content: space-evenly;
                 /* ao ocupar toda a largura da tela, cria-se uma nova linha*/
@@ -340,6 +328,7 @@
                 overflow-y: hidden;
                 font-style: normal;
                 margin-top: 16px;
+                width: 100%;
             }
 
             /*Cortar as imagens conforme configuração eixo y = eixo vertical*/
@@ -354,7 +343,7 @@
 
         }
 
-        
+
 
         @media screen and (min-width: 768px) and (max-width: 1023px) {
 
@@ -400,7 +389,7 @@
                 <div class="container">
                     <ul class="nav nav-pills">
                         <li class="nav-item  fw-bold ">
-                            <a class="nav-link" href="./index.html" target=""> Página Principal</a>
+                            <a id="nav-principal" class="nav-link" href="./index.html" target=""> Página Principal</a>
                         </li>
                         <li class="nav-item  fw-bold">
                             <a id="nav-quem-somos" class="nav-link" href="./sobre.html" target=""> Quem Somos</a>
@@ -410,13 +399,14 @@
                             <a id="nav-unidades" class="nav-link" href="./unidades.html">Unidades</a>
                         </li>
                         <li class="nav-item  fw-bold">
-                            <a class="nav-link" href="./profissionais.html">Nossos profissionais</a>
+                            <a id="nav-profissionais" class="nav-link" href="./profissionais.html">Nossos
+                                profissionais</a>
                         </li>
                         <li class="nav-item  fw-bold">
                             <a id="nav-convenios" class="nav-link" href="./convenios.html">Convênios</a>
                         </li>
                         <li class="nav-item  fw-bold">
-                            <a class="nav-link" href="./filmes.html" target=""> Filmes Recomendados</a>
+                            <a id="nav-filmes" class="nav-link" href="./filmes.html" target=""> Filmes Recomendados</a>
                         </li>
 
                         <ul class="container-flex">
@@ -448,6 +438,9 @@
 
             <div class="lista-psi ">
                 <h2 class="sticky-top"><strong>Psicologia</strong></h2>
+                <div>
+                    <img src="./assets/images/Imagens Serviços/terapia-para-criancas-1.png" alt="terapia em crianças">
+                </div>
                 <ul>
                     <li>
                         <strong>Atendimento psicológico, individual, casal e família;</strong>
@@ -488,6 +481,10 @@
 
             <div class="lista-nutri">
                 <h2 class="sticky-top"><strong> Nutrição</strong></h2>
+                <div>
+                    <img src="./assets/images/Imagens Serviços/Blog-nutrição-Fundação-Pró-Renal-1024x683.jpg"
+                        alt="nutrição">
+                </div>
                 <ul>
                     <li>
                         <strong>Consulta nutricional;</strong>
@@ -506,9 +503,12 @@
 
             <div class="lista-fono">
                 <h2 class="sticky-top">
+
                     <strong> Fonoaudiologia</strong>
                 </h2>
-
+                <div>
+                    <img src="./assets/images/Imagens Serviços//fonoaudiologia-e-o-desenvolvimento-da-linguagem-infantil-21082018010329.jpg" alt="Fonoaudiologia">
+                </div>
                 <ul>
                     <li>
                         <strong>Avaliação e acompanhamento com fonoaudiólogo;</strong>
@@ -522,6 +522,10 @@
 
             <div class="lista-med">
                 <h2 class="sticky-top"><strong>Medicina</strong></h2>
+                <div>
+                    <img src="./assets/images/Imagens Serviços/pos-graduacao-medicina-ou-residencia-1.jpg"
+                        alt="medicina">
+                </div>
                 <ul>
                     <li>
                         <strong>Consulta e acompanhamento pediátrico;</strong>

@@ -103,6 +103,8 @@ ul li {
     /*Cortar as imagens conforme configuração eixo y = eixo vertical*/
 }
 
+
+
 ul li a {
     font-size: 30px;
 
@@ -154,6 +156,12 @@ section.lista-servicos h2 {
     /* background-color: #cfb3c1;*/
     border-color: #a54586;
     border: 3px solid #a54586;
+}
+
+.lista-psi img, .lista-nutri img, .lista-fono img, .lista-med img{
+    width: 75%;
+    height: 200px;
+    
 }
 
 .lista-nutri {
@@ -362,7 +370,7 @@ footer #responsabilidade-tecnica .row {
     }
 
     ul {
-        display: flex;
+        display: none;
         flex-wrap: wrap;
         justify-content: space-evenly;
         padding-left: 0rem;

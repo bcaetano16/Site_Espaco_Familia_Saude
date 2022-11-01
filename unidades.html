@@ -144,9 +144,9 @@
             color: #fff;
         }
 
-        #nav-quem-somos, #nav-principal,  #nav-unidades, #nav-servicos, #nav-profissionais{
+       /* #nav-quem-somos, #nav-principal,  #nav-unidades, #nav-servicos, #nav-profissionais{
                 margin-bottom: 32px;
-            }
+            }*/
 
         .nav-pills .nav-link.active,
         .nav-pills .show>.nav-link {
@@ -232,6 +232,14 @@
 
             }
 
+
+            #nav-quem-somos, #nav-convenios,  #nav-unidades{
+                padding: 0px;
+            }
+
+            #nav-quem-somos, #nav-unidades, #nav-servicos, #nav-principal, #nav-convenios, #nav-profissionais, #nav-filmes{
+                border: 3px solid #fff;
+            }
             .nav a {
                 font-size: 26px;
             }
@@ -446,7 +454,7 @@
                 <div class="container">
                     <ul class="nav nav-pills">
                         <li class="nav-item">
-                            <a class="nav-link" href="./index.html" target=""> Página Principal</a>
+                            <a id="nav-principal" class="nav-link" href="./index.html" target=""> Página Principal</a>
                         </li>
                         <li>
                             <a id="nav-quem-somos" class="nav-link" href="./sobre.html" target=""> Quem Somos</a>
@@ -481,7 +489,7 @@
                                 profissionais</a>
                         </li>
                         <li>
-                            <a id="filmes-link" class="nav-link" href="./filmes.html" target=""> Filmes Recomendados</a>
+                            <a id="nav-filmes" class="nav-link" href="./filmes.html" target=""> Filmes Recomendados</a>
                         </li>
                         <li>
                             <a id="nav-convenios" class="nav-link" href="./convenios.html">Convênios</a>
@@ -523,72 +531,53 @@
 
                     <h4><strong>Horário de funcionamento:</strong></h4>
                     <p>Segunda a Sexta: 08h às 22h</br>Sábado: 08h às 19h</br>Domingo: 08h às 12h</p>
-                    <a href="https://www.google.com/maps?ll=-16.730341,-43.872332&z=15&t=m&hl=pt-BR&gl=BR&mapclient=embed"
+                    <a href="https://www.google.com/maps/place/Espa%C3%A7o+Fam%C3%ADlia+-+Consult%C3%B3rio+de+Psicologia/@-16.7303414,-43.8701437,17z/data=!3m1!4b1!4m5!3m4!1s0xab5359a4cdcec7:0xb51138559132d67f!8m2!3d-16.7302754!4d-43.870132"
                         target="_blank" rel="nofollow noopener" class="store-address"><br>
                         <span id="endereco1">
                             <i class="bi bi-geo-alt"></i>
                             Endereço: R.
                             Correia Machado , 1025
                             - Centro </br> Montes Claros - MG</span></a>
-
-                    <!-- <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3820.9300556676712!2d-43.87233238255615!3d-16.730341399999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1663791830033!5m2!1spt-BR!2sbr"
+                           <!-- <div>
+                     <iframe
+                        src="https://www.google.com/maps/place/Espa%C3%A7o+Fam%C3%ADlia+-+Consult%C3%B3rio+de+Psicologia/@-16.7303414,-43.8701437,17z/data=!3m1!4b1!4m5!3m4!1s0xab5359a4cdcec7:0xb51138559132d67f!8m2!3d-16.7302754!4d-43.870132"
                         id="local" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>-->
                 </article>
+                    </div>
+                
+            
+                <div class="articles">
                 <article>
                     <h3 class="h3">Espaço Família <i>Mais</i></h3>
                     <img src="./assets/images/Espaço Família mais.jpeg" id="unid-pimenta"
                         alt="fachada unidade familia mais">
                     <h4><strong>Horário de funcionamento:</strong></h4>
                     <p>Segunda a Sexta: 08h às 19h</br>Sábado: 08h às 12h</p>
-                    <a href="  https://goo.gl/maps/rFAsLVuQGEZCqXcz7" target="_blank" rel="nofollow noopener"
+                    
+                    <a href="  https://goo.gl/maps/rFAsLVuQGEZCqXcz7" target="_blank"  rel="nofollow noopener"
                         class="store-address"><br>
-                        <span id="endereco2">
+                        
+                        <span class="pt-4">
                             <i class="bi bi-geo-alt"></i>
                             Endereço: R. Alípio de Paula Silveira , 250 - Antonio
                             Pimenta</br>Montes Claros - MG</span></a>
 
-                    <!--   <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3820.9300556676712!2d-43.87233238255615!3d-16.730341399999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1663791830033!5m2!1spt-BR!2sbr"
+                            <div class="pt-4" >
+                     <!--  <iframe 
+                        src="https://www.google.com.br/maps/place/16%C2%B044'37.7%22S+43%C2%B051'18.8%22W/@-16.7434499,-43.8552553,16.73z/data=!4m5!3m4!1s0x0:0x36c525790b4ec345!8m2!3d-16.7438111!4d-43.8552077?shorturl=1"
                         id="local" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>-->
+                        referrerpolicy="no-referrer-when-downgrade"></iframe></div>-->
                 </article>
-
+            </div>
             </div>
 
-            <!--
-            <article>
-                
-                <div id="carousel-unidade3">
-                    <img src="./assets/images/terceira unidade/img consultorio1.jpeg" id="brinquedo"
-                        alt="imagem consultorio clinica">
-                    <img src="./assets/images/terceira unidade/img consultorio2.jpeg" id="brinquedo"
-                        alt="imagem consultorio clinica">
-                    <img src="./assets/images/terceira unidade/img consultorio3.jpeg" id="consultorio3"
-                        alt="imagem consultorio clinica">
-                    <img src="./assets/images/terceira unidade/img consultorio4.jpeg" alt="imagem consultorio clinica">
-                    <img src="./assets/images/terceira unidade/img consultorio5.jpeg" alt="imagem consultorio clinica">
-                    <img src="./assets/images/terceira unidade/img consultorio6.jpeg" alt="imagem consultorio clinica">
-                    <img src="./assets/images/terceira unidade/img consultorio7.jpeg" alt="imagem consultorio clinica">
-                    <img src="./assets/images/terceira unidade/consultorio infantil2.jpeg" id="brinquedo"
-                        alt="imagem consultorio infantil">
-                    <img src="/assets/images/terceira unidade/img consultorio infantil1.jpeg" id="brinquedo"
-                        alt="imagem consultorio infantil">
-                    <img src="./assets/images/terceira unidade/recepcao1.jpeg" alt="imagem recepcao clinica">
-                    <img src="./assets/images/terceira unidade/recepcao2.jpeg" alt="imagem recepcao clinica">
-                    <img src="./assets/images/terceira unidade/recepcao3.jpeg" alt="imagem recepcao clinica">
-                    <img src="./assets/images/terceira unidade/recepcao4.jpeg" alt="imagem recepcao clinica">
-                    <img src="./assets/images/terceira unidade/recepcao5.jpeg" alt="imagem recepcao clinica">
-                    <img src="./assets/images/terceira unidade/lavabo.jpeg" alt="imagem lavabo clinica">
-                </div>
-            </article>-->
+        </section>
 
 
 
-
-
+        <section id="projeto3">
             <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
                 <h3 id="projeto3" class="h3">
                     <i class="bi bi-building"></i>
@@ -718,9 +707,9 @@
             </div>
 
 
-
+        </section>
         </div>
-    </section>
+    
 
     <div class="container">
 

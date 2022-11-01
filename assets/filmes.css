@@ -355,45 +355,8 @@ footer #responsabilidade-tecnica .row {
         font-size: 30px;
     }
 
-    .lista-psi {
-        font-size: 24px;
-        margin-top: 16px;
-        color: #a54586;
-        text-transform: uppercase;
-        list-style: disc;
-        border: none;
-    }
-
     form button:hover {
         background-color: #FF00FF;
-    }
-
-    .sobre {
-        display: block;
-        width: 100%;
-        max-width: 100%;
-        background-color: #fff;
-    }
-
-    .sobre p {
-        color: #a54586;
-        background-color: #fff;
-        max-width: 100%;
-        width: 100%;
-        margin-top: 20px;
-        text-align: justify;
-    }
-
-
-    .botao-menu {
-        display: none;
-        justify-content: center;
-        margin-top: 16px;
-        padding-bottom: 16px;
-    }
-
-    .botao-menu button {
-        padding: 8px;
     }
 
 
